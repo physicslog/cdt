@@ -1,16 +1,27 @@
 # Causal Dynamical Triangulation(CDT) 1+1 D
-CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spacetime dimension. This means to say that, we consider one space dimension and one time dimension. We know the main idea behind General Relativity is that, Spacetime is curved by the presence of matter. And that of Quantum Mechanics says, states can exist in superposition. Thus, Any theories explaining Quantum Gravity should incorporate superpositions of curved spacetimes.
+CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spacetime dimension. This means, we consider one space dimension and one time dimension. We know the main idea behind General Relativity is that, Spacetime is curved by the presence of matter. And that of Quantum Mechanics says, states can exist in superposition. Thus, any theories explaining Quantum Gravity should incorporate superpositions of curved spacetimes.
 
 ## Background theories
 1. General Relativity
 2. Quantum Mechanics
+3. Simplicial Topology(Used in Regge Calculus)
+4. Regge Calculus
 
-## Tools
+## Theory Keywords
 1. Einstein Hibert Action
 2. Feynmann Path Integral
 3. Gauss-Bonnet Theorem
-4. Regge Calculus
-5. Periodic Boundary Condition (Optional)
+4. Wick Rotation
+5. Euler characteristic
+6. Toroidal Universe, Periodic Boundary Condition (Optional)
+7. Partition Function
+
+## Simulation Keywords
+1. Hash Table
+2. Ergodic Move
+3. Alexander Move
+3. Metropolis Hasting Algorithm
+
 
 ## Further Reading 
 ### Introductory
@@ -20,9 +31,9 @@ CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spa
 4. [The Emergence of Spacetime, or, Quantum Gravity on Your Desktop](https://arxiv.org/pdf/0711.0273.pdf)
 
 ### Research Based
-5. [Quantum gravity on a laptop: 1+1 Dimensional Causal Dynamical Triangulation   simulaton](http://www.sciencedirect.com/science/article/pii/S2211379712000319)
-6. [Numerical Work in SAGE MATH 14: 1+1 Dimensional Causal Dynamical Triangulation](https://quantumtetrahedron.wordpress.com/2014/01/16/numerical-work-in-sage-math-14-11-dimensional-causal-dynamical-triangulation/)
-7. [Two Dimensional Causal Dynamical Triangulation](http://physics.wooster.edu/JrIS/Files/Israel_Web_Article.pdf)
+1. [Quantum gravity on a laptop: 1+1 Dimensional Causal Dynamical Triangulation   simulaton](http://www.sciencedirect.com/science/article/pii/S2211379712000319)
+2. [Numerical Work in SAGE MATH 14: 1+1 Dimensional Causal Dynamical Triangulation](https://quantumtetrahedron.wordpress.com/2014/01/16/numerical-work-in-sage-math-14-11-dimensional-causal-dynamical-triangulation/)
+3. [Two Dimensional Causal Dynamical Triangulation](http://physics.wooster.edu/JrIS/Files/Israel_Web_Article.pdf)
 
 ## Further Reading in higher Dimension
 1. [Fixing the Boundaries for Causal Dynamical Triangulations in 2+1 Dimensions](http://london.ucdavis.edu/~reu/REU12/Papers/miller.pdf)
