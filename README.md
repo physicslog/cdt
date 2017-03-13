@@ -4,6 +4,7 @@ CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spa
 ## Background theories
 1. General Relativity
 2. Quantum Mechanics
+
 ## Tools
 1. Einstein Hibert Action
 2. Feynmann Path Integral
@@ -17,6 +18,7 @@ CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spa
 2. [Quantum Geometry: Causal Dynamical Triangulations](http://www.thephysicsmill.com/2013/10/13/causal-dynamical-triangulations/) 
 3. [The Self-Organizing Quantum](http://www.signallake.com/innovation/SelfOrganizingQuantumJul08.pdf) 
 4. [The Emergence of Spacetime, or, Quantum Gravity on Your Desktop](https://arxiv.org/pdf/0711.0273.pdf)
+
 ### Research Based
 5. [Quantum gravity on a laptop: 1+1 Dimensional Causal Dynamical Triangulation   simulaton](http://www.sciencedirect.com/science/article/pii/S2211379712000319)
 6. [Numerical Work in SAGE MATH 14: 1+1 Dimensional Causal Dynamical Triangulation](https://quantumtetrahedron.wordpress.com/2014/01/16/numerical-work-in-sage-math-14-11-dimensional-causal-dynamical-triangulation/)
