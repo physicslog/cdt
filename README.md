@@ -1,6 +1,36 @@
-# Causal Dynamical Triangulation 1+1 D
+# Causal Dynamical Triangulation(CDT) 1+1 D
+CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spacetime dimension. This means to say that, we consider one space dimension and one time dimension. We know the main idea behind General Relativity is that, Spacetime is curved by the presence of matter. And that of Quantum Mechanics says, states can exist in superposition. Thus, Any theories explaining Quantum Gravity should incorporate superpositions of curved spacetimes.
 
+## Background theories
+1. General Relativity
+2. Quantum Mechanics
+## Tools
+1. Einstein Hibert Action
+2. Feynmann Path Integral
+3. Gauss-Bonnet Theorem
+4. Regge Calculus
+5. Periodic Boundary Condition (Optional)
 
+## Further Reading 
+### Introductory
+1. [Universe from Scratch](https://arxiv.org/abs/hep-th/0509010v3)
+2. [Quantum Geometry: Causal Dynamical Triangulations](http://www.thephysicsmill.com/2013/10/13/causal-dynamical-triangulations/) 
+3. [The Self-Organizing Quantum](http://www.signallake.com/innovation/SelfOrganizingQuantumJul08.pdf) 
+4. [The Emergence of Spacetime, or, Quantum Gravity on Your Desktop](https://arxiv.org/pdf/0711.0273.pdf)
+### Research Based
+5. [Quantum gravity on a laptop: 1+1 Dimensional Causal Dynamical Triangulation   simulaton](http://www.sciencedirect.com/science/article/pii/S2211379712000319)
+6. [Numerical Work in SAGE MATH 14: 1+1 Dimensional Causal Dynamical Triangulation](https://quantumtetrahedron.wordpress.com/2014/01/16/numerical-work-in-sage-math-14-11-dimensional-causal-dynamical-triangulation/)
+7. [Two Dimensional Causal Dynamical Triangulation](http://physics.wooster.edu/JrIS/Files/Israel_Web_Article.pdf)
+
+## Further Reading in higher Dimension
+1. [Fixing the Boundaries for Causal Dynamical Triangulations in 2+1 Dimensions](http://london.ucdavis.edu/~reu/REU12/Papers/miller.pdf)
+2. [A first look at transition amplitudes in (2+1)-dimensional causal dynamical triangulations](https://arxiv.org/abs/1305.2932v3)
+3. [Causal Dynamical Triangulation in Three Dimensions:Tiling spacetime with Tetrahedrons](http://physics.wooster.edu/JrIS/Files/Web_Article_Shrestha.pdf)
+4. [A Validation of Causal Dynamical Triangulations](https://arxiv.org/abs/1110.6875) 
+5. [Causal Dynamical Triangulations](https://sites.google.com/site/lisaglaserphysics/research/causal-dynamical-triangulations)
+6. [Dynamically Triangulating Lorentzian Quantum Gravity](https://arxiv.org/pdf/hep-th/0105267.pdf)
+7. [Causal Dynamical Triangulation of Quantum Gravity in Three Dimensions](http://london.ucdavis.edu/~reu/REU07/zhang.pdf)
+  
 ### Thanks For Reading!
 
 ##### [Click Here to go in Home page](https://damicristi.github.io/)
