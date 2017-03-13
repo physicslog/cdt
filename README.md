@@ -4,7 +4,7 @@ CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spa
 ## Background theories
 1. General Relativity
 2. Quantum Mechanics
-3. Simplicial Topology(Used in Regge Calculus)
+3. Simplicial complex (Concept will be used in Regge Calculus)
 4. Regge Calculus
 
 ## Theory Keywords
