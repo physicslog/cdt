@@ -29,11 +29,13 @@ CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spa
 2. [Quantum Geometry: Causal Dynamical Triangulations](http://www.thephysicsmill.com/2013/10/13/causal-dynamical-triangulations/) 
 3. [The Self-Organizing Quantum](http://www.signallake.com/innovation/SelfOrganizingQuantumJul08.pdf) 
 4. [The Emergence of Spacetime, or, Quantum Gravity on Your Desktop](https://arxiv.org/pdf/0711.0273.pdf)
+5. [Reconstructing the Universe](https://arxiv.org/pdf/hep-th/0505154.pdf)
 
 ### Research Based
 1. [Quantum gravity on a laptop: 1+1 Dimensional Causal Dynamical Triangulation   simulaton](http://www.sciencedirect.com/science/article/pii/S2211379712000319)
 2. [Numerical Work in SAGE MATH 14: 1+1 Dimensional Causal Dynamical Triangulation](https://quantumtetrahedron.wordpress.com/2014/01/16/numerical-work-in-sage-math-14-11-dimensional-causal-dynamical-triangulation/)
 3. [Two Dimensional Causal Dynamical Triangulation](http://physics.wooster.edu/JrIS/Files/Israel_Web_Article.pdf)
+4. [A discrete history of the Lorentzian path integral](https://arxiv.org/pdf/hep-th/0212340.pdf)
 
 ## Further Reading in higher Dimension
 1. [Fixing the Boundaries for Causal Dynamical Triangulations in 2+1 Dimensions](http://london.ucdavis.edu/~reu/REU12/Papers/miller.pdf)
