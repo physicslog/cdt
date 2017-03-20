@@ -41,6 +41,8 @@ CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spa
 2. [Numerical Work in SAGE MATH 14: 1+1 Dimensional Causal Dynamical Triangulation](https://quantumtetrahedron.wordpress.com/2014/01/16/numerical-work-in-sage-math-14-11-dimensional-causal-dynamical-triangulation/)
 3. [Two Dimensional Causal Dynamical Triangulation](http://physics.wooster.edu/JrIS/Files/Israel_Web_Article.pdf)
 4. [A discrete history of the Lorentzian path integral](https://arxiv.org/pdf/hep-th/0212340.pdf)
+5. [Locally Causal Dynamical Triangulations in Two Dimensions](https://arxiv.org/abs/1507.04566)
+6. [A Numerical Simulation in 1+1 Dimensions of Locally Causal Dynamical Triangulations](http://www.ru.nl/publish/pages/760962/thesis_final_version.pdf)
 
 ## Further Reading in higher Dimension
 1. [Fixing the Boundaries for Causal Dynamical Triangulations in 2+1 Dimensions](http://london.ucdavis.edu/~reu/REU12/Papers/miller.pdf)
@@ -50,6 +52,7 @@ CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spa
 5. [Causal Dynamical Triangulations](https://sites.google.com/site/lisaglaserphysics/research/causal-dynamical-triangulations)
 6. [Dynamically Triangulating Lorentzian Quantum Gravity](https://arxiv.org/pdf/hep-th/0105267.pdf)
 7. [Causal Dynamical Triangulation of Quantum Gravity in Three Dimensions](http://london.ucdavis.edu/~reu/REU07/zhang.pdf)
+8. [Globally and Locally Causal Dynamical Triangulations](http://www.ru.nl/publish/pages/548169/thesis.pdf)
   
 ### Thanks For Reading!
 
