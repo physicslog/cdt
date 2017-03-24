@@ -27,9 +27,9 @@ CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spa
 3. Alexander Move
 3. Metropolis Hasting Algorithm
 
-## Books Recommended
-1. [Spacetime and Geometry: An Introduction to General Relativity](https://www.amazon.com/Spacetime-Geometry-Introduction-General-Relativity/dp/0805387323)
-2. [Gravitation](https://www.amazon.com/Gravitation-Charles-W-Misner/dp/0716703440) 
+## Recommended Books 
+1. [Gravitation](https://www.amazon.com/Gravitation-Charles-W-Misner/dp/0716703440) 
+2. [Spacetime and Geometry: An Introduction to General Relativity](https://www.amazon.com/Spacetime-Geometry-Introduction-General-Relativity/dp/0805387323)
 3. [A First Course in General Relativity](https://www.amazon.com/First-Course-General-Relativity/dp/0521887054)
 4. [Introduction to Quantum Mechanics](https://www.amazon.com/Introduction-Quantum-Mechanics-David-Griffiths/dp/0131118927)
 5. [Quantum Mechanics and Path Integrals](https://www.amazon.com/Quantum-Mechanics-Path-Integrals-Emended/dp/0486477223)
