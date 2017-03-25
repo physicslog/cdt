@@ -35,7 +35,7 @@ CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spa
 5. [Quantum Mechanics and Path Integrals](https://www.amazon.com/Quantum-Mechanics-Path-Integrals-Emended/dp/0486477223)
 
 ## Basics Reading (Online Stuffs)
-My Supervisor's blog is great to start with basics skills needed for doing CDT. Here you are : [The Physics Mill](http://www.thephysicsmill.com/)
+My Supervisor's blog is wonderful place to start with basic skills needed for doing CDT. Here you are : [The Physics Mill](http://www.thephysicsmill.com/)
 
 1. [Wikibooks: Spacetime](https://en.wikibooks.org/wiki/Special_Relativity/Spacetime)
 2. [PBS Space Time](https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g/playlists) 
