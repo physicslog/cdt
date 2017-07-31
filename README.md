@@ -1,6 +1,6 @@
 # Causal Dynamical Triangulation(CDT) 1+1 D
 Author: [Damodar Rajbhandari](mailto:damicristi7@live.com)    
-Supervisors: [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Dr. Udayraj Khanal](mailto:khanalu@yahoo.com).
+Supervisors: [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com).
 
 ## Introduction
 CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spacetime dimension. This means, we consider one space and one time dimension. We know the main idea behind General Relativity is that, Spacetime is curved by the presence of matter. And that of Quantum Mechanics says, states can exist in superposition. Thus, any theories explaining Quantum Gravity should incorporate superpositions of curved spacetimes.
