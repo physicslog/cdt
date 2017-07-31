@@ -1,8 +1,7 @@
 # Causal Dynamical Triangulation(CDT) 1+1 D
 Author: [Damodar Rajbhandari](mailto:damicristi7@live.com)    
-Supervisors: [Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Udayraj Khanal](mailto:khanalu@yahoo.com).
+Supervisors: [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Dr. Udayraj Khanal](mailto:khanalu@yahoo.com).
 
-Special Thanks: [Dr. Joshua H. Cooperman](mailto:jhcooperman@gmail.com), [Prakrit Shrestha](mailto:prakrit.shrestha@gmail.com).
 ## Introduction
 CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spacetime dimension. This means, we consider one space and one time dimension. We know the main idea behind General Relativity is that, Spacetime is curved by the presence of matter. And that of Quantum Mechanics says, states can exist in superposition. Thus, any theories explaining Quantum Gravity should incorporate superpositions of curved spacetimes.
 
@@ -65,7 +64,10 @@ My Supervisor's blog is wonderful place to start with basic skills needed for do
 6. [Dynamically Triangulating Lorentzian Quantum Gravity](https://arxiv.org/pdf/hep-th/0105267.pdf)
 7. [Causal Dynamical Triangulation of Quantum Gravity in Three Dimensions](http://london.ucdavis.edu/~reu/REU07/zhang.pdf)
 8. [Globally and Locally Causal Dynamical Triangulations](http://www.ru.nl/publish/pages/548169/thesis.pdf)
-  
+
+Special Thanks: [Dr. Joshua H. Cooperman](mailto:jhcooperman@gmail.com), [Prakrit Shrestha](mailto:prakrit.shrestha@gmail.com).
+Foremost, thanks to my brilliant girlfriend Swastika Shrestha, she knows why!
+
 ### Thanks For Reading!
 
 ##### [Click Here to go in Home page](https://damicristi.github.io/)
