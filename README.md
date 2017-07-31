@@ -66,6 +66,7 @@ My Supervisor's blog is wonderful place to start with basic skills needed for do
 8. [Globally and Locally Causal Dynamical Triangulations](http://www.ru.nl/publish/pages/548169/thesis.pdf)
 
 Special Thanks: [Dr. Joshua H. Cooperman](mailto:jhcooperman@gmail.com), [Prakrit Shrestha](mailto:prakrit.shrestha@gmail.com).
+
 Foremost, thanks to my brilliant girlfriend Swastika Shrestha, she knows why!
 
 ### Thanks For Reading!
