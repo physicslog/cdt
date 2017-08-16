@@ -1,5 +1,5 @@
 # Causal Dynamical Triangulation(CDT) 1+1 D
-Author: [Damodar Rajbhandari](mailto:damicristi7@live.com), Out-reach blogger at [Physcis Log](http://www.physicslog.com/)  
+Author: [Damodar Rajbhandari](mailto:damicristi7@live.com), Out-reach blogger at [Physics Log](http://www.physicslog.com/)  
 Supervisors: [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com).
 
 ## Introduction
