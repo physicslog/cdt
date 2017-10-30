@@ -10,6 +10,7 @@ one trying to quantize the quantum fluctuation around a given solution by the cl
 of general relativity, one discovers that the corresponding quantum field theory is perturbatively
 non-renormalizable . This is one of the greatest challenges facing in the theoretical physics
 which lies in combining Einstein’s classical theory of gravity with Quantum Field Theory.
+
 One can attempt to construct a theory of quantum gravity is by defining a non-perturbative
 quantum field theory as a sum over histories. This technique is the modification of Feynman
 path integral into gravitational path integral which was first put forwarded by Stephen Hawking
@@ -33,6 +34,7 @@ time so that we can track of time direction. But the question is, does CDT rely 
 time slicing? Rely on this question, Renate Loll and Samo Jordan introduced the more general
 version of CDT which is called as CDT without preferred foliation (equivalent to say, Locally
 causal dynamical triangulations) and found the answer to be hopefully no.
+
 The main motivation for choosing this approach is because it is relies on very few funda-
 mental physical principles and attempt to quantize gravitational degree of freedom without in-
 troduction of additional variables, extra dimensions or new symmetries widely used by String
