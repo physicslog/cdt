@@ -3,8 +3,8 @@ Author: [Damodar Rajbhandari](mailto:damicristi7@live.com), Out-reach blogger at
 Supervisors: [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com).
 
 ## Introduction
-After introducing the General Theory of Relativity (in 1915), Einstein pointed out the quan-
-tum effects will lead to the modifications of his theory . In order to study gravity in the
+After introducing the General Theory of Relativity (in 1915), Einstein pointed out the quantum effects
+will lead to the modifications of his theory . In order to study gravity in the
 regime where this effects cannot be discarded, such area we called Quantum Gravity. But if
 one trying to quantize the quantum fluctuation around a given solution by the classical equation
 of general relativity, one discovers that the corresponding quantum field theory is perturbatively
