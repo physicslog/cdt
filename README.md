@@ -16,10 +16,9 @@ quantum field theory as a sum over histories. This technique is the modification
 path integral into gravitational path integral which was first put forwarded by Stephen Hawking
 and Gary William Gibbons for their quantum gravity approach called a “Euclidean Quantum
 Gravity ”. This approach uses Euclidean signature (+ + + +). In-short, instead of superposing
-the usual Lorentzian spacetimes, they used Euclidean spaces which have four space dimen-
-sions. The hope of the Euclidean quantum gravity was that spacetime could be assumed to be
-Euclidean and that time would emerge dynamically (see for more refined history of this
-approach). But, this did not work out. In early 1990s, this work was combined with quan-
+the usual Lorentzian spacetimes, they used Euclidean spaces which have four space dimensions. 
+The hope of the Euclidean quantum gravity was that spacetime could be assumed to be
+Euclidean and that time would emerge dynamically. But, this did not work out. In early 1990s, this work was combined with quan-
 tum Regge calculus so that, it could formulated non-perturbatively. This was called Dynamical
 Triangulations. This technique encountered the unboundedness in the gravitational action.
 And also, the path integral knows nothing about causality (i.e. light cone structure of the
