@@ -3,44 +3,12 @@ Author: [Damodar Rajbhandari](mailto:damicristi7@live.com), Out-reach blogger at
 Supervisors: [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com).
 
 ## Introduction
-After introducing the General Theory of Relativity (in 1915), Einstein pointed out the quantum effects
-will lead to the modifications of his theory . In order to study gravity in the
-regime where this effects cannot be discarded, such area we called Quantum Gravity. But if
-one trying to quantize the quantum fluctuation around a given solution by the classical equation
-of general relativity, one discovers that the corresponding quantum field theory is perturbatively
-non-renormalizable . This is one of the greatest challenges facing in the theoretical physics
-which lies in combining Einstein’s classical theory of gravity with Quantum Field Theory.
 
-One can attempt to construct a theory of quantum gravity is by defining a non-perturbative
-quantum field theory as a sum over histories. This technique is the modification of Feynman
-path integral into gravitational path integral which was first put forwarded by Stephen Hawking
-and Gary William Gibbons for their quantum gravity approach called a “Euclidean Quantum
-Gravity ”. This approach uses Euclidean signature (+ + + +). In-short, instead of superposing
-the usual Lorentzian spacetimes, they used Euclidean spaces which have four space dimensions. 
-The hope of the Euclidean quantum gravity was that spacetime could be assumed to be
-Euclidean and that time would emerge dynamically. But, this did not work out. In early 1990s, this work was combined with quan-
-tum Regge calculus so that, it could formulated non-perturbatively. This was called Dynamical
-Triangulations. This technique encountered the unboundedness in the gravitational action.
-And also, the path integral knows nothing about causality (i.e. light cone structure of the
-spacetime) and there’s no specification that any test matter will bounded by the light cones. In
-an effort to resolve these issues, Renate Loll, Jan Ambjørn and Jerzy Jurkiewicz reformulated
-this construction, but with Lorentzian signature imposed from the start. They only map into
-Euclidean signature via Wick rotation after constructing the theory. Thus, Causal Dynami-
-cal Triangulations was born (initially, it was named as Lorentzian Dynamical Triangulations).
-This approach provides concrete evidence that one must include causal structure, in the sense
-of having a well-defined light cones everywhere. This model imposed preferred foliation of
-time so that we can track of time direction. But the question is, does CDT rely on distinguished
-time slicing? Rely on this question, Renate Loll and Samo Jordan introduced the more general
-version of CDT which is called as CDT without preferred foliation (equivalent to say, Locally
-causal dynamical triangulations) and found the answer to be hopefully no.
+After introducing the General Theory of Relativity (in 1915), Einstein pointed out that quantum effects will lead to modifications of his theory. We call the unknown theory required to study these effects “quantum gravity”. Unfortunately, a naive quantization of general relativity appears to be perturbatively non-renormalizable. This is one of the greatest challenges facing in modern theoretical physics.
 
-The main motivation for choosing this approach is because it is relies on very few funda-
-mental physical principles and attempt to quantize gravitational degree of freedom without in-
-troduction of additional variables, extra dimensions or new symmetries widely used by String
-theory and Loop quantum gravity etc. And also comes with definite numerical approxima-
-tion scheme. To study the numerical simulation of 1+1 dimensional CDT with non-foliated
-structure, we requires new Monte Carlo moves, which are significantly more difficult to
-implement than the generalized Pachner moves used in standard CDT.
+One can attempt to construct a theory of quantum gravity by defining a non-perturbative quantum field theory as a sum over histories. This technique is a modification of Feynman path integral formulation which was first put forwarded by Stephen Hawking and Gary William Gibbons for their quantum gravity approach “Euclidean quantum gravity ”. In-short, instead of superposing the usual Lorentzian spacetimes, they used Euclidean spaces which have four space dimensions. The hope of Euclidean quantum gravity was that spacetime could be assumed to be Euclidean and that time would emerge dynamically. Unfortunately, this did not work out. In the 1990s, this work was combined with quantum Regge calculus so that it could be formulated non-perturbatively. This was called Dynamical Triangulations. This technique failed due to unboundedness in the gravitational action. And also the path integral knows nothing about causality (i.e. light cone structure of the spacetime) and there’s no specification that any test matter will bounded by light cones. In an effort to resolve these issues, Renate Loll, Jan Ambjørn and Jerzy Jurkiewicz reformulated this construction, but with Lorentzian signature imposed from the start. They only map into Euclidean signature via Wick rotation after constructing the theory. Thus, Causal Dynamical Triangulations was born (initially, it was named as Lorentzian Dynamical Triangulations). This approach provides concrete evidence that one must include causal structure, in the sense of having a well-defined light cones everywhere. This model imposed preferred foliation of time so that we can track of time direction. But the question is, does CDT rely on distinguished time slicing? To answer this question, Renate Loll and Samo Jordan introduced the more general version of CDT which is called CDT without preferred foliation (equivalent to say, Locally causal dynamical triangulations) and found the answer to be hopefully no.
+
+The main motivation for choosing this approach is that it is relies on very few fundamental physical principles and attempts to quantize gravitational degree of freedom without introduction of additional variables, extra dimensions or new symmetries widely used by String theory (for example). Moreover, it comes with definite numerical approximation scheme. To study the numerical simulations of 1+1 dimensional CDT with non-foliated structure, we requires new Monte Carlo moves, which are significantly more difficult to implement than the generalized Pachner moves used in standard CDT.
 
 ## Background theories
 1. General Relativity
