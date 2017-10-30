@@ -1,9 +1,45 @@
-# Causal Dynamical Triangulation(CDT) 1+1 D
+# 1+1 Dimensional Causal Dynamical Triangulation(CDT) without preferred foliation
 Author: [Damodar Rajbhandari](mailto:damicristi7@live.com), Out-reach blogger at [Physics Log](http://www.physicslog.com/)  
 Supervisors: [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com).
 
 ## Introduction
-CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spacetime dimension. This means, we consider one space and one time dimension. We know the main idea behind General Relativity is that, Spacetime is curved by the presence of matter. And that of Quantum Mechanics says, states can exist in superposition. Thus, any theories explaining Quantum Gravity should incorporate superpositions of curved spacetimes.
+After introducing the General Theory of Relativity (in 1915), Einstein pointed out the quan-
+tum effects will lead to the modifications of his theory . In order to study gravity in the
+regime where this effects cannot be discarded, such area we called Quantum Gravity. But if
+one trying to quantize the quantum fluctuation around a given solution by the classical equation
+of general relativity, one discovers that the corresponding quantum field theory is perturbatively
+non-renormalizable . This is one of the greatest challenges facing in the theoretical physics
+which lies in combining Einstein’s classical theory of gravity with Quantum Field Theory.
+One can attempt to construct a theory of quantum gravity is by defining a non-perturbative
+quantum field theory as a sum over histories. This technique is the modification of Feynman
+path integral into gravitational path integral which was first put forwarded by Stephen Hawking
+and Gary William Gibbons for their quantum gravity approach called a “Euclidean Quantum
+Gravity ”. This approach uses Euclidean signature (+ + + +). In-short, instead of superposing
+the usual Lorentzian spacetimes, they used Euclidean spaces which have four space dimen-
+sions. The hope of the Euclidean quantum gravity was that spacetime could be assumed to be
+Euclidean and that time would emerge dynamically (see for more refined history of this
+approach). But, this did not work out. In early 1990s, this work was combined with quan-
+tum Regge calculus so that, it could formulated non-perturbatively. This was called Dynamical
+Triangulations. This technique encountered the unboundedness in the gravitational action.
+And also, the path integral knows nothing about causality (i.e. light cone structure of the
+spacetime) and there’s no specification that any test matter will bounded by the light cones. In
+an effort to resolve these issues, Renate Loll, Jan Ambjørn and Jerzy Jurkiewicz reformulated
+this construction, but with Lorentzian signature imposed from the start. They only map into
+Euclidean signature via Wick rotation after constructing the theory. Thus, Causal Dynami-
+cal Triangulations was born (initially, it was named as Lorentzian Dynamical Triangulations).
+This approach provides concrete evidence that one must include causal structure, in the sense
+of having a well-defined light cones everywhere. This model imposed preferred foliation of
+time so that we can track of time direction. But the question is, does CDT rely on distinguished
+time slicing? Rely on this question, Renate Loll and Samo Jordan introduced the more general
+version of CDT which is called as CDT without preferred foliation (equivalent to say, Locally
+causal dynamical triangulations) and found the answer to be hopefully no.
+The main motivation for choosing this approach is because it is relies on very few funda-
+mental physical principles and attempt to quantize gravitational degree of freedom without in-
+troduction of additional variables, extra dimensions or new symmetries widely used by String
+theory and Loop quantum gravity etc. And also comes with definite numerical approxima-
+tion scheme. To study the numerical simulation of 1+1 dimensional CDT with non-foliated
+structure, we requires new Monte Carlo moves, which are significantly more difficult to
+implement than the generalized Pachner moves used in standard CDT.
 
 ## Background theories
 1. General Relativity
@@ -22,8 +58,7 @@ CDT is one of a candidate of Quantum Gravity. This project will focus on 1+1 spa
 
 ## Simulation Keywords
 1. Data Structure
-2. Ergodic Move
-3. Alexander Move
+2. Alexander Move
 3. Metropolis Hasting Algorithm
 
 ## Recommended Books 
