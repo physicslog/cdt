@@ -1,0 +1,838 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module sub_triangle_property</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>sub_triangle_property</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/field/Gravity/4.%20Projects%20and%20Presentation%20drafts/Github_Full_cdt_one_plus/sub_triangle_property.py">/media/field/Gravity/4. Projects and Presentation drafts/Github_Full_cdt_one_plus/sub_triangle_property.py</a></font></td></tr></table>
+    <p><tt>Path:&nbsp;/Full_cdt_one_plus_one/sub_triangle_property.py<br>
+&nbsp;<br>
+Time-stamp:&nbsp;&lt;2017-12-11&nbsp;22:32:24&nbsp;(Damodar)&gt;<br>
+Author:&nbsp;Damodar&nbsp;Rajbhandari&nbsp;(dphysicslog@gmail.com)<br>
+&nbsp;<br>
+Description:&nbsp;This&nbsp;file&nbsp;consists&nbsp;of&nbsp;a&nbsp;sub-class&nbsp;for&nbsp;<a href="triangle_property.html#triangle">triangle</a>'s&nbsp;edges,<br>
+vertices&nbsp;and&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;itself.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="scipy.html">scipy</a><br>
+</td><td width="25%" valign=top><a href="sub_triangle_property.html">sub_triangle_property</a><br>
+</td><td width="25%" valign=top><a href="utilities.html">utilities</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="triangle_property.html#edge">triangle_property.edge</a>(<a href="triangulations.html#Triangulations">triangulations.Triangulations</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="sub_triangle_property.html#spacelike">spacelike</a>
+</font></dt><dt><font face="helvetica, arial"><a href="sub_triangle_property.html#timelike">timelike</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="triangle_property.html#triangle">triangle_property.triangle</a>(<a href="triangulations.html#Triangulations">triangulations.Triangulations</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="sub_triangle_property.html#sst_triangle">sst_triangle</a>
+</font></dt><dt><font face="helvetica, arial"><a href="sub_triangle_property.html#tts_triangle">tts_triangle</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="triangulations.html#Triangulations">triangulations.Triangulations</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="sub_triangle_property.html#vertex">vertex</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="spacelike">class <strong>spacelike</strong></a>(<a href="triangle_property.html#edge">triangle_property.edge</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;is&nbsp;a&nbsp;sub-class&nbsp;of&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;class&nbsp;that&nbsp;specifies&nbsp;<br>
+the&nbsp;<a href="#spacelike">spacelike</a>&nbsp;edges&nbsp;of&nbsp;a&nbsp;<a href="triangle_property.html#triangle">triangle</a>.&nbsp;It&nbsp;should&nbsp;be&nbsp;noted&nbsp;that<br>
+<a href="#spacelike">spacelike</a>&nbsp;edges&nbsp;donot&nbsp;have&nbsp;any&nbsp;time&nbsp;direction.&nbsp;<br>
+&nbsp;<br>
+ATTRIBUTES:&nbsp;<br>
+--&nbsp;last_used_id&nbsp;=&nbsp;the&nbsp;last&nbsp;used&nbsp;point&nbsp;ID.&nbsp;global/static.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shared&nbsp;by&nbsp;all&nbsp;class&nbsp;instances.<br>
+--&nbsp;recycled_ids&nbsp;=&nbsp;A&nbsp;list&nbsp;of&nbsp;used&nbsp;IDs,&nbsp;which&nbsp;after&nbsp;deletion,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;becomes&nbsp;available.&nbsp;Global/Static.&nbsp;Shared&nbsp;by<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all&nbsp;class&nbsp;instances.<br>
+--&nbsp;vertices&nbsp;=&nbsp;A&nbsp;list&nbsp;of&nbsp;point&nbsp;IDs&nbsp;for&nbsp;<a href="#spacelike">spacelike</a>&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;endpoints.<br>
+--&nbsp;points&nbsp;=&nbsp;A&nbsp;function&nbsp;that&nbsp;returns&nbsp;the&nbsp;points&nbsp;the&nbsp;<a href="#spacelike">spacelike</a>&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;contains.<br>
+--&nbsp;id&nbsp;=&nbsp;The&nbsp;identifying&nbsp;number&nbsp;of&nbsp;the&nbsp;simplex.&nbsp;<br>
+--&nbsp;length&nbsp;=&nbsp;The&nbsp;LENGTH&nbsp;of&nbsp;an&nbsp;<a href="triangle_property.html#edge">edge</a>(lattice&nbsp;spacing)&nbsp;in&nbsp;the&nbsp;PHYSICAL&nbsp;geometry.<br>
+--&nbsp;instances&nbsp;=&nbsp;The&nbsp;dictionary&nbsp;containing&nbsp;all&nbsp;instances&nbsp;of&nbsp;the&nbsp;class.<br>
+&nbsp;<br>
+EXAMPLE&nbsp;of&nbsp;a&nbsp;call:&nbsp;e&nbsp;=&nbsp;spacelike_edge(vertex_pair)<br>
+where&nbsp;vertex_pair&nbsp;=&nbsp;[vertex_id_1,&nbsp;vertex_id_2]<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="sub_triangle_property.html#spacelike">spacelike</a></dd>
+<dd><a href="triangle_property.html#edge">triangle_property.edge</a></dd>
+<dd><a href="triangulations.html#Triangulations">triangulations.Triangulations</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="spacelike-__init__"><strong>__init__</strong></a>(self, vertex_pair=[])</dt><dd><tt>Initialize&nbsp;the&nbsp;<a href="#spacelike">spacelike</a>&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;object&nbsp;ID.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-__len__"><strong>__len__</strong></a>(self)</dt><dd><tt>Length&nbsp;reveals&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>String&nbsp;conversion&nbsp;reveals&nbsp;id&nbsp;and&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="spacelike-isinstances"><strong>isinstances</strong></a>(object_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Tests&nbsp;if&nbsp;an&nbsp;object_instance&nbsp;is&nbsp;an&nbsp;instance&nbsp;of&nbsp;the&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;class</tt></dd></dl>
+
+<dl><dt><a name="spacelike-spacelike_exists"><strong>spacelike_exists</strong></a>(endpoint_pair)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Test&nbsp;to&nbsp;see&nbsp;if&nbsp;the&nbsp;<a href="#spacelike">spacelike</a>&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;defined&nbsp;by&nbsp;a&nbsp;<a href="#vertex">vertex</a>&nbsp;pair&nbsp;exists.<br>
+If&nbsp;it&nbsp;does,&nbsp;return&nbsp;the&nbsp;<a href="#spacelike">spacelike</a>&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;ID.</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>instances</strong> = {}</dl>
+
+<dl><dt><strong>last_used_id</strong> = 0</dl>
+
+<dl><dt><strong>length</strong> = 1</dl>
+
+<dl><dt><strong>recycled_ids</strong> = set()</dl>
+
+<hr>
+Methods inherited from <a href="triangle_property.html#edge">triangle_property.edge</a>:<br>
+<dl><dt><a name="spacelike-bisect"><strong>bisect</strong></a>(self)</dt><dd><tt>If&nbsp;the&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;length&nbsp;of&nbsp;the&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;is&nbsp;EQUILATERAL,&nbsp;cuts&nbsp;it&nbsp;in<br>
+two&nbsp;and&nbsp;generates&nbsp;two&nbsp;edges&nbsp;with&nbsp;a&nbsp;point&nbsp;between&nbsp;them.&nbsp;Returns<br>
+the&nbsp;edges&nbsp;and&nbsp;the&nbsp;new&nbsp;point&nbsp;ID&nbsp;generated.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-check_topology"><strong>check_topology</strong></a>(self, return_value=False)</dt><dd><tt>Check&nbsp;to&nbsp;ensure&nbsp;that&nbsp;the&nbsp;number&nbsp;of&nbsp;endpoints&nbsp;is&nbsp;correct.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-get_vertex_ids"><strong>get_vertex_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-get_vertices"><strong>get_vertices</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-set_vertices"><strong>set_vertices</strong></a>(self, new_vertices)</dt><dd><tt>Takes&nbsp;an&nbsp;input&nbsp;list&nbsp;or&nbsp;set&nbsp;and&nbsp;resets&nbsp;self's&nbsp;vertices/endpoints.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="triangle_property.html#edge">triangle_property.edge</a>:<br>
+<dl><dt><a name="spacelike-find_duplicates"><strong>find_duplicates</strong></a>(vertex_list)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Searches&nbsp;through&nbsp;self.<strong>instances</strong>&nbsp;for&nbsp;edges&nbsp;with&nbsp;the&nbsp;same<br>
+vertices&nbsp;as&nbsp;in&nbsp;vertex_list.&nbsp;Requires&nbsp;set&nbsp;equality.&nbsp;Returns<br>
+the&nbsp;duplicates.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><a name="spacelike-get_id"><strong>get_id</strong></a>(self)</dt><dd><tt>Gets&nbsp;the&nbsp;object&nbsp;id.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><a name="spacelike-add"><strong>add</strong></a>(object_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Adds&nbsp;an&nbsp;object&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self&nbsp;to&nbsp;the&nbsp;dictionary&nbsp;containing<br>
+those&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-count_instances"><strong>count_instances</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Counts&nbsp;the&nbsp;number&nbsp;of&nbsp;instances&nbsp;of&nbsp;object&nbsp;of&nbsp;type&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-delete"><strong>delete</strong></a>(argument)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Deletes&nbsp;an&nbsp;object&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self&nbsp;from&nbsp;the&nbsp;dictionary&nbsp;containing<br>
+those&nbsp;objects&nbsp;and&nbsp;reclaims&nbsp;its&nbsp;id.&nbsp;<br>
+&nbsp;<br>
+Accepts&nbsp;an&nbsp;id,&nbsp;a&nbsp;list&nbsp;of&nbsp;ids,&nbsp;an&nbsp;object,&nbsp;or&nbsp;a&nbsp;list&nbsp;of&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-delete_all"><strong>delete_all</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Deletes&nbsp;all&nbsp;instances&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-increment_id"><strong>increment_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Increment&nbsp;the&nbsp;static&nbsp;variable&nbsp;last_used_id&nbsp;by&nbsp;1.&nbsp;Then<br>
+return&nbsp;the&nbsp;new&nbsp;id&nbsp;for&nbsp;use.&nbsp;<br>
+Tips:&nbsp;last_used_id&nbsp;=&nbsp;max(&nbsp;total&nbsp;ids)</tt></dd></dl>
+
+<dl><dt><a name="spacelike-list_ids"><strong>list_ids</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;object&nbsp;ids&nbsp;of&nbsp;type&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-make_id"><strong>make_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Generate&nbsp;an&nbsp;ID&nbsp;for&nbsp;use.&nbsp;Firstly,&nbsp;it&nbsp;will&nbsp;look&nbsp;in&nbsp;recycled&nbsp;IDs.&nbsp;<br>
+If&nbsp;none&nbsp;are&nbsp;avaiable,&nbsp;make&nbsp;a&nbsp;brand&nbsp;new&nbsp;ID&nbsp;and&nbsp;return&nbsp;it.<br>
+It&nbsp;should&nbsp;be&nbsp;known&nbsp;that&nbsp;on&nbsp;increasing&nbsp;the&nbsp;IDs&nbsp;we&nbsp;are&nbsp;making<br>
+compact&nbsp;triangulations&nbsp;in&nbsp;the&nbsp;spacetime&nbsp;manifold.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-parse_input"><strong>parse_input</strong></a>(id_or_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Enables&nbsp;a&nbsp;function&nbsp;to&nbsp;take&nbsp;an&nbsp;id&nbsp;or&nbsp;an&nbsp;instance&nbsp;as<br>
+input.&nbsp;Always&nbsp;returns&nbsp;a&nbsp;class&nbsp;instance&nbsp;rather&nbsp;than&nbsp;an<br>
+id.&nbsp;Takes&nbsp;in&nbsp;either&nbsp;an&nbsp;id&nbsp;or&nbsp;an&nbsp;instance&nbsp;as&nbsp;input&nbsp;and&nbsp;returns<br>
+the&nbsp;corresponding&nbsp;class&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-reclaim_id"><strong>reclaim_id</strong></a>(object_id)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Take&nbsp;an&nbsp;input&nbsp;ID&nbsp;and&nbsp;add&nbsp;it&nbsp;to&nbsp;the&nbsp;list&nbsp;of&nbsp;recycled&nbsp;IDs.<br>
+Return&nbsp;the&nbsp;list&nbsp;of&nbsp;recycled&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="spacelike-recycle_id"><strong>recycle_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Looks&nbsp;for&nbsp;the&nbsp;minimum&nbsp;element&nbsp;of&nbsp;your&nbsp;recycled&nbsp;IDs&nbsp;(means<br>
+trash&nbsp;IDs).&nbsp;Returns&nbsp;it&nbsp;and&nbsp;removes&nbsp;it&nbsp;from&nbsp;the&nbsp;set<br>
+so&nbsp;that&nbsp;we&nbsp;can&nbsp;used&nbsp;it.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="sst_triangle">class <strong>sst_triangle</strong></a>(<a href="triangle_property.html#triangle">triangle_property.triangle</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;sub-class&nbsp;that&nbsp;define&nbsp;the&nbsp;sst&nbsp;type&nbsp;of&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;object.<br>
+&nbsp;<br>
+Attributes:&nbsp;<br>
+--&nbsp;last_used_id&nbsp;=&nbsp;the&nbsp;last&nbsp;used&nbsp;point&nbsp;ID.&nbsp;global/static<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHARED&nbsp;BY&nbsp;ALL&nbsp;CLASS&nbsp;INSTANCES<br>
+--&nbsp;recycled_ids&nbsp;=&nbsp;A&nbsp;list&nbsp;of&nbsp;used&nbsp;IDs,&nbsp;which,&nbsp;after&nbsp;deletion,&nbsp;become&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available.&nbsp;Global/static.&nbsp;SHARED&nbsp;BY&nbsp;ALL&nbsp;CLASS&nbsp;INSTANCES.<br>
+--&nbsp;points&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;A&nbsp;list&nbsp;of&nbsp;points&nbsp;contained&nbsp;by&nbsp;this&nbsp;sst&nbsp;<a href="triangle_property.html#triangle">triangle</a><br>
+--&nbsp;id&nbsp;=&nbsp;The&nbsp;identifying&nbsp;number&nbsp;of&nbsp;the&nbsp;2D&nbsp;simplex.&nbsp;USEFUL!&nbsp;<br>
+--&nbsp;area&nbsp;=&nbsp;The&nbsp;physical&nbsp;area&nbsp;of&nbsp;a&nbsp;Minkowskian&nbsp;equilateral&nbsp;tts&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;with&nbsp;the&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;length.<br>
+--&nbsp;angle&nbsp;=&nbsp;The&nbsp;angle&nbsp;of&nbsp;each&nbsp;angle&nbsp;of&nbsp;an&nbsp;equilateral&nbsp;<a href="triangle_property.html#triangle">triangle</a>.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60&nbsp;degrees.<br>
+--&nbsp;instances&nbsp;=&nbsp;The&nbsp;dictionary&nbsp;containing&nbsp;all&nbsp;instances&nbsp;of&nbsp;this&nbsp;class.<br>
+&nbsp;<br>
+Example&nbsp;of&nbsp;call:&nbsp;t&nbsp;=&nbsp;<a href="#sst_triangle">sst_triangle</a>(point_list)<br>
+where&nbsp;point_list&nbsp;=&nbsp;[p1,p2,p3]&nbsp;where&nbsp;p1,&nbsp;p2&nbsp;and&nbsp;p3&nbsp;are&nbsp;the&nbsp;vertices&nbsp;of&nbsp;this&nbsp;<a href="triangle_property.html#triangle">triangle</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="sub_triangle_property.html#sst_triangle">sst_triangle</a></dd>
+<dd><a href="triangle_property.html#triangle">triangle_property.triangle</a></dd>
+<dd><a href="triangulations.html#Triangulations">triangulations.Triangulations</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="sst_triangle-__init__"><strong>__init__</strong></a>(self, point_list=[], spacelike_edge_list=[], timelike_edge_list=[], tts_triangle_list=[], sst_triangle_list=[])</dt><dd><tt>Initialize&nbsp;a&nbsp;sst&nbsp;type&nbsp;of&nbsp;<a href="triangle_property.html#triangle">triangle</a>.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-__len__"><strong>__len__</strong></a>(self)</dt><dd><tt>Length&nbsp;reveals&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Sring&nbsp;conversion&nbsp;reveals&nbsp;id,&nbsp;neighbors&nbsp;type&nbsp;and&nbsp;number&nbsp;of&nbsp;vertices</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="sst_triangle-isinstance"><strong>isinstance</strong></a>(object_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Testing&nbsp;if&nbsp;an&nbsp;object_instance&nbsp;is&nbsp;an&nbsp;instance&nbsp;of&nbsp;the&nbsp;tts&nbsp;type&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;class</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>angle</strong> = 1.0471975511965976</dl>
+
+<dl><dt><strong>area</strong> = 0.4330127018922193</dl>
+
+<dl><dt><strong>instances</strong> = {}</dl>
+
+<dl><dt><strong>last_used_id</strong> = 0</dl>
+
+<dl><dt><strong>recycled_ids</strong> = set()</dl>
+
+<hr>
+Methods inherited from <a href="triangle_property.html#triangle">triangle_property.triangle</a>:<br>
+<dl><dt><a name="sst_triangle-__add__"><strong>__add__</strong></a>(self, other_triangle)</dt><dd><tt>Equivalent&nbsp;to&nbsp;self.<a href="#sst_triangle-connect_to_triangle">connect_to_triangle</a>(other_triangle).</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-check_edge_validity"><strong>check_edge_validity</strong></a>(self)</dt><dd><tt>Checks&nbsp;to&nbsp;make&nbsp;sure&nbsp;that&nbsp;the&nbsp;number&nbsp;of&nbsp;endpoints&nbsp;of&nbsp;edges&nbsp;is<br>
+the&nbsp;same&nbsp;as&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-check_neighbor_edge_correlation"><strong>check_neighbor_edge_correlation</strong></a>(self)</dt><dd><tt>Ensures&nbsp;there&nbsp;is&nbsp;a&nbsp;bijection&nbsp;between&nbsp;neighbors&nbsp;and&nbsp;edges&nbsp;of&nbsp;same&nbsp;type<br>
+This&nbsp;method&nbsp;can&nbsp;be&nbsp;compatible&nbsp;with&nbsp;both&nbsp;the&nbsp;types&nbsp;of&nbsp;<a href="triangle_property.html#triangle">triangle</a>.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-check_topology"><strong>check_topology</strong></a>(self, return_value=False)</dt><dd><tt>Ensure&nbsp;that&nbsp;the&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;has&nbsp;the&nbsp;correct&nbsp;number&nbsp;of&nbsp;<br>
+vertices,&nbsp;edges&nbsp;and&nbsp;neighbors.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-check_topology_v2"><strong>check_topology_v2</strong></a>(self, return_value=False)</dt><dd><tt>Like&nbsp;check&nbsp;topology,&nbsp;but&nbsp;only&nbsp;allows&nbsp;3&nbsp;for&nbsp;each&nbsp;value.&nbsp;<br>
+USEFUL&nbsp;AFTER&nbsp;INITIALIZATION</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-connect_to_triangle"><strong>connect_to_triangle</strong></a>(self, other_triangle)</dt><dd><tt>Look&nbsp;for&nbsp;the&nbsp;any&nbsp;type&nbsp;of&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;and&nbsp;check&nbsp;if&nbsp;it&nbsp;shares&nbsp;an<br>
+<a href="triangle_property.html#edge">edge</a>&nbsp;with&nbsp;same&nbsp;type.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-get_spacelike_edges"><strong>get_spacelike_edges</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-get_spacelike_edges_ids"><strong>get_spacelike_edges_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-get_sst_neighbors"><strong>get_sst_neighbors</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-get_timelike_edges"><strong>get_timelike_edges</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-get_timelike_edges_ids"><strong>get_timelike_edges_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-get_tts_neighbor_ids"><strong>get_tts_neighbor_ids</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-get_tts_neighbors"><strong>get_tts_neighbors</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-get_vertex_ids"><strong>get_vertex_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-get_vertices"><strong>get_vertices</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-make_outstring"><strong>make_outstring</strong></a>(self)</dt><dd><tt>Makes&nbsp;a&nbsp;string&nbsp;of&nbsp;the&nbsp;form&nbsp;'(v1,&nbsp;v2,&nbsp;v3)'&nbsp;for&nbsp;vertices.&nbsp;Useful<br>
+for&nbsp;output.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-remove_sst_neighbor"><strong>remove_sst_neighbor</strong></a>(self, other_triangle)</dt><dd><tt>other_triangle&nbsp;is&nbsp;in&nbsp;self.<strong>sst_neighbors</strong>,&nbsp;remove&nbsp;it&nbsp;from&nbsp;the<br>
+neighbor&nbsp;list.&nbsp;Accepts&nbsp;ids&nbsp;only.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-remove_tts_neighbor"><strong>remove_tts_neighbor</strong></a>(self, other_triangle)</dt><dd><tt>other_triangle&nbsp;is&nbsp;in&nbsp;self.<strong>tts_neighbors</strong>,&nbsp;remove&nbsp;it&nbsp;from&nbsp;the<br>
+neighbor&nbsp;list.&nbsp;Accepts&nbsp;ids&nbsp;only.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="triangle_property.html#triangle">triangle_property.triangle</a>:<br>
+<dl><dt><a name="sst_triangle-find_duplicates"><strong>find_duplicates</strong></a>(vertex_list=False, spacelike_edge_list=False, timelike_edge_list=False, tts_triangle_list=False, sst_triangle_list=False)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Searches&nbsp;through&nbsp;self.<strong>instances</strong>&nbsp;for&nbsp;triangles&nbsp;with&nbsp;the&nbsp;same<br>
+vertices&nbsp;or&nbsp;the&nbsp;same&nbsp;edges&nbsp;or&nbsp;the&nbsp;same&nbsp;neighbors&nbsp;as&nbsp;the&nbsp;given&nbsp;lists.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><a name="sst_triangle-get_id"><strong>get_id</strong></a>(self)</dt><dd><tt>Gets&nbsp;the&nbsp;object&nbsp;id.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><a name="sst_triangle-add"><strong>add</strong></a>(object_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Adds&nbsp;an&nbsp;object&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self&nbsp;to&nbsp;the&nbsp;dictionary&nbsp;containing<br>
+those&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-count_instances"><strong>count_instances</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Counts&nbsp;the&nbsp;number&nbsp;of&nbsp;instances&nbsp;of&nbsp;object&nbsp;of&nbsp;type&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-delete"><strong>delete</strong></a>(argument)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Deletes&nbsp;an&nbsp;object&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self&nbsp;from&nbsp;the&nbsp;dictionary&nbsp;containing<br>
+those&nbsp;objects&nbsp;and&nbsp;reclaims&nbsp;its&nbsp;id.&nbsp;<br>
+&nbsp;<br>
+Accepts&nbsp;an&nbsp;id,&nbsp;a&nbsp;list&nbsp;of&nbsp;ids,&nbsp;an&nbsp;object,&nbsp;or&nbsp;a&nbsp;list&nbsp;of&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-delete_all"><strong>delete_all</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Deletes&nbsp;all&nbsp;instances&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-increment_id"><strong>increment_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Increment&nbsp;the&nbsp;static&nbsp;variable&nbsp;last_used_id&nbsp;by&nbsp;1.&nbsp;Then<br>
+return&nbsp;the&nbsp;new&nbsp;id&nbsp;for&nbsp;use.&nbsp;<br>
+Tips:&nbsp;last_used_id&nbsp;=&nbsp;max(&nbsp;total&nbsp;ids)</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-list_ids"><strong>list_ids</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;object&nbsp;ids&nbsp;of&nbsp;type&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-make_id"><strong>make_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Generate&nbsp;an&nbsp;ID&nbsp;for&nbsp;use.&nbsp;Firstly,&nbsp;it&nbsp;will&nbsp;look&nbsp;in&nbsp;recycled&nbsp;IDs.&nbsp;<br>
+If&nbsp;none&nbsp;are&nbsp;avaiable,&nbsp;make&nbsp;a&nbsp;brand&nbsp;new&nbsp;ID&nbsp;and&nbsp;return&nbsp;it.<br>
+It&nbsp;should&nbsp;be&nbsp;known&nbsp;that&nbsp;on&nbsp;increasing&nbsp;the&nbsp;IDs&nbsp;we&nbsp;are&nbsp;making<br>
+compact&nbsp;triangulations&nbsp;in&nbsp;the&nbsp;spacetime&nbsp;manifold.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-parse_input"><strong>parse_input</strong></a>(id_or_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Enables&nbsp;a&nbsp;function&nbsp;to&nbsp;take&nbsp;an&nbsp;id&nbsp;or&nbsp;an&nbsp;instance&nbsp;as<br>
+input.&nbsp;Always&nbsp;returns&nbsp;a&nbsp;class&nbsp;instance&nbsp;rather&nbsp;than&nbsp;an<br>
+id.&nbsp;Takes&nbsp;in&nbsp;either&nbsp;an&nbsp;id&nbsp;or&nbsp;an&nbsp;instance&nbsp;as&nbsp;input&nbsp;and&nbsp;returns<br>
+the&nbsp;corresponding&nbsp;class&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-reclaim_id"><strong>reclaim_id</strong></a>(object_id)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Take&nbsp;an&nbsp;input&nbsp;ID&nbsp;and&nbsp;add&nbsp;it&nbsp;to&nbsp;the&nbsp;list&nbsp;of&nbsp;recycled&nbsp;IDs.<br>
+Return&nbsp;the&nbsp;list&nbsp;of&nbsp;recycled&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="sst_triangle-recycle_id"><strong>recycle_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Looks&nbsp;for&nbsp;the&nbsp;minimum&nbsp;element&nbsp;of&nbsp;your&nbsp;recycled&nbsp;IDs&nbsp;(means<br>
+trash&nbsp;IDs).&nbsp;Returns&nbsp;it&nbsp;and&nbsp;removes&nbsp;it&nbsp;from&nbsp;the&nbsp;set<br>
+so&nbsp;that&nbsp;we&nbsp;can&nbsp;used&nbsp;it.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="timelike">class <strong>timelike</strong></a>(<a href="triangle_property.html#edge">triangle_property.edge</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;is&nbsp;a&nbsp;sub-class&nbsp;of&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;class&nbsp;that&nbsp;specifies&nbsp;<br>
+the&nbsp;<a href="#timelike">timelike</a>&nbsp;edges&nbsp;of&nbsp;a&nbsp;<a href="triangle_property.html#triangle">triangle</a>.&nbsp;(a,b)&nbsp;means&nbsp;arrow&nbsp;of&nbsp;time&nbsp;<br>
+going&nbsp;from&nbsp;a&nbsp;to&nbsp;b.&nbsp;i.e.&nbsp;a-&gt;b&nbsp;where,&nbsp;a&nbsp;(past&nbsp;event)&nbsp;and&nbsp;b&nbsp;(future&nbsp;event)&nbsp;is&nbsp;the<br>
+end-points&nbsp;of&nbsp;a&nbsp;<a href="#timelike">timelike</a>&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;and&nbsp;"a"&nbsp;&amp;&nbsp;"b"&nbsp;are&nbsp;the&nbsp;<a href="#vertex">vertex</a>&nbsp;IDs.<br>
+&nbsp;<br>
+ATTRIBUTES:&nbsp;<br>
+--&nbsp;last_used_id&nbsp;=&nbsp;the&nbsp;last&nbsp;used&nbsp;point&nbsp;ID.&nbsp;global/static.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shared&nbsp;by&nbsp;all&nbsp;class&nbsp;instances.<br>
+--&nbsp;recycled_ids&nbsp;=&nbsp;A&nbsp;list&nbsp;of&nbsp;used&nbsp;IDs,&nbsp;which&nbsp;after&nbsp;deletion,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;becomes&nbsp;available.&nbsp;Global/Static.&nbsp;Shared&nbsp;by<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all&nbsp;class&nbsp;instances.<br>
+--&nbsp;vertices&nbsp;=&nbsp;A&nbsp;list&nbsp;of&nbsp;point&nbsp;IDs&nbsp;for&nbsp;<a href="#spacelike">spacelike</a>&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;endpoints.<br>
+--&nbsp;points&nbsp;=&nbsp;A&nbsp;function&nbsp;that&nbsp;returns&nbsp;the&nbsp;points&nbsp;the&nbsp;<a href="#timelike">timelike</a>&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;contains.<br>
+--&nbsp;id&nbsp;=&nbsp;The&nbsp;identifying&nbsp;number&nbsp;of&nbsp;the&nbsp;simplex.&nbsp;<br>
+--&nbsp;length&nbsp;=&nbsp;The&nbsp;LENGTH&nbsp;of&nbsp;an&nbsp;<a href="triangle_property.html#edge">edge</a>(lattice&nbsp;spacing)&nbsp;in&nbsp;the&nbsp;PHYSICAL&nbsp;geometry.<br>
+--&nbsp;instances&nbsp;=&nbsp;The&nbsp;dictionary&nbsp;containing&nbsp;all&nbsp;instances&nbsp;of&nbsp;the&nbsp;class.<br>
+&nbsp;<br>
+EXAMPLE&nbsp;of&nbsp;a&nbsp;call:&nbsp;e&nbsp;=&nbsp;timelike_edge(vertex_pair)<br>
+where&nbsp;vertex_pair&nbsp;=&nbsp;(vertex_id_1,&nbsp;vertex_id_2)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="sub_triangle_property.html#timelike">timelike</a></dd>
+<dd><a href="triangle_property.html#edge">triangle_property.edge</a></dd>
+<dd><a href="triangulations.html#Triangulations">triangulations.Triangulations</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="timelike-__init__"><strong>__init__</strong></a>(self, vertex_pair=[])</dt><dd><tt>Initialize&nbsp;the&nbsp;<a href="#timelike">timelike</a>&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;object&nbsp;ID.</tt></dd></dl>
+
+<dl><dt><a name="timelike-__len__"><strong>__len__</strong></a>(self)</dt><dd><tt>Length&nbsp;reveals&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices.</tt></dd></dl>
+
+<dl><dt><a name="timelike-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>String&nbsp;conversion&nbsp;reveals&nbsp;id&nbsp;and&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="timelike-isinstance"><strong>isinstance</strong></a>(object_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Tests&nbsp;if&nbsp;an&nbsp;object_instance&nbsp;is&nbsp;an&nbsp;instance&nbsp;of&nbsp;the&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;class</tt></dd></dl>
+
+<dl><dt><a name="timelike-timelike_exists"><strong>timelike_exists</strong></a>(endpoint_pair)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Test&nbsp;to&nbsp;see&nbsp;if&nbsp;the&nbsp;<a href="#timelike">timelike</a>&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;defined&nbsp;by&nbsp;a&nbsp;<a href="#vertex">vertex</a>&nbsp;pair&nbsp;exists.<br>
+If&nbsp;it&nbsp;does,&nbsp;return&nbsp;the&nbsp;<a href="#timelike">timelike</a>&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;ID.</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>instances</strong> = {}</dl>
+
+<dl><dt><strong>last_used_id</strong> = 0</dl>
+
+<dl><dt><strong>length</strong> = 1</dl>
+
+<dl><dt><strong>recycled_ids</strong> = set()</dl>
+
+<hr>
+Methods inherited from <a href="triangle_property.html#edge">triangle_property.edge</a>:<br>
+<dl><dt><a name="timelike-bisect"><strong>bisect</strong></a>(self)</dt><dd><tt>If&nbsp;the&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;length&nbsp;of&nbsp;the&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;is&nbsp;EQUILATERAL,&nbsp;cuts&nbsp;it&nbsp;in<br>
+two&nbsp;and&nbsp;generates&nbsp;two&nbsp;edges&nbsp;with&nbsp;a&nbsp;point&nbsp;between&nbsp;them.&nbsp;Returns<br>
+the&nbsp;edges&nbsp;and&nbsp;the&nbsp;new&nbsp;point&nbsp;ID&nbsp;generated.</tt></dd></dl>
+
+<dl><dt><a name="timelike-check_topology"><strong>check_topology</strong></a>(self, return_value=False)</dt><dd><tt>Check&nbsp;to&nbsp;ensure&nbsp;that&nbsp;the&nbsp;number&nbsp;of&nbsp;endpoints&nbsp;is&nbsp;correct.</tt></dd></dl>
+
+<dl><dt><a name="timelike-get_vertex_ids"><strong>get_vertex_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="timelike-get_vertices"><strong>get_vertices</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="timelike-set_vertices"><strong>set_vertices</strong></a>(self, new_vertices)</dt><dd><tt>Takes&nbsp;an&nbsp;input&nbsp;list&nbsp;or&nbsp;set&nbsp;and&nbsp;resets&nbsp;self's&nbsp;vertices/endpoints.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="triangle_property.html#edge">triangle_property.edge</a>:<br>
+<dl><dt><a name="timelike-find_duplicates"><strong>find_duplicates</strong></a>(vertex_list)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Searches&nbsp;through&nbsp;self.<strong>instances</strong>&nbsp;for&nbsp;edges&nbsp;with&nbsp;the&nbsp;same<br>
+vertices&nbsp;as&nbsp;in&nbsp;vertex_list.&nbsp;Requires&nbsp;set&nbsp;equality.&nbsp;Returns<br>
+the&nbsp;duplicates.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><a name="timelike-get_id"><strong>get_id</strong></a>(self)</dt><dd><tt>Gets&nbsp;the&nbsp;object&nbsp;id.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><a name="timelike-add"><strong>add</strong></a>(object_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Adds&nbsp;an&nbsp;object&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self&nbsp;to&nbsp;the&nbsp;dictionary&nbsp;containing<br>
+those&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="timelike-count_instances"><strong>count_instances</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Counts&nbsp;the&nbsp;number&nbsp;of&nbsp;instances&nbsp;of&nbsp;object&nbsp;of&nbsp;type&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="timelike-delete"><strong>delete</strong></a>(argument)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Deletes&nbsp;an&nbsp;object&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self&nbsp;from&nbsp;the&nbsp;dictionary&nbsp;containing<br>
+those&nbsp;objects&nbsp;and&nbsp;reclaims&nbsp;its&nbsp;id.&nbsp;<br>
+&nbsp;<br>
+Accepts&nbsp;an&nbsp;id,&nbsp;a&nbsp;list&nbsp;of&nbsp;ids,&nbsp;an&nbsp;object,&nbsp;or&nbsp;a&nbsp;list&nbsp;of&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="timelike-delete_all"><strong>delete_all</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Deletes&nbsp;all&nbsp;instances&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="timelike-increment_id"><strong>increment_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Increment&nbsp;the&nbsp;static&nbsp;variable&nbsp;last_used_id&nbsp;by&nbsp;1.&nbsp;Then<br>
+return&nbsp;the&nbsp;new&nbsp;id&nbsp;for&nbsp;use.&nbsp;<br>
+Tips:&nbsp;last_used_id&nbsp;=&nbsp;max(&nbsp;total&nbsp;ids)</tt></dd></dl>
+
+<dl><dt><a name="timelike-list_ids"><strong>list_ids</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;object&nbsp;ids&nbsp;of&nbsp;type&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="timelike-make_id"><strong>make_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Generate&nbsp;an&nbsp;ID&nbsp;for&nbsp;use.&nbsp;Firstly,&nbsp;it&nbsp;will&nbsp;look&nbsp;in&nbsp;recycled&nbsp;IDs.&nbsp;<br>
+If&nbsp;none&nbsp;are&nbsp;avaiable,&nbsp;make&nbsp;a&nbsp;brand&nbsp;new&nbsp;ID&nbsp;and&nbsp;return&nbsp;it.<br>
+It&nbsp;should&nbsp;be&nbsp;known&nbsp;that&nbsp;on&nbsp;increasing&nbsp;the&nbsp;IDs&nbsp;we&nbsp;are&nbsp;making<br>
+compact&nbsp;triangulations&nbsp;in&nbsp;the&nbsp;spacetime&nbsp;manifold.</tt></dd></dl>
+
+<dl><dt><a name="timelike-parse_input"><strong>parse_input</strong></a>(id_or_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Enables&nbsp;a&nbsp;function&nbsp;to&nbsp;take&nbsp;an&nbsp;id&nbsp;or&nbsp;an&nbsp;instance&nbsp;as<br>
+input.&nbsp;Always&nbsp;returns&nbsp;a&nbsp;class&nbsp;instance&nbsp;rather&nbsp;than&nbsp;an<br>
+id.&nbsp;Takes&nbsp;in&nbsp;either&nbsp;an&nbsp;id&nbsp;or&nbsp;an&nbsp;instance&nbsp;as&nbsp;input&nbsp;and&nbsp;returns<br>
+the&nbsp;corresponding&nbsp;class&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="timelike-reclaim_id"><strong>reclaim_id</strong></a>(object_id)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Take&nbsp;an&nbsp;input&nbsp;ID&nbsp;and&nbsp;add&nbsp;it&nbsp;to&nbsp;the&nbsp;list&nbsp;of&nbsp;recycled&nbsp;IDs.<br>
+Return&nbsp;the&nbsp;list&nbsp;of&nbsp;recycled&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="timelike-recycle_id"><strong>recycle_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Looks&nbsp;for&nbsp;the&nbsp;minimum&nbsp;element&nbsp;of&nbsp;your&nbsp;recycled&nbsp;IDs&nbsp;(means<br>
+trash&nbsp;IDs).&nbsp;Returns&nbsp;it&nbsp;and&nbsp;removes&nbsp;it&nbsp;from&nbsp;the&nbsp;set<br>
+so&nbsp;that&nbsp;we&nbsp;can&nbsp;used&nbsp;it.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="tts_triangle">class <strong>tts_triangle</strong></a>(<a href="triangle_property.html#triangle">triangle_property.triangle</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;class&nbsp;that&nbsp;define&nbsp;the&nbsp;tts&nbsp;type&nbsp;of&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;object.<br>
+&nbsp;<br>
+Attributes:&nbsp;<br>
+--&nbsp;last_used_id&nbsp;=&nbsp;the&nbsp;last&nbsp;used&nbsp;point&nbsp;ID.&nbsp;global/static<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHARED&nbsp;BY&nbsp;ALL&nbsp;CLASS&nbsp;INSTANCES<br>
+--&nbsp;recycled_ids&nbsp;=&nbsp;A&nbsp;list&nbsp;of&nbsp;used&nbsp;IDs,&nbsp;which,&nbsp;after&nbsp;deletion,&nbsp;become&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;available.&nbsp;Global/static.&nbsp;SHARED&nbsp;BY&nbsp;ALL&nbsp;CLASS&nbsp;INSTANCES.<br>
+--&nbsp;points&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;A&nbsp;list&nbsp;of&nbsp;points&nbsp;contained&nbsp;by&nbsp;this&nbsp;tts&nbsp;<a href="triangle_property.html#triangle">triangle</a><br>
+--&nbsp;id&nbsp;=&nbsp;The&nbsp;identifying&nbsp;number&nbsp;of&nbsp;the&nbsp;2D&nbsp;simplex.&nbsp;USEFUL!&nbsp;<br>
+--&nbsp;area&nbsp;=&nbsp;The&nbsp;physical&nbsp;area&nbsp;of&nbsp;a&nbsp;Minkowskian&nbsp;equilateral&nbsp;tts&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;with&nbsp;the&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given&nbsp;<a href="triangle_property.html#edge">edge</a>&nbsp;length.<br>
+--&nbsp;angle&nbsp;=&nbsp;The&nbsp;angle&nbsp;of&nbsp;each&nbsp;angle&nbsp;of&nbsp;an&nbsp;equilateral&nbsp;<a href="triangle_property.html#triangle">triangle</a>.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60&nbsp;degrees.<br>
+--&nbsp;instances&nbsp;=&nbsp;The&nbsp;dictionary&nbsp;containing&nbsp;all&nbsp;instances&nbsp;of&nbsp;this&nbsp;class.<br>
+&nbsp;<br>
+Example&nbsp;of&nbsp;call:&nbsp;t&nbsp;=&nbsp;<a href="#tts_triangle">tts_triangle</a>(point_list)<br>
+where&nbsp;point_list&nbsp;=&nbsp;[p1,p2,p3]&nbsp;where&nbsp;p1,&nbsp;p2&nbsp;and&nbsp;p3&nbsp;are&nbsp;the&nbsp;vertices&nbsp;of&nbsp;this&nbsp;<a href="triangle_property.html#triangle">triangle</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="sub_triangle_property.html#tts_triangle">tts_triangle</a></dd>
+<dd><a href="triangle_property.html#triangle">triangle_property.triangle</a></dd>
+<dd><a href="triangulations.html#Triangulations">triangulations.Triangulations</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="tts_triangle-__init__"><strong>__init__</strong></a>(self, point_list=[], spacelike_edge_list=[], timelike_edge_list=[], tts_triangle_list=[], sst_triangle_list=[])</dt><dd><tt>Initialize&nbsp;a&nbsp;tts&nbsp;type&nbsp;of&nbsp;<a href="triangle_property.html#triangle">triangle</a>.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-__len__"><strong>__len__</strong></a>(self)</dt><dd><tt>Length&nbsp;reveals&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Sring&nbsp;conversion&nbsp;reveals&nbsp;id,&nbsp;neighbors&nbsp;type&nbsp;and&nbsp;number&nbsp;of&nbsp;vertices</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="tts_triangle-isinstance"><strong>isinstance</strong></a>(object_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Testing&nbsp;if&nbsp;an&nbsp;object_instance&nbsp;is&nbsp;an&nbsp;instance&nbsp;of&nbsp;the&nbsp;tts&nbsp;type&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;class</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>angle</strong> = 1.0471975511965976</dl>
+
+<dl><dt><strong>area</strong> = 0.4330127018922193</dl>
+
+<dl><dt><strong>instances</strong> = {}</dl>
+
+<dl><dt><strong>last_used_id</strong> = 0</dl>
+
+<dl><dt><strong>recycled_ids</strong> = set()</dl>
+
+<hr>
+Methods inherited from <a href="triangle_property.html#triangle">triangle_property.triangle</a>:<br>
+<dl><dt><a name="tts_triangle-__add__"><strong>__add__</strong></a>(self, other_triangle)</dt><dd><tt>Equivalent&nbsp;to&nbsp;self.<a href="#tts_triangle-connect_to_triangle">connect_to_triangle</a>(other_triangle).</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-check_edge_validity"><strong>check_edge_validity</strong></a>(self)</dt><dd><tt>Checks&nbsp;to&nbsp;make&nbsp;sure&nbsp;that&nbsp;the&nbsp;number&nbsp;of&nbsp;endpoints&nbsp;of&nbsp;edges&nbsp;is<br>
+the&nbsp;same&nbsp;as&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-check_neighbor_edge_correlation"><strong>check_neighbor_edge_correlation</strong></a>(self)</dt><dd><tt>Ensures&nbsp;there&nbsp;is&nbsp;a&nbsp;bijection&nbsp;between&nbsp;neighbors&nbsp;and&nbsp;edges&nbsp;of&nbsp;same&nbsp;type<br>
+This&nbsp;method&nbsp;can&nbsp;be&nbsp;compatible&nbsp;with&nbsp;both&nbsp;the&nbsp;types&nbsp;of&nbsp;<a href="triangle_property.html#triangle">triangle</a>.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-check_topology"><strong>check_topology</strong></a>(self, return_value=False)</dt><dd><tt>Ensure&nbsp;that&nbsp;the&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;has&nbsp;the&nbsp;correct&nbsp;number&nbsp;of&nbsp;<br>
+vertices,&nbsp;edges&nbsp;and&nbsp;neighbors.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-check_topology_v2"><strong>check_topology_v2</strong></a>(self, return_value=False)</dt><dd><tt>Like&nbsp;check&nbsp;topology,&nbsp;but&nbsp;only&nbsp;allows&nbsp;3&nbsp;for&nbsp;each&nbsp;value.&nbsp;<br>
+USEFUL&nbsp;AFTER&nbsp;INITIALIZATION</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-connect_to_triangle"><strong>connect_to_triangle</strong></a>(self, other_triangle)</dt><dd><tt>Look&nbsp;for&nbsp;the&nbsp;any&nbsp;type&nbsp;of&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;and&nbsp;check&nbsp;if&nbsp;it&nbsp;shares&nbsp;an<br>
+<a href="triangle_property.html#edge">edge</a>&nbsp;with&nbsp;same&nbsp;type.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-get_spacelike_edges"><strong>get_spacelike_edges</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-get_spacelike_edges_ids"><strong>get_spacelike_edges_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-get_sst_neighbors"><strong>get_sst_neighbors</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-get_timelike_edges"><strong>get_timelike_edges</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-get_timelike_edges_ids"><strong>get_timelike_edges_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-get_tts_neighbor_ids"><strong>get_tts_neighbor_ids</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-get_tts_neighbors"><strong>get_tts_neighbors</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-get_vertex_ids"><strong>get_vertex_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-get_vertices"><strong>get_vertices</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;instances,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-make_outstring"><strong>make_outstring</strong></a>(self)</dt><dd><tt>Makes&nbsp;a&nbsp;string&nbsp;of&nbsp;the&nbsp;form&nbsp;'(v1,&nbsp;v2,&nbsp;v3)'&nbsp;for&nbsp;vertices.&nbsp;Useful<br>
+for&nbsp;output.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-remove_sst_neighbor"><strong>remove_sst_neighbor</strong></a>(self, other_triangle)</dt><dd><tt>other_triangle&nbsp;is&nbsp;in&nbsp;self.<strong>sst_neighbors</strong>,&nbsp;remove&nbsp;it&nbsp;from&nbsp;the<br>
+neighbor&nbsp;list.&nbsp;Accepts&nbsp;ids&nbsp;only.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-remove_tts_neighbor"><strong>remove_tts_neighbor</strong></a>(self, other_triangle)</dt><dd><tt>other_triangle&nbsp;is&nbsp;in&nbsp;self.<strong>tts_neighbors</strong>,&nbsp;remove&nbsp;it&nbsp;from&nbsp;the<br>
+neighbor&nbsp;list.&nbsp;Accepts&nbsp;ids&nbsp;only.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="triangle_property.html#triangle">triangle_property.triangle</a>:<br>
+<dl><dt><a name="tts_triangle-find_duplicates"><strong>find_duplicates</strong></a>(vertex_list=False, spacelike_edge_list=False, timelike_edge_list=False, tts_triangle_list=False, sst_triangle_list=False)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Searches&nbsp;through&nbsp;self.<strong>instances</strong>&nbsp;for&nbsp;triangles&nbsp;with&nbsp;the&nbsp;same<br>
+vertices&nbsp;or&nbsp;the&nbsp;same&nbsp;edges&nbsp;or&nbsp;the&nbsp;same&nbsp;neighbors&nbsp;as&nbsp;the&nbsp;given&nbsp;lists.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><a name="tts_triangle-get_id"><strong>get_id</strong></a>(self)</dt><dd><tt>Gets&nbsp;the&nbsp;object&nbsp;id.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><a name="tts_triangle-add"><strong>add</strong></a>(object_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Adds&nbsp;an&nbsp;object&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self&nbsp;to&nbsp;the&nbsp;dictionary&nbsp;containing<br>
+those&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-count_instances"><strong>count_instances</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Counts&nbsp;the&nbsp;number&nbsp;of&nbsp;instances&nbsp;of&nbsp;object&nbsp;of&nbsp;type&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-delete"><strong>delete</strong></a>(argument)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Deletes&nbsp;an&nbsp;object&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self&nbsp;from&nbsp;the&nbsp;dictionary&nbsp;containing<br>
+those&nbsp;objects&nbsp;and&nbsp;reclaims&nbsp;its&nbsp;id.&nbsp;<br>
+&nbsp;<br>
+Accepts&nbsp;an&nbsp;id,&nbsp;a&nbsp;list&nbsp;of&nbsp;ids,&nbsp;an&nbsp;object,&nbsp;or&nbsp;a&nbsp;list&nbsp;of&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-delete_all"><strong>delete_all</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Deletes&nbsp;all&nbsp;instances&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-increment_id"><strong>increment_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Increment&nbsp;the&nbsp;static&nbsp;variable&nbsp;last_used_id&nbsp;by&nbsp;1.&nbsp;Then<br>
+return&nbsp;the&nbsp;new&nbsp;id&nbsp;for&nbsp;use.&nbsp;<br>
+Tips:&nbsp;last_used_id&nbsp;=&nbsp;max(&nbsp;total&nbsp;ids)</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-list_ids"><strong>list_ids</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;object&nbsp;ids&nbsp;of&nbsp;type&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-make_id"><strong>make_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Generate&nbsp;an&nbsp;ID&nbsp;for&nbsp;use.&nbsp;Firstly,&nbsp;it&nbsp;will&nbsp;look&nbsp;in&nbsp;recycled&nbsp;IDs.&nbsp;<br>
+If&nbsp;none&nbsp;are&nbsp;avaiable,&nbsp;make&nbsp;a&nbsp;brand&nbsp;new&nbsp;ID&nbsp;and&nbsp;return&nbsp;it.<br>
+It&nbsp;should&nbsp;be&nbsp;known&nbsp;that&nbsp;on&nbsp;increasing&nbsp;the&nbsp;IDs&nbsp;we&nbsp;are&nbsp;making<br>
+compact&nbsp;triangulations&nbsp;in&nbsp;the&nbsp;spacetime&nbsp;manifold.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-parse_input"><strong>parse_input</strong></a>(id_or_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Enables&nbsp;a&nbsp;function&nbsp;to&nbsp;take&nbsp;an&nbsp;id&nbsp;or&nbsp;an&nbsp;instance&nbsp;as<br>
+input.&nbsp;Always&nbsp;returns&nbsp;a&nbsp;class&nbsp;instance&nbsp;rather&nbsp;than&nbsp;an<br>
+id.&nbsp;Takes&nbsp;in&nbsp;either&nbsp;an&nbsp;id&nbsp;or&nbsp;an&nbsp;instance&nbsp;as&nbsp;input&nbsp;and&nbsp;returns<br>
+the&nbsp;corresponding&nbsp;class&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-reclaim_id"><strong>reclaim_id</strong></a>(object_id)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Take&nbsp;an&nbsp;input&nbsp;ID&nbsp;and&nbsp;add&nbsp;it&nbsp;to&nbsp;the&nbsp;list&nbsp;of&nbsp;recycled&nbsp;IDs.<br>
+Return&nbsp;the&nbsp;list&nbsp;of&nbsp;recycled&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="tts_triangle-recycle_id"><strong>recycle_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Looks&nbsp;for&nbsp;the&nbsp;minimum&nbsp;element&nbsp;of&nbsp;your&nbsp;recycled&nbsp;IDs&nbsp;(means<br>
+trash&nbsp;IDs).&nbsp;Returns&nbsp;it&nbsp;and&nbsp;removes&nbsp;it&nbsp;from&nbsp;the&nbsp;set<br>
+so&nbsp;that&nbsp;we&nbsp;can&nbsp;used&nbsp;it.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="vertex">class <strong>vertex</strong></a>(<a href="triangulations.html#Triangulations">triangulations.Triangulations</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;class&nbsp;that&nbsp;keeps&nbsp;track&nbsp;of&nbsp;the&nbsp;points&nbsp;such&nbsp;<br>
+that&nbsp;it&nbsp;always&nbsp;be&nbsp;vertices&nbsp;of&nbsp;a&nbsp;<a href="triangle_property.html#triangle">triangle</a>.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="sub_triangle_property.html#vertex">vertex</a></dd>
+<dd><a href="triangulations.html#Triangulations">triangulations.Triangulations</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="vertex-__init__"><strong>__init__</strong></a>(self, new_id=0, tts_triangle_list=[], sst_triangle_list=[], timelike_edge_list=[], spacelike_edge_list=[])</dt><dd><tt>Initialize&nbsp;a&nbsp;<a href="#vertex">vertex</a>.&nbsp;This&nbsp;will&nbsp;carry&nbsp;a&nbsp;list&nbsp;of&nbsp;triangles&nbsp;that<br>
+you&nbsp;know&nbsp;are&nbsp;connected&nbsp;to&nbsp;it.&nbsp;To&nbsp;add&nbsp;them&nbsp;to&nbsp;the&nbsp;list&nbsp;of&nbsp;triangles.<br>
+However,&nbsp;by&nbsp;default,&nbsp;this&nbsp;list&nbsp;is&nbsp;empty.&nbsp;<br>
+Note:&nbsp;The&nbsp;id&nbsp;is&nbsp;the&nbsp;only&nbsp;thing&nbsp;that&nbsp;specify&nbsp;the&nbsp;vertices,&nbsp;edges&nbsp;and&nbsp;triangles.<br>
+In&nbsp;constructor,&nbsp;we&nbsp;have&nbsp;defined:<br>
+*&nbsp;tts_triangle_list&nbsp;=&nbsp;list&nbsp;of&nbsp;all&nbsp;tts&nbsp;type&nbsp;triangles<br>
+*&nbsp;sst_triangle_list&nbsp;=&nbsp;list&nbsp;of&nbsp;all&nbsp;sst&nbsp;type&nbsp;triangles<br>
+*&nbsp;timelike_edge_list&nbsp;=&nbsp;list&nbsp;of&nbsp;all&nbsp;<a href="#timelike">timelike</a>&nbsp;edges<br>
+*&nbsp;spacelike_edge_list&nbsp;=&nbsp;list&nbsp;of&nbsp;all&nbsp;<a href="#spacelike">spacelike</a>&nbsp;edges<br>
+*&nbsp;new_id&nbsp;=&nbsp;ID&nbsp;number&nbsp;for&nbsp;<a href="#vertex">vertex</a>&nbsp;and&nbsp;it's&nbsp;just&nbsp;an&nbsp;integer<br>
+(We&nbsp;are&nbsp;using&nbsp;new_id&nbsp;instance&nbsp;variable&nbsp;only&nbsp;for&nbsp;<a href="#vertex">vertex</a>&nbsp;class<br>
+&nbsp;because&nbsp;we&nbsp;are&nbsp;working&nbsp;with&nbsp;lattices.)<br>
+*&nbsp;set()&nbsp;will&nbsp;make&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;IDs&nbsp;unique.</tt></dd></dl>
+
+<dl><dt><a name="vertex-__len__"><strong>__len__</strong></a>(self)</dt><dd><tt>Length&nbsp;reveals&nbsp;the&nbsp;number&nbsp;of&nbsp;neighbors&nbsp;vertices&nbsp;attached&nbsp;to&nbsp;self<br>
+which&nbsp;is&nbsp;equal&nbsp;to&nbsp;the&nbsp;total&nbsp;number&nbsp;of&nbsp;edges&nbsp;attached&nbsp;to&nbsp;this&nbsp;<a href="#vertex">vertex</a>.</tt></dd></dl>
+
+<dl><dt><a name="vertex-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>String&nbsp;conversion&nbsp;reveals&nbsp;the&nbsp;<a href="#vertex">vertex</a>&nbsp;objects&nbsp;characteristics.</tt></dd></dl>
+
+<dl><dt><a name="vertex-check_causality"><strong>check_causality</strong></a>(self)</dt><dd><tt>This&nbsp;will&nbsp;check&nbsp;whether&nbsp;there&nbsp;is&nbsp;exactly&nbsp;one&nbsp;lightcone&nbsp;for<br>
+each&nbsp;vertices&nbsp;or&nbsp;not.&nbsp;Checks&nbsp;the&nbsp;causality&nbsp;requirement&nbsp;for&nbsp;this<br>
+<a href="#vertex">vertex</a>.&nbsp;Return&nbsp;True,&nbsp;if&nbsp;<a href="#vertex">vertex</a>&nbsp;is&nbsp;causal,&nbsp;else&nbsp;False.&nbsp;<br>
+&nbsp;<br>
+INFO:&nbsp;In&nbsp;standard&nbsp;CDT,&nbsp;the&nbsp;<a href="#vertex">vertex</a>&nbsp;causality&nbsp;validation&nbsp;is<br>
+always&nbsp;trival.</tt></dd></dl>
+
+<dl><dt><a name="vertex-connect_surrounding_triangles"><strong>connect_surrounding_triangles</strong></a>(self)</dt><dd><tt>For&nbsp;each&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;around&nbsp;any&nbsp;point&nbsp;on&nbsp;the&nbsp;spacetime,&nbsp;check&nbsp;their<br>
+intersections&nbsp;to&nbsp;find&nbsp;which&nbsp;triangles&nbsp;share&nbsp;an&nbsp;<a href="triangle_property.html#edge">edge</a>.</tt></dd></dl>
+
+<dl><dt><a name="vertex-curvature"><strong>curvature</strong></a>(self)</dt><dd><tt>In&nbsp;2-D&nbsp;triangulated&nbsp;spacetime,&nbsp;curvature&nbsp;is&nbsp;embedded&nbsp;in&nbsp;the&nbsp;vertices.&nbsp;<br>
+To&nbsp;relate&nbsp;the&nbsp;<a href="#vertex">vertex</a>&nbsp;into&nbsp;curvature,&nbsp;we&nbsp;need&nbsp;to&nbsp;relate&nbsp;Pseudo-Riemann&nbsp;geometry<br>
+with&nbsp;Guass-Bonnet&nbsp;Theorem.&nbsp;To&nbsp;be&nbsp;specific,&nbsp;Theorema&nbsp;Egregium.&nbsp;i.e.<br>
+Curvature&nbsp;at&nbsp;a&nbsp;<a href="#vertex">vertex</a>&nbsp;is&nbsp;directly&nbsp;proportional&nbsp;to&nbsp;the&nbsp;deficit&nbsp;angle<br>
+=&gt;&nbsp;2*(2*pi&nbsp;-&nbsp;(angle_of_triangle)*(sum&nbsp;of&nbsp;triangles&nbsp;attached&nbsp;to&nbsp;<a href="#vertex">vertex</a>)).&nbsp;<br>
+Because,&nbsp;RICCI&nbsp;SCALAR&nbsp;=&nbsp;2*(GAUSSIAN&nbsp;CURVATURE)<br>
+FOR&nbsp;PROOF:&nbsp;https://arxiv.org/pdf/gr-qc/0401099.pdf<br>
+&nbsp;<br>
+#need&nbsp;to&nbsp;define&nbsp;for&nbsp;every&nbsp;<a href="triangle_property.html#triangle">triangle</a>&nbsp;type</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_and_set_spacelike_edges"><strong>find_and_set_spacelike_edges</strong></a>(self)</dt><dd><tt>Finds&nbsp;attached&nbsp;<a href="#spacelike">spacelike</a>&nbsp;edges&nbsp;and&nbsp;sets&nbsp;self.<strong>spacelike_edges</strong>&nbsp;<br>
+to&nbsp;include&nbsp;them.</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_and_set_sst_triangles"><strong>find_and_set_sst_triangles</strong></a>(self)</dt><dd><tt>Finds&nbsp;attached&nbsp;sst&nbsp;triangles&nbsp;and&nbsp;sets&nbsp;self.<strong>sst_neighbors</strong>&nbsp;to&nbsp;include&nbsp;them.</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_and_set_timelike_edges"><strong>find_and_set_timelike_edges</strong></a>(self)</dt><dd><tt>Finds&nbsp;attached&nbsp;<a href="#timelike">timelike</a>&nbsp;edges&nbsp;and&nbsp;sets&nbsp;self.<strong>timelike_edges</strong>&nbsp;<br>
+to&nbsp;include&nbsp;them.</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_and_set_tts_triangles"><strong>find_and_set_tts_triangles</strong></a>(self)</dt><dd><tt>Finds&nbsp;attached&nbsp;tts&nbsp;triangles&nbsp;and&nbsp;sets&nbsp;self.<strong>tts_neighbors</strong>&nbsp;to&nbsp;include&nbsp;them.</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_edges_from_collection"><strong>find_edges_from_collection</strong></a>(self, collection)</dt><dd><tt>Find&nbsp;out&nbsp;what&nbsp;edges&nbsp;contained&nbsp;in&nbsp;collection&nbsp;own&nbsp;this&nbsp;<a href="#vertex">vertex</a>.</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_spacelike_edges"><strong>find_spacelike_edges</strong></a>(self)</dt><dd><tt>Find&nbsp;out&nbsp;what&nbsp;<a href="#spacelike">spacelike</a>&nbsp;edges&nbsp;belongs&nbsp;to&nbsp;this&nbsp;<a href="#vertex">vertex</a>.</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_sst_triangles"><strong>find_sst_triangles</strong></a>(self)</dt><dd><tt>Find&nbsp;out&nbsp;what&nbsp;sst&nbsp;triangles&nbsp;belongs&nbsp;to&nbsp;this&nbsp;<a href="#vertex">vertex</a>.</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_timelike_edges"><strong>find_timelike_edges</strong></a>(self)</dt><dd><tt>Find&nbsp;out&nbsp;what&nbsp;<a href="#spacelike">spacelike</a>&nbsp;edges&nbsp;belongs&nbsp;to&nbsp;this&nbsp;<a href="#vertex">vertex</a>.</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_triangles_from_collection"><strong>find_triangles_from_collection</strong></a>(self, collection)</dt><dd><tt>Find&nbsp;out&nbsp;what&nbsp;edges&nbsp;contained&nbsp;in&nbsp;collection&nbsp;own&nbsp;this&nbsp;<a href="#vertex">vertex</a>.</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_tts_triangles"><strong>find_tts_triangles</strong></a>(self)</dt><dd><tt>Find&nbsp;out&nbsp;what&nbsp;tts&nbsp;triangles&nbsp;belongs&nbsp;to&nbsp;this&nbsp;<a href="#vertex">vertex</a>.</tt></dd></dl>
+
+<dl><dt><a name="vertex-get_sector_vertices"><strong>get_sector_vertices</strong></a>(self)</dt><dd><tt>Find&nbsp;the&nbsp;number&nbsp;of&nbsp;sector(equals&nbsp;to&nbsp;transition&nbsp;line)&nbsp;in&nbsp;a&nbsp;<a href="#vertex">vertex</a>.<br>
+TRANSITION&nbsp;LINE&nbsp;represents&nbsp;the&nbsp;boundary&nbsp;line&nbsp;of&nbsp;light&nbsp;cone.<br>
+Results:&nbsp;Total&nbsp;sectors&nbsp;==&nbsp;Total&nbsp;transition&nbsp;lines.</tt></dd></dl>
+
+<dl><dt><a name="vertex-get_spacelike_edge_ids"><strong>get_spacelike_edge_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids,&nbsp;not&nbsp;the&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="vertex-get_spacelike_edges"><strong>get_spacelike_edges</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;objects,&nbsp;not&nbsp;the&nbsp;idss.</tt></dd></dl>
+
+<dl><dt><a name="vertex-get_sst_triangle_ids"><strong>get_sst_triangle_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids,&nbsp;not&nbsp;the&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="vertex-get_sst_triangles"><strong>get_sst_triangles</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;objects,&nbsp;not&nbsp;the&nbsp;ids</tt></dd></dl>
+
+<dl><dt><a name="vertex-get_timelike_edge_ids"><strong>get_timelike_edge_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids,&nbsp;not&nbsp;the&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="vertex-get_timelike_edges"><strong>get_timelike_edges</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;objects,&nbsp;not&nbsp;the&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="vertex-get_tts_triangle_ids"><strong>get_tts_triangle_ids</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;ids,&nbsp;not&nbsp;the&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="vertex-get_tts_triangles"><strong>get_tts_triangles</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;objects,&nbsp;not&nbsp;the&nbsp;ids</tt></dd></dl>
+
+<dl><dt><a name="vertex-set_spacelike_edges"><strong>set_spacelike_edges</strong></a>(self, spacelike_edge_list)</dt><dd><tt>Sets&nbsp;self.<strong>edges</strong></tt></dd></dl>
+
+<dl><dt><a name="vertex-set_sst_triangles"><strong>set_sst_triangles</strong></a>(self, sst_triangle_list)</dt><dd><tt>Sets&nbsp;self.<strong>triangles</strong></tt></dd></dl>
+
+<dl><dt><a name="vertex-set_timelike_edges"><strong>set_timelike_edges</strong></a>(self, timelike_edge_list)</dt><dd><tt>Sets&nbsp;self.<strong>edges</strong></tt></dd></dl>
+
+<dl><dt><a name="vertex-set_tts_triangles"><strong>set_tts_triangles</strong></a>(self, tts_triangle_list)</dt><dd><tt>Sets&nbsp;self.<strong>triangles</strong></tt></dd></dl>
+
+<dl><dt><a name="vertex-share_a_sst_triangle_with"><strong>share_a_sst_triangle_with</strong></a>(self, other_instance_or_id)</dt><dd><tt>Test&nbsp;to&nbsp;see&nbsp;whether&nbsp;self&nbsp;is&nbsp;a&nbsp;<a href="#vertex">vertex</a>&nbsp;of&nbsp;one&nbsp;the&nbsp;same&nbsp;sst&nbsp;triangles&nbsp;as<br>
+other.&nbsp;Return&nbsp;a&nbsp;boolen&nbsp;value&nbsp;i.e.&nbsp;True&nbsp;or&nbsp;False.</tt></dd></dl>
+
+<dl><dt><a name="vertex-share_a_tts_triangle_with"><strong>share_a_tts_triangle_with</strong></a>(self, other_instance_or_id)</dt><dd><tt>Test&nbsp;to&nbsp;see&nbsp;whether&nbsp;self&nbsp;is&nbsp;a&nbsp;<a href="#vertex">vertex</a>&nbsp;of&nbsp;one&nbsp;the&nbsp;same&nbsp;tts&nbsp;triangles&nbsp;as<br>
+other.&nbsp;Return&nbsp;a&nbsp;boolen&nbsp;value&nbsp;i.e.&nbsp;True&nbsp;or&nbsp;False.</tt></dd></dl>
+
+<dl><dt><a name="vertex-triangles_shared_with"><strong>triangles_shared_with</strong></a>(self, other_instance_or_id)</dt><dd><tt>Tests&nbsp;to&nbsp;see&nbsp;whether&nbsp;self&nbsp;is&nbsp;a&nbsp;<a href="#vertex">vertex</a>&nbsp;of&nbsp;one&nbsp;of&nbsp;the&nbsp;same&nbsp;triangles<br>
+as&nbsp;other.&nbsp;Other&nbsp;can&nbsp;be&nbsp;a&nbsp;<a href="#vertex">vertex</a>&nbsp;instance&nbsp;or&nbsp;a&nbsp;<a href="#vertex">vertex</a>&nbsp;ID.&nbsp;If&nbsp;triangles<br>
+exist,&nbsp;returns&nbsp;them.&nbsp;Otherwise,&nbsp;returns&nbsp;false.</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="vertex-check_causality_all"><strong>check_causality_all</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;check&nbsp;the&nbsp;global&nbsp;causality&nbsp;<br>
+of&nbsp;all&nbsp;the&nbsp;vertices&nbsp;and&nbsp;the&nbsp;cls&nbsp;should&nbsp;always<br>
+need&nbsp;<a href="#vertex">vertex</a>&nbsp;class.<br>
+Need&nbsp;to&nbsp;import&nbsp;package:&nbsp;functools<br>
+CALL&nbsp;IT&nbsp;IN&nbsp;DEBUGGING&nbsp;AS:<br>
+st.<a href="#vertex">vertex</a>.<a href="#vertex-check_causality_all">check_causality_all</a>()<br>
+If&nbsp;all&nbsp;True:&nbsp;returns&nbsp;True,&nbsp;else&nbsp;False</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_sst_duplicates"><strong>find_sst_duplicates</strong></a>(sst_triangle_list)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Searches&nbsp;through&nbsp;self.<strong>instances</strong>&nbsp;for&nbsp;vertices&nbsp;with&nbsp;the&nbsp;same<br>
+triangles&nbsp;as&nbsp;in&nbsp;sst_triangle_list.&nbsp;Requires&nbsp;set&nbsp;equality.&nbsp;Returns<br>
+the&nbsp;duplicates.</tt></dd></dl>
+
+<dl><dt><a name="vertex-find_tts_duplicates"><strong>find_tts_duplicates</strong></a>(tts_triangle_list)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Searches&nbsp;through&nbsp;self.<strong>instances</strong>&nbsp;for&nbsp;vertices&nbsp;with&nbsp;the&nbsp;same<br>
+triangles&nbsp;as&nbsp;in&nbsp;tts_triangle_list.&nbsp;Requires&nbsp;set&nbsp;equality.&nbsp;Returns<br>
+the&nbsp;duplicates.</tt></dd></dl>
+
+<dl><dt><a name="vertex-is_redundant_id"><strong>is_redundant_id</strong></a>(vertex_id)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Checks&nbsp;to&nbsp;see&nbsp;if&nbsp;a&nbsp;vertex_id&nbsp;is&nbsp;currently&nbsp;in&nbsp;use&nbsp;or&nbsp;not.&nbsp;If<br>
+the&nbsp;<a href="#vertex">vertex</a>&nbsp;is&nbsp;currently&nbsp;in&nbsp;use,&nbsp;return&nbsp;True.&nbsp;If&nbsp;the&nbsp;<a href="#vertex">vertex</a>&nbsp;is<br>
+currently&nbsp;in&nbsp;recycled&nbsp;IDs,&nbsp;return&nbsp;the&nbsp;string<br>
+'recycled'.&nbsp;Otherwise,&nbsp;returns&nbsp;False.</tt></dd></dl>
+
+<dl><dt><a name="vertex-isinstance"><strong>isinstance</strong></a>(object_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>"<br>
+Tests&nbsp;if&nbsp;an&nbsp;object_instance&nbsp;is&nbsp;an&nbsp;instance&nbsp;of&nbsp;the&nbsp;<a href="#vertex">vertex</a>&nbsp;class.<br>
+This&nbsp;is&nbsp;a&nbsp;built-in&nbsp;function&nbsp;calls&nbsp;as:&nbsp;<a href="#vertex-isinstance">isinstance</a>(instance,&nbsp;class)</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>instances</strong> = {}</dl>
+
+<dl><dt><strong>last_used_id</strong> = 0</dl>
+
+<dl><dt><strong>recycled_ids</strong> = set()</dl>
+
+<hr>
+Methods inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><a name="vertex-get_id"><strong>get_id</strong></a>(self)</dt><dd><tt>Gets&nbsp;the&nbsp;object&nbsp;id.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><a name="vertex-add"><strong>add</strong></a>(object_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Adds&nbsp;an&nbsp;object&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self&nbsp;to&nbsp;the&nbsp;dictionary&nbsp;containing<br>
+those&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="vertex-count_instances"><strong>count_instances</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Counts&nbsp;the&nbsp;number&nbsp;of&nbsp;instances&nbsp;of&nbsp;object&nbsp;of&nbsp;type&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="vertex-delete"><strong>delete</strong></a>(argument)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Deletes&nbsp;an&nbsp;object&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self&nbsp;from&nbsp;the&nbsp;dictionary&nbsp;containing<br>
+those&nbsp;objects&nbsp;and&nbsp;reclaims&nbsp;its&nbsp;id.&nbsp;<br>
+&nbsp;<br>
+Accepts&nbsp;an&nbsp;id,&nbsp;a&nbsp;list&nbsp;of&nbsp;ids,&nbsp;an&nbsp;object,&nbsp;or&nbsp;a&nbsp;list&nbsp;of&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="vertex-delete_all"><strong>delete_all</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Deletes&nbsp;all&nbsp;instances&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;as&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="vertex-increment_id"><strong>increment_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Increment&nbsp;the&nbsp;static&nbsp;variable&nbsp;last_used_id&nbsp;by&nbsp;1.&nbsp;Then<br>
+return&nbsp;the&nbsp;new&nbsp;id&nbsp;for&nbsp;use.&nbsp;<br>
+Tips:&nbsp;last_used_id&nbsp;=&nbsp;max(&nbsp;total&nbsp;ids)</tt></dd></dl>
+
+<dl><dt><a name="vertex-list_ids"><strong>list_ids</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;the&nbsp;object&nbsp;ids&nbsp;of&nbsp;type&nbsp;self.</tt></dd></dl>
+
+<dl><dt><a name="vertex-make_id"><strong>make_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Generate&nbsp;an&nbsp;ID&nbsp;for&nbsp;use.&nbsp;Firstly,&nbsp;it&nbsp;will&nbsp;look&nbsp;in&nbsp;recycled&nbsp;IDs.&nbsp;<br>
+If&nbsp;none&nbsp;are&nbsp;avaiable,&nbsp;make&nbsp;a&nbsp;brand&nbsp;new&nbsp;ID&nbsp;and&nbsp;return&nbsp;it.<br>
+It&nbsp;should&nbsp;be&nbsp;known&nbsp;that&nbsp;on&nbsp;increasing&nbsp;the&nbsp;IDs&nbsp;we&nbsp;are&nbsp;making<br>
+compact&nbsp;triangulations&nbsp;in&nbsp;the&nbsp;spacetime&nbsp;manifold.</tt></dd></dl>
+
+<dl><dt><a name="vertex-parse_input"><strong>parse_input</strong></a>(id_or_instance)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Enables&nbsp;a&nbsp;function&nbsp;to&nbsp;take&nbsp;an&nbsp;id&nbsp;or&nbsp;an&nbsp;instance&nbsp;as<br>
+input.&nbsp;Always&nbsp;returns&nbsp;a&nbsp;class&nbsp;instance&nbsp;rather&nbsp;than&nbsp;an<br>
+id.&nbsp;Takes&nbsp;in&nbsp;either&nbsp;an&nbsp;id&nbsp;or&nbsp;an&nbsp;instance&nbsp;as&nbsp;input&nbsp;and&nbsp;returns<br>
+the&nbsp;corresponding&nbsp;class&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="vertex-reclaim_id"><strong>reclaim_id</strong></a>(object_id)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Take&nbsp;an&nbsp;input&nbsp;ID&nbsp;and&nbsp;add&nbsp;it&nbsp;to&nbsp;the&nbsp;list&nbsp;of&nbsp;recycled&nbsp;IDs.<br>
+Return&nbsp;the&nbsp;list&nbsp;of&nbsp;recycled&nbsp;ids.</tt></dd></dl>
+
+<dl><dt><a name="vertex-recycle_id"><strong>recycle_id</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Looks&nbsp;for&nbsp;the&nbsp;minimum&nbsp;element&nbsp;of&nbsp;your&nbsp;recycled&nbsp;IDs&nbsp;(means<br>
+trash&nbsp;IDs).&nbsp;Returns&nbsp;it&nbsp;and&nbsp;removes&nbsp;it&nbsp;from&nbsp;the&nbsp;set<br>
+so&nbsp;that&nbsp;we&nbsp;can&nbsp;used&nbsp;it.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="triangulations.html#Triangulations">triangulations.Triangulations</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-reduce"><strong>reduce</strong></a>(...)</dt><dd><tt><a href="#-reduce">reduce</a>(function,&nbsp;sequence[,&nbsp;initial])&nbsp;-&gt;&nbsp;value<br>
+&nbsp;<br>
+Apply&nbsp;a&nbsp;function&nbsp;of&nbsp;two&nbsp;arguments&nbsp;cumulatively&nbsp;to&nbsp;the&nbsp;items&nbsp;of&nbsp;a&nbsp;sequence,<br>
+from&nbsp;left&nbsp;to&nbsp;right,&nbsp;so&nbsp;as&nbsp;to&nbsp;reduce&nbsp;the&nbsp;sequence&nbsp;to&nbsp;a&nbsp;single&nbsp;value.<br>
+For&nbsp;example,&nbsp;<a href="#-reduce">reduce</a>(lambda&nbsp;x,&nbsp;y:&nbsp;x+y,&nbsp;[1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5])&nbsp;calculates<br>
+((((1+2)+3)+4)+5).&nbsp;&nbsp;If&nbsp;initial&nbsp;is&nbsp;present,&nbsp;it&nbsp;is&nbsp;placed&nbsp;before&nbsp;the&nbsp;items<br>
+of&nbsp;the&nbsp;sequence&nbsp;in&nbsp;the&nbsp;calculation,&nbsp;and&nbsp;serves&nbsp;as&nbsp;a&nbsp;default&nbsp;when&nbsp;the<br>
+sequence&nbsp;is&nbsp;empty.</tt></dd></dl>
+</td></tr></table>
+</body></html>

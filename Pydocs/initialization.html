@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module initialization</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>initialization</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/field/Gravity/4.%20Projects%20and%20Presentation%20drafts/Github_Full_cdt_one_plus/initialization.py">/media/field/Gravity/4. Projects and Presentation drafts/Github_Full_cdt_one_plus/initialization.py</a></font></td></tr></table>
+    <p><tt>Path:&nbsp;/Full_cdt_one_plus_one/initialization.py<br>
+&nbsp;<br>
+Time-stamp:&nbsp;&lt;2017-12-11&nbsp;22:30:51&nbsp;(Damodar)&gt;<br>
+Author:&nbsp;Damodar&nbsp;Rajbhandari&nbsp;(dphysicslog@gmail.com)<br>
+&nbsp;<br>
+Description:&nbsp;This&nbsp;file&nbsp;is&nbsp;a&nbsp;part&nbsp;of&nbsp;the&nbsp;LCDT&nbsp;software&nbsp;which&nbsp;generates&nbsp;<br>
+topological&nbsp;2-torus&nbsp;of&nbsp;(as&nbsp;possible&nbsp;close&nbsp;to)&nbsp;uniform&nbsp;curvature&nbsp;for&nbsp;a<br>
+given&nbsp;surface&nbsp;area&nbsp;by&nbsp;Monte-Carlo&nbsp;simulation.<br>
+&nbsp;<br>
+This&nbsp;module&nbsp;initialize&nbsp;the&nbsp;topological&nbsp;torus&nbsp;in&nbsp;a&nbsp;runtime.<br>
+&nbsp;<br>
+Note:&nbsp;"ONLY&nbsp;USEFUL&nbsp;AT&nbsp;INITIALIZATION"&nbsp;means&nbsp;to&nbsp;initialize&nbsp;our&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;standard&nbsp;CDT&nbsp;lattices.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+<a href="state_manipulation.html">state_manipulation</a><br>
+</td><td width="25%" valign=top><a href="scipy.html">scipy</a><br>
+<a href="sub_triangle_property.html">sub_triangle_property</a><br>
+</td><td width="25%" valign=top><a href="utilities.html">utilities</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-build_first_two_torus"><strong>build_first_two_torus</strong></a>()</dt><dd><tt>ONLY&nbsp;USEFUL&nbsp;AT&nbsp;INITIALIZATION.&nbsp;<br>
+&nbsp;<br>
+The&nbsp;base&nbsp;of&nbsp;initialization.&nbsp;Builds&nbsp;a&nbsp;two&nbsp;torus&nbsp;to&nbsp;operate&nbsp;moves&nbsp;on.</tt></dd></dl>
+ <dl><dt><a name="-build_torus_from_data"><strong>build_torus_from_data</strong></a>(torus_data)</dt><dd><tt>ONLY&nbsp;USEFUL&nbsp;AT&nbsp;INITIALIZATION.&nbsp;<br>
+&nbsp;<br>
+torus_data&nbsp;means&nbsp;two_torus_point_data&nbsp;should&nbsp;be&nbsp;a&nbsp;lists&nbsp;of&nbsp;sets,&nbsp;<br>
+each&nbsp;with&nbsp;6&nbsp;points&nbsp;in&nbsp;it.</tt></dd></dl>
+ <dl><dt><a name="-connect_all_triangles"><strong>connect_all_triangles</strong></a>()</dt><dd><tt>ONLY&nbsp;USEFUL&nbsp;AT&nbsp;INITIALIZATION.&nbsp;<br>
+&nbsp;<br>
+This&nbsp;function&nbsp;ensures&nbsp;that&nbsp;every&nbsp;vertex&nbsp;know&nbsp;what<br>
+triangles&nbsp;type&nbsp;it&nbsp;is&nbsp;part&nbsp;of&nbsp;and&nbsp;every&nbsp;triangle&nbsp;<br>
+know&nbsp;what&nbsp;type&nbsp;of&nbsp;neighbors&nbsp;it&nbsp;has.</tt></dd></dl>
+ <dl><dt><a name="-reduce"><strong>reduce</strong></a>(...)</dt><dd><tt><a href="#-reduce">reduce</a>(function,&nbsp;sequence[,&nbsp;initial])&nbsp;-&gt;&nbsp;value<br>
+&nbsp;<br>
+Apply&nbsp;a&nbsp;function&nbsp;of&nbsp;two&nbsp;arguments&nbsp;cumulatively&nbsp;to&nbsp;the&nbsp;items&nbsp;of&nbsp;a&nbsp;sequence,<br>
+from&nbsp;left&nbsp;to&nbsp;right,&nbsp;so&nbsp;as&nbsp;to&nbsp;reduce&nbsp;the&nbsp;sequence&nbsp;to&nbsp;a&nbsp;single&nbsp;value.<br>
+For&nbsp;example,&nbsp;<a href="#-reduce">reduce</a>(lambda&nbsp;x,&nbsp;y:&nbsp;x+y,&nbsp;[1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5])&nbsp;calculates<br>
+((((1+2)+3)+4)+5).&nbsp;&nbsp;If&nbsp;initial&nbsp;is&nbsp;present,&nbsp;it&nbsp;is&nbsp;placed&nbsp;before&nbsp;the&nbsp;items<br>
+of&nbsp;the&nbsp;sequence&nbsp;in&nbsp;the&nbsp;calculation,&nbsp;and&nbsp;serves&nbsp;as&nbsp;a&nbsp;default&nbsp;when&nbsp;the<br>
+sequence&nbsp;is&nbsp;empty.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>s</strong> = [{1, 4}, {4, 5}, {1, 5}, {2, 6}, {6, 7}, {2, 7}, {3, 8}, {8, 9}, {3, 9}]<br>
+<strong>t</strong> = [{1, 2}, {2, 3}, {1, 3}, {4, 6}, {6, 8}, {4, 8}, {5, 7}, {7, 9}, {5, 9}, {3, 4}, {2, 8}, {5, 8}, {1, 6}, {6, 9}, {1, 9}, {4, 7}, {3, 7}, {2, 5}]<br>
+<strong>two_torus_data</strong> = [({1, 2}, {1, 6}, {2, 6}), ({1, 6}, {4, 6}, {1, 4}), ({4, 7}, {4, 6}, {6, 7}), ({4, 7}, {5, 7}, {4, 5}), ({5, 7}, {2, 5}, {2, 7}), ({2, 5}, {1, 2}, {1, 5}), ({2, 3}, {2, 8}, {3, 8}), ({2, 8}, {6, 8}, {2, 6}), ({6, 8}, {6, 9}, {8, 9}), ({6, 9}, {7, 9}, {6, 7}), ({7, 9}, {3, 7}, {3, 9}), ({3, 7}, {2, 3}, {2, 7}), ({1, 3}, {3, 4}, {1, 4}), ({3, 4}, {4, 8}, {3, 8}), ({4, 8}, {5, 8}, {4, 5}), ({5, 8}, {5, 9}, {8, 9}), ({5, 9}, {1, 9}, {1, 5}), ({1, 9}, {1, 3}, {3, 9})]</td></tr></table>
+</body></html>
