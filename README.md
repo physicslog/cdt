@@ -1,4 +1,4 @@
-# Causal Dynamical Triangulation(CDT) 1+1 D
+# Causal Dynamical Triangulations (CDT) (1+1) Dimensions
 Author: [Damodar Rajbhandari](https://damodarrajbhandari.com.np), Outreach blogger at [Physics Log](http://www.physicslog.com/)  
 Supervisors: [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com) and [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com)
 
