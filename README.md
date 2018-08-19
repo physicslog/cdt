@@ -38,13 +38,13 @@ My Supervisor's blog is wonderful place to start with basic skills needed for do
 2. [PBS Space Time](https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g/playlists) 
 
 ## Recommended Reading Materials
-Please go to this link: [readings.physicslog.com][https://readings.physicslog.com#causal-dynamical-triangulations].
+Please go to this link: [readings.physicslog.com](https://readings.physicslog.com#causal-dynamical-triangulations).
 
 ## Code Documentation
-Please download from this link: [Damodar Bachelor Approved Thesis by Tribhuvan University][https://www.researchgate.net/publication/327108635_An_Open_Source_Code_for_Causal_Dynamical_Triangulations_Without_Preferred_Foliation_in_11-_Dimensions_with_Elementary_Expositions].
+Please download from this link: [Damodar Bachelor Approved Thesis by Tribhuvan University](https://www.researchgate.net/publication/327108635_An_Open_Source_Code_for_Causal_Dynamical_Triangulations_Without_Preferred_Foliation_in_11-_Dimensions_with_Elementary_Expositions).
 
 ## Presentation
-Plese download from this link: [Final Bachelor Defense Presentation][https://www.researchgate.net/publication/326837831_An_open_source_code_for_Causal_Dynamical_Triangulations_without_preferred_foliation_in_11-_dimensions_with_elementary_expositions?_iepl%5BviewId%5D=7N81OWlysW0sGWe7ejoAv9G2&_iepl%5Bcontexts%5D%5B0%5D=projectUpdatesLog&_iepl%5BtargetEntityId%5D=PB%3A326837831&_iepl%5BinteractionType%5D=publicationTitle].
+Plese download from this link: [Final Bachelor Defense Presentation](https://www.researchgate.net/publication/326837831_An_open_source_code_for_Causal_Dynamical_Triangulations_without_preferred_foliation_in_11-_dimensions_with_elementary_expositions?_iepl%5BviewId%5D=7N81OWlysW0sGWe7ejoAv9G2&_iepl%5Bcontexts%5D%5B0%5D=projectUpdatesLog&_iepl%5BtargetEntityId%5D=PB%3A326837831&_iepl%5BinteractionType%5D=publicationTitle).
 
 ##### Special Thanks to Prof. Dr. Jerzy Jurkiewicz (Jagiellonian University, Poland), Prof. Dr. Steven Carlip (University of California, Davis, USA), Dr. Ben Ruijl (ETH Zurich, Switzerland), Dr. Joshua Cooperman (Radboud University, Netherlands) and Mr. Adam Getchell (University of California, Davis, USA), who provided invaluable advices. 
 
