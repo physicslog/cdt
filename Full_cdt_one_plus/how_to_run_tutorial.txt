@@ -9,7 +9,7 @@ Description: Direction to use test the main codes.
 How to update: bash pydocs.sh
 
 Notice: Please find the documentation of this code in 
-        my Bachlelor thesis at https://projects.physicslog.com/cdt-qg-2D/#code-documentation
+        my Bachlelor thesis at physicslog.com
 """
 
 >>> from debugging import *

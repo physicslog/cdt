@@ -1,20 +1,64 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html><head><title>Python: module move_factory</title>
+<html><head><title>Python: module AlexanderMove</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head><body bgcolor="#f0f0f8">
 
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
 <tr bgcolor="#7799ee">
 <td valign=bottom>&nbsp;<br>
-<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>move_factory</strong></big></big></font></td
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>AlexanderMove</strong></big></big></font></td
 ><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/field/Gravity/4.%20Projects%20and%20Presentation%20drafts/Github_Full_cdt_one_plus/move_factory.py">/media/field/Gravity/4. Projects and Presentation drafts/Github_Full_cdt_one_plus/move_factory.py</a></font></td></tr></table>
-    <p><tt>Path:&nbsp;/Full_cdt_one_plus_one/move_factory.py<br>
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/field/Gravity/4.%20Projects%20and%20Presentation%20drafts/Github_Full_cdt_one_plus/cdt-qg-2D-master/cdt-qg-2D/Full_cdt_one_plus/moves/AlexanderMove.py">/media/field/Gravity/4. Projects and Presentation drafts/Github_Full_cdt_one_plus/cdt-qg-2D-master/cdt-qg-2D/Full_cdt_one_plus/moves/AlexanderMove.py</a></font></td></tr></table>
+    <p><tt>Path:&nbsp;/Full_cdt_one_plus_one/moves/<a href="#AlexanderMove">AlexanderMove</a>.py<br>
 &nbsp;<br>
-Time-stamp:&nbsp;&lt;2017-12-23&nbsp;14:57:40&nbsp;(Damodar)&gt;<br>
+Time-stamp:&nbsp;&lt;2017-12-13&nbsp;08:35:53&nbsp;(Damodar)&gt;<br>
 Author:&nbsp;Damodar&nbsp;Rajbhandari&nbsp;(dphysicslog@gmail.com)<br>
 &nbsp;<br>
-Description:&nbsp;Contains&nbsp;the&nbsp;collection&nbsp;of&nbsp;moves.</tt></p>
+Description:&nbsp;This&nbsp;is&nbsp;a&nbsp;module&nbsp;where&nbsp;the&nbsp;Alexander&nbsp;move<br>
+is&nbsp;defined.&nbsp;Also&nbsp;called&nbsp;(2&nbsp;-&gt;&nbsp;4)&nbsp;move.<br>
+&nbsp;<br>
+Move&nbsp;behavior:&nbsp;Given&nbsp;any&nbsp;two&nbsp;tts&nbsp;triangles&nbsp;that&nbsp;shares&nbsp;same&nbsp;spacelike&nbsp;edge,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this&nbsp;move&nbsp;makes&nbsp;4&nbsp;tts&nbsp;triangles&nbsp;from&nbsp;2.&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;tts&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v---------w&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0----n----0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;tts&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;|&nbsp;&nbsp;/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;|&nbsp;/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w'<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIGURE:&nbsp;One&nbsp;of&nbsp;the&nbsp;eight&nbsp;possible&nbsp;Alexander&nbsp;moves.&nbsp;Because&nbsp;every<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;possible&nbsp;link&nbsp;configuration&nbsp;on&nbsp;the&nbsp;rhombus&nbsp;is&nbsp;allowed.&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;THE&nbsp;NEW&nbsp;VERTEX&nbsp;(n)&nbsp;AT&nbsp;THE&nbsp;CENTER&nbsp;OF&nbsp;THE&nbsp;RHOMBUS&nbsp;SHOULD&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BE&nbsp;CAUSAL.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;THE&nbsp;LINK&nbsp;TYPE&nbsp;OF&nbsp;THE&nbsp;NEWLY&nbsp;ADDED&nbsp;LINK&nbsp;SHOULD&nbsp;BE&nbsp;OPPOSITE&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TO&nbsp;THAT&nbsp;OF&nbsp;THE&nbsp;CHOSEN&nbsp;LINK.&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROBABILITY&nbsp;OF&nbsp;A&nbsp;GIVEN&nbsp;ALEXANDER&nbsp;MOVE&nbsp;IS&nbsp;[Ben&nbsp;Rujil,&nbsp;2013&nbsp;LCDT];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P_{alex}&nbsp;=&nbsp;rac{1}{N*N_{e}(v)}&nbsp;+&nbsp;rac{1]{N*N_{e}(w)}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where,&nbsp;N&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices&nbsp;in&nbsp;our&nbsp;triangulated&nbsp;spacetime<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and,&nbsp;N_{e}(x)&nbsp;is&nbsp;the&nbsp;neighbours&nbsp;of&nbsp;x.&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INVERSE&nbsp;PROBABILITY,&nbsp;is&nbsp;a&nbsp;probability&nbsp;of&nbsp;selecting&nbsp;the&nbsp;newly&nbsp;created&nbsp;vertex&nbsp;(n)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;which&nbsp;is&nbsp;[Ben&nbsp;Rujil,&nbsp;2013&nbsp;LCDT],&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P^{-1}_{alex}&nbsp;=&nbsp;rac{1]{N+1}<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since,&nbsp;the&nbsp;volume&nbsp;is&nbsp;changed,&nbsp;we&nbsp;need&nbsp;to&nbsp;check&nbsp;to&nbsp;see&nbsp;if&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;volume&nbsp;change&nbsp;will&nbsp;make&nbsp;the&nbsp;move&nbsp;topologically&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unacceptable.<br>
+&nbsp;<br>
+Algorithm:&nbsp;<br>
+-&nbsp;Randomly&nbsp;pick&nbsp;anyone&nbsp;vertex&nbsp;and&nbsp;find&nbsp;the&nbsp;edges&nbsp;that&nbsp;are&nbsp;connected&nbsp;to&nbsp;it.&nbsp;<br>
+-&nbsp;Check&nbsp;whether&nbsp;these&nbsp;edges&nbsp;are&nbsp;spacelike&nbsp;or&nbsp;not.&nbsp;<br>
+-&nbsp;If&nbsp;there&nbsp;are&nbsp;more&nbsp;than&nbsp;one&nbsp;spacelike&nbsp;edges&nbsp;connected&nbsp;to&nbsp;it,&nbsp;randomly&nbsp;pick&nbsp;anyone&nbsp;spacelike&nbsp;edge.<br>
+-&nbsp;Find&nbsp;the&nbsp;triangles&nbsp;that&nbsp;share&nbsp;this&nbsp;spacelike&nbsp;edge.<br>
+-&nbsp;Apply&nbsp;the&nbsp;Metropolis-Hastings&nbsp;Algorithm&nbsp;whether&nbsp;or&nbsp;not&nbsp;we&nbsp;can&nbsp;create&nbsp;a&nbsp;new&nbsp;point&nbsp;on&nbsp;this&nbsp;edge.<br>
+&nbsp;&nbsp;This&nbsp;means&nbsp;we&nbsp;can&nbsp;create&nbsp;four&nbsp;triangles.<br>
+-&nbsp;If&nbsp;yes,&nbsp;delete&nbsp;those&nbsp;triangle&nbsp;IDs&nbsp;and&nbsp;create&nbsp;a&nbsp;new&nbsp;point&nbsp;on&nbsp;this&nbsp;edge.&nbsp;<br>
+-&nbsp;Create&nbsp;two&nbsp;timelike&nbsp;edges&nbsp;by&nbsp;joining&nbsp;the&nbsp;new&nbsp;point&nbsp;and&nbsp;the&nbsp;third&nbsp;vertex&nbsp;(the&nbsp;vertex&nbsp;that&nbsp;is&nbsp;<br>
+&nbsp;&nbsp;not&nbsp;associated&nbsp;with&nbsp;spacelike&nbsp;edge&nbsp;that&nbsp;we&nbsp;have&nbsp;chosen)&nbsp;of&nbsp;the&nbsp;two&nbsp;previous&nbsp;triangles.</tt></p>
 <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#aa55cc">
@@ -22,14 +66,11 @@ Description:&nbsp;Contains&nbsp;the&nbsp;collection&nbsp;of&nbsp;moves.</tt></p>
 <font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
     
 <tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="error_checking.html">error_checking</a><br>
-<a href="initialization.html">initialization</a><br>
-<a href="numpy.html">numpy</a><br>
-</td><td width="25%" valign=top><a href="state_tracking.html">state_tracking</a><br>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
 <a href="state_manipulation.html">state_manipulation</a><br>
-<a href="scipy.html">scipy</a><br>
-</td><td width="25%" valign=top><a href="sub_triangle_property.html">sub_triangle_property</a><br>
-<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="scipy.html">scipy</a><br>
+<a href="sub_triangle_property.html">sub_triangle_property</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
 <a href="utilities.html">utilities</a><br>
 </td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
@@ -39,10 +80,10 @@ Description:&nbsp;Contains&nbsp;the&nbsp;collection&nbsp;of&nbsp;moves.</tt></p>
     
 <tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><dl>
-<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+<dt><font face="helvetica, arial"><a href="Move.html#AbstractMove">Move.AbstractMove</a>(<a href="abc.html#ABC">abc.ABC</a>)
 </font></dt><dd>
 <dl>
-<dt><font face="helvetica, arial"><a href="move_factory.html#MovesFactory">MovesFactory</a>
+<dt><font face="helvetica, arial"><a href="AlexanderMove.html#AlexanderMove">AlexanderMove</a>
 </font></dt></dl>
 </dd>
 </dl>
@@ -50,30 +91,101 @@ Description:&nbsp;Contains&nbsp;the&nbsp;collection&nbsp;of&nbsp;moves.</tt></p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><a name="MovesFactory">class <strong>MovesFactory</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+<font color="#000000" face="helvetica, arial"><a name="AlexanderMove">class <strong>AlexanderMove</strong></a>(<a href="Move.html#AbstractMove">Move.AbstractMove</a>)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>A&nbsp;class&nbsp;for&nbsp;the&nbsp;list&nbsp;of&nbsp;moves.<br>&nbsp;</tt></td></tr>
+<td colspan=2><tt>This&nbsp;class&nbsp;consists&nbsp;of&nbsp;the&nbsp;methods&nbsp;that&nbsp;define&nbsp;the&nbsp;Alexander&nbsp;<br>
+move.<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
-<td width="100%">Methods defined here:<br>
-<dl><dt><a name="MovesFactory-__init__"><strong>__init__</strong></a>(self, all_moves=[&lt;class 'AlexanderMove.AlexanderMove'&gt;, &lt;class 'CollapseMove.CollapseMove'&gt;])</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="AlexanderMove.html#AlexanderMove">AlexanderMove</a></dd>
+<dd><a href="Move.html#AbstractMove">Move.AbstractMove</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="AlexanderMove-bisect_spacelike_create_vertex"><strong>bisect_spacelike_create_vertex</strong></a>(self)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;vertex&nbsp;and&nbsp;two&nbsp;spacelike&nbsp;edges&nbsp;by&nbsp;bisecting&nbsp;the<br>
+self.<strong>pick_spacelike</strong>&nbsp;and&nbsp;delete&nbsp;the&nbsp;self.<strong>pick_spacelike</strong>.<br>
+i.e.&nbsp;[new_spacelike_edge_instances,&nbsp;new_vertex_instance]<br>
+And,&nbsp;delete&nbsp;the&nbsp;self.<strong>pick_spacelike</strong>&nbsp;edge.</tt></dd></dl>
 
-<dl><dt><a name="MovesFactory-find_two_triangles"><strong>find_two_triangles</strong></a>(self)</dt><dd><tt>After&nbsp;picking&nbsp;a&nbsp;spacelike/timelike&nbsp;edge&nbsp;at&nbsp;random,&nbsp;return&nbsp;the&nbsp;two<br>
-tts/sst&nbsp;triangles.&nbsp;For&nbsp;not&nbsp;to&nbsp;voilate&nbsp;the&nbsp;causality,&nbsp;we&nbsp;use&nbsp;tts&nbsp;triangles<br>
-with&nbsp;spacelike&nbsp;edge&nbsp;shared.<br>
-WILL&nbsp;NOT&nbsp;WORK&nbsp;FOR&nbsp;PINCHING&nbsp;MOVE.</tt></dd></dl>
+<dl><dt><a name="AlexanderMove-create_new_timelike_edges"><strong>create_new_timelike_edges</strong></a>(self, central_vertex)</dt><dd><tt>Returns&nbsp;two&nbsp;new&nbsp;timelike&nbsp;edges!</tt></dd></dl>
 
-<dl><dt><a name="MovesFactory-picked_edge"><strong>picked_edge</strong></a>(self, edge_type)</dt><dd><tt>Returns&nbsp;the&nbsp;random&nbsp;edge&nbsp;where&nbsp;edge&nbsp;type&nbsp;is&nbsp;specified&nbsp;in<br>
-the&nbsp;input.&nbsp;i.e.<br>
-get_edges("spacelike")&nbsp;OR,<br>
-get_edges("timelike")</tt></dd></dl>
+<dl><dt><a name="AlexanderMove-extract_all_info_and_update"><strong>extract_all_info_and_update</strong></a>(self)</dt><dd><tt>Update&nbsp;all&nbsp;the&nbsp;informations&nbsp;of&nbsp;two&nbsp;simplices&nbsp;that&nbsp;is&nbsp;required<br>
+to&nbsp;build&nbsp;4&nbsp;triangles&nbsp;from&nbsp;2.&nbsp;AND&nbsp;WE&nbsp;CREATE&nbsp;FOUR&nbsp;TTS&nbsp;TRIANGLES!!!<br>
+INFORMATIONS&nbsp;WE&nbsp;HAVE:<br>
+old_timelike_edges,&nbsp;old_vertices,&nbsp;old_tts_neighbors,&nbsp;old_sst_neighbors,<br>
+new_spacelike_edges,&nbsp;new_central_vertex,&nbsp;new_timelike_edges<br>
+&nbsp;<br>
+UPDATE&nbsp;BY&nbsp;CONNECTING&nbsp;ALL&nbsp;THE&nbsp;NEW&nbsp;INFORMATION&nbsp;TO&nbsp;OUR&nbsp;TRIANGULATION<br>
+AND&nbsp;WE&nbsp;DO&nbsp;IT&nbsp;MANUALLY&nbsp;!!!</tt></dd></dl>
 
-<dl><dt><a name="MovesFactory-picked_vertex"><strong>picked_vertex</strong></a>(self)</dt><dd><tt>Returns&nbsp;the&nbsp;random&nbsp;vertex&nbsp;from&nbsp;the&nbsp;spacetime&nbsp;graph.</tt></dd></dl>
+<dl><dt><a name="AlexanderMove-get_dNtts_dNsst"><strong>get_dNtts_dNsst</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;change&nbsp;in&nbsp;no.&nbsp;of&nbsp;tts&nbsp;triangle&nbsp;and&nbsp;sst&nbsp;triangle&nbsp;during&nbsp;this&nbsp;move.<br>
+&nbsp;<br>
+For&nbsp;Alexander&nbsp;move:<br>
+-------------------<br>
+If&nbsp;we&nbsp;pick&nbsp;two&nbsp;tts&nbsp;triangle&nbsp;then;<br>
+\delta&nbsp;N_{tts}&nbsp;=&nbsp;N_{tts}(T2)&nbsp;-&nbsp;N_{tts}(T1)=&nbsp;(N_{tts}(T1)&nbsp;+&nbsp;2)&nbsp;-&nbsp;N_{tts}(T1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;2<br>
+and,&nbsp;\delta&nbsp;N_{sst}&nbsp;=&nbsp;0<br>
+&nbsp;<br>
+Else&nbsp;if&nbsp;we&nbsp;pick&nbsp;two&nbsp;sst&nbsp;triangle&nbsp;then;<br>
+\delta&nbsp;N_{sst}&nbsp;=&nbsp;N_{sst}(T2)&nbsp;-&nbsp;N_{sst}(T1)=&nbsp;(N_{sst}(T1)&nbsp;+&nbsp;2)&nbsp;-&nbsp;N_{sst}(T1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;2<br>
+and,&nbsp;\delta&nbsp;N_{tts}&nbsp;=&nbsp;0<br>
+&nbsp;<br>
+But&nbsp;there&nbsp;should&nbsp;not&nbsp;be&nbsp;a&nbsp;combination&nbsp;of&nbsp;sst&nbsp;and&nbsp;tts&nbsp;triangles&nbsp;that&nbsp;share&nbsp;the&nbsp;<br>
+same&nbsp;edge&nbsp;because&nbsp;it&nbsp;voilate&nbsp;the&nbsp;local&nbsp;causality.&nbsp;<br>
+&nbsp;<br>
+FOR&nbsp;OUR&nbsp;ALEXANDER&nbsp;MOVE,&nbsp;IF&nbsp;WE&nbsp;CHOSE&nbsp;TWO&nbsp;TTS&nbsp;TRIANGLES:<br>
+\delta&nbsp;Ntts&nbsp;=&nbsp;2&nbsp;because&nbsp;Ntts(T2)&nbsp;=&nbsp;Ntts(T1)&nbsp;+&nbsp;2<br>
+and&nbsp;\delta&nbsp;Nsst&nbsp;=&nbsp;0.&nbsp;<br>
+If&nbsp;we&nbsp;chose&nbsp;two&nbsp;sst&nbsp;triangles:<br>
+\delta&nbsp;Ntts&nbsp;=&nbsp;0&nbsp;and&nbsp;\delta&nbsp;Nsst&nbsp;=&nbsp;2</tt></dd></dl>
 
-<dl><dt><a name="MovesFactory-try_random"><strong>try_random</strong></a>(self)</dt><dd><tt>Randomly&nbsp;pick&nbsp;a&nbsp;move&nbsp;from&nbsp;the&nbsp;list&nbsp;of&nbsp;all&nbsp;moves.</tt></dd></dl>
+<dl><dt><a name="AlexanderMove-get_ratio_trial_probability"><strong>get_ratio_trial_probability</strong></a>(self)</dt><dd><tt>&nbsp;For&nbsp;simple&nbsp;simulator,&nbsp;trial&nbsp;probabilities&nbsp;are&nbsp;same&nbsp;but&nbsp;in&nbsp;our&nbsp;case,&nbsp;it's&nbsp;not!<br>
+&nbsp;<br>
+*&nbsp;Returns&nbsp;the&nbsp;ratio&nbsp;of&nbsp;trial/proposing&nbsp;probabilities&nbsp;of&nbsp;Triangulations&nbsp;T1&nbsp;and&nbsp;T2.<br>
+&nbsp;<br>
+PROBABILITY&nbsp;OF&nbsp;A&nbsp;GIVEN&nbsp;ALEXANDER&nbsp;MOVE&nbsp;IS&nbsp;[Ben&nbsp;Rujil,&nbsp;2013&nbsp;LCDT];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g(T1-&gt;T2)&nbsp;=&nbsp;P_{alex}&nbsp;=&nbsp;rac{1}{N*N_{e}(v)}&nbsp;+&nbsp;rac{1]{N*N_{e}(w)}<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where,&nbsp;N&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices&nbsp;in&nbsp;our&nbsp;triangulated&nbsp;spacetime<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and,&nbsp;N_{e}(x)&nbsp;is&nbsp;the&nbsp;neighbours&nbsp;of&nbsp;x.&nbsp;i.e.&nbsp;total&nbsp;number&nbsp;of&nbsp;spacelike<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;edges&nbsp;and&nbsp;timelike&nbsp;edges&nbsp;attached&nbsp;to&nbsp;a&nbsp;vertex.<br>
+&nbsp;<br>
+INVERSE&nbsp;PROBABILITY,&nbsp;is&nbsp;a&nbsp;probability&nbsp;of&nbsp;selecting&nbsp;the&nbsp;newly&nbsp;created&nbsp;vertex&nbsp;(n)<br>
+which&nbsp;is&nbsp;[Ben&nbsp;Rujil,&nbsp;2013&nbsp;LCDT],&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g(T2-&gt;T1)&nbsp;=&nbsp;P^{-1}_{alex}&nbsp;=&nbsp;rac{1]{N+1}</tt></dd></dl>
 
 <hr>
-Data descriptors defined here:<br>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<hr>
+Methods inherited from <a href="Move.html#AbstractMove">Move.AbstractMove</a>:<br>
+<dl><dt><a name="AlexanderMove-__init__"><strong>__init__</strong></a>(self, pick_spacelike, share_tts_triangles)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="AlexanderMove-delete_old_triangles"><strong>delete_old_triangles</strong></a>(self)</dt><dd><tt>Delete&nbsp;the&nbsp;old&nbsp;triangles&nbsp;that&nbsp;share&nbsp;the&nbsp;self.<strong>spacelike</strong>&nbsp;edge.</tt></dd></dl>
+
+<dl><dt><a name="AlexanderMove-delete_spacelike_attached"><strong>delete_spacelike_attached</strong></a>(self)</dt><dd><tt>Delete&nbsp;self.<strong>pick_spacelike</strong>&nbsp;edge&nbsp;from&nbsp;the&nbsp;vertex.</tt></dd></dl>
+
+<dl><dt><a name="AlexanderMove-delete_tts_triangles_attached"><strong>delete_tts_triangles_attached</strong></a>(self)</dt><dd><tt>Delete&nbsp;self.<strong>share_tts_triangles</strong>&nbsp;from&nbsp;the&nbsp;vertex,&nbsp;<br>
+tts_triangle&nbsp;and&nbsp;sst_triangle&nbsp;instances.</tt></dd></dl>
+
+<dl><dt><a name="AlexanderMove-extract_pick_spacelike"><strong>extract_pick_spacelike</strong></a>(self)</dt><dd><tt>Extract&nbsp;all&nbsp;the&nbsp;vertex&nbsp;instances&nbsp;from&nbsp;the&nbsp;self.<strong>pick_spacelike</strong></tt></dd></dl>
+
+<dl><dt><a name="AlexanderMove-extract_timelike_edges"><strong>extract_timelike_edges</strong></a>(self)</dt><dd><tt>Extract&nbsp;the&nbsp;timelike&nbsp;edges&nbsp;from&nbsp;two&nbsp;triangles.</tt></dd></dl>
+
+<dl><dt><a name="AlexanderMove-extract_vertices"><strong>extract_vertices</strong></a>(self)</dt><dd><tt>Extract&nbsp;the&nbsp;vertices&nbsp;from&nbsp;two&nbsp;triangles.</tt></dd></dl>
+
+<dl><dt><a name="AlexanderMove-update_all"><strong>update_all</strong></a>(self, req_vertices)</dt><dd><tt>Update&nbsp;the&nbsp;neighbors!</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="abc.html#ABC">abc.ABC</a>:<br>
 <dl><dt><strong>__dict__</strong></dt>
 <dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
 </dl>
@@ -3108,14 +3220,5 @@ Truncate&nbsp;s&nbsp;values&nbsp;at&nbsp;50&nbsp;so&nbsp;plot&nbsp;is&nbsp;inter
 &gt;&gt;&gt;&nbsp;y&nbsp;=&nbsp;x**(-a)&nbsp;/&nbsp;special.zetac(a)<br>
 &gt;&gt;&gt;&nbsp;plt.plot(x,&nbsp;y/max(y),&nbsp;linewidth=2,&nbsp;color='r')<br>
 &gt;&gt;&gt;&nbsp;plt.show()</tt></dd></dl>
-</td></tr></table><p>
-<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
-<tr bgcolor="#55aa55">
-<td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
-    
-<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><strong>col</strong> = [&lt;class 'CollapseMove.CollapseMove'&gt;]<br>
-<strong>increase_move</strong> = [&lt;class 'AlexanderMove.AlexanderMove'&gt;]<br>
-<strong>list_of_all_moves</strong> = [&lt;class 'AlexanderMove.AlexanderMove'&gt;, &lt;class 'CollapseMove.CollapseMove'&gt;]</td></tr></table>
+</td></tr></table>
 </body></html>

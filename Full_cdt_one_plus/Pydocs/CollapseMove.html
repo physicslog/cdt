@@ -1,23 +1,49 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html><head><title>Python: module PinchingMove</title>
+<html><head><title>Python: module CollapseMove</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head><body bgcolor="#f0f0f8">
 
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
 <tr bgcolor="#7799ee">
 <td valign=bottom>&nbsp;<br>
-<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>PinchingMove</strong></big></big></font></td
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>CollapseMove</strong></big></big></font></td
 ><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/field/Gravity/4.%20Projects%20and%20Presentation%20drafts/Github_Full_cdt_one_plus/moves/PinchingMove.py">/media/field/Gravity/4. Projects and Presentation drafts/Github_Full_cdt_one_plus/moves/PinchingMove.py</a></font></td></tr></table>
-    <p><tt>Path:&nbsp;/Full_cdt_one_plus_one/moves/<a href="#PinchingMove">PinchingMove</a>.py<br>
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/field/Gravity/4.%20Projects%20and%20Presentation%20drafts/Github_Full_cdt_one_plus/cdt-qg-2D-master/cdt-qg-2D/Full_cdt_one_plus/moves/CollapseMove.py">/media/field/Gravity/4. Projects and Presentation drafts/Github_Full_cdt_one_plus/cdt-qg-2D-master/cdt-qg-2D/Full_cdt_one_plus/moves/CollapseMove.py</a></font></td></tr></table>
+    <p><tt>Path:&nbsp;/Full_cdt_one_plus_one/moves/<a href="#CollapseMove">CollapseMove</a>.py<br>
 &nbsp;<br>
-Time-stamp:&nbsp;&lt;2017-12-24&nbsp;18:35:48&nbsp;(Damodar)&gt;<br>
+Time-stamp:&nbsp;&lt;2018-01-28&nbsp;11:29:09&nbsp;(Damodar)&gt;<br>
 Author:&nbsp;Damodar&nbsp;Rajbhandari&nbsp;(dphysicslog@gmail.com)<br>
 &nbsp;<br>
-Description:&nbsp;This&nbsp;move&nbsp;involves&nbsp;the&nbsp;biggest&nbsp;structure.<br>
-It&nbsp;transforms&nbsp;a&nbsp;group&nbsp;of&nbsp;four&nbsp;tts-triangles&nbsp;into&nbsp;two&nbsp;<br>
-sst-triangles&nbsp;by&nbsp;"pinching"&nbsp;a&nbsp;link&nbsp;shared&nbsp;by&nbsp;two<br>
-tts-triangles&nbsp;and&nbsp;changing&nbsp;the&nbsp;type&nbsp;of&nbsp;the&nbsp;other&nbsp;two.</tt></p>
+Description:&nbsp;This&nbsp;is&nbsp;a&nbsp;module&nbsp;where&nbsp;the&nbsp;Collapse&nbsp;move<br>
+is&nbsp;defined.&nbsp;Also&nbsp;called&nbsp;(2&nbsp;-&gt;&nbsp;0)&nbsp;move.<br>
+&nbsp;<br>
+Move&nbsp;behavior:&nbsp;Given&nbsp;any&nbsp;two&nbsp;tts&nbsp;triangles&nbsp;that&nbsp;share&nbsp;same<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spacelike&nbsp;edge,&nbsp;this&nbsp;moves&nbsp;collapse&nbsp;the&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;triangles.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;tts&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v---------w&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;tts&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w'<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIGURE:&nbsp;Collapse&nbsp;move&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;PROBABILITY&nbsp;OF&nbsp;A&nbsp;GIVEN&nbsp;COLLAPSE&nbsp;MOVE&nbsp;IS<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Ben&nbsp;Rujil,&nbsp;2013&nbsp;LCDT]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P_{alex}&nbsp;=&nbsp;rac{1}{N*N_{e}(v)}&nbsp;+&nbsp;rac{1]{N*N_{e}(w)}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where,&nbsp;N&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices&nbsp;in&nbsp;our&nbsp;triangulated&nbsp;spacetime<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and,&nbsp;N_{e}(x)&nbsp;is&nbsp;the&nbsp;neighbours&nbsp;of&nbsp;x.&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;INVERSE&nbsp;PROBABILITY&nbsp;is&nbsp;[Ben&nbsp;Rujil,&nbsp;2013&nbsp;LCDT]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P^{-1}_{collapse}&nbsp;=&nbsp;rac{1}{N-1}*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rac{2}{(N_{e}(v)+N_{e}(w)-4)(N_{e}(v)+N_{e}(w)-5)}</tt></p>
 <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#aa55cc">
@@ -42,7 +68,7 @@ tts-triangles&nbsp;and&nbsp;changing&nbsp;the&nbsp;type&nbsp;of&nbsp;the&nbsp;ot
 <dt><font face="helvetica, arial"><a href="Move.html#AbstractMove">Move.AbstractMove</a>(<a href="abc.html#ABC">abc.ABC</a>)
 </font></dt><dd>
 <dl>
-<dt><font face="helvetica, arial"><a href="PinchingMove.html#PinchingMove">PinchingMove</a>
+<dt><font face="helvetica, arial"><a href="CollapseMove.html#CollapseMove">CollapseMove</a>
 </font></dt></dl>
 </dd>
 </dl>
@@ -50,45 +76,65 @@ tts-triangles&nbsp;and&nbsp;changing&nbsp;the&nbsp;type&nbsp;of&nbsp;the&nbsp;ot
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><a name="PinchingMove">class <strong>PinchingMove</strong></a>(<a href="Move.html#AbstractMove">Move.AbstractMove</a>)</font></td></tr>
+<font color="#000000" face="helvetica, arial"><a name="CollapseMove">class <strong>CollapseMove</strong></a>(<a href="Move.html#AbstractMove">Move.AbstractMove</a>)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>This&nbsp;class&nbsp;consists&nbsp;of&nbsp;the&nbsp;methods&nbsp;that&nbsp;define&nbsp;the&nbsp;pinching&nbsp;<br>
-move.<br>&nbsp;</tt></td></tr>
+<td colspan=2><tt>This&nbsp;class&nbsp;consists&nbsp;of&nbsp;the&nbsp;methods&nbsp;that&nbsp;define&nbsp;the<br>
+Alexander&nbsp;move.<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%"><dl><dt>Method resolution order:</dt>
-<dd><a href="PinchingMove.html#PinchingMove">PinchingMove</a></dd>
+<dd><a href="CollapseMove.html#CollapseMove">CollapseMove</a></dd>
 <dd><a href="Move.html#AbstractMove">Move.AbstractMove</a></dd>
 <dd><a href="abc.html#ABC">abc.ABC</a></dd>
 <dd><a href="builtins.html#object">builtins.object</a></dd>
 </dl>
 <hr>
+Methods defined here:<br>
+<dl><dt><a name="CollapseMove-add_tri_neighbors"><strong>add_tri_neighbors</strong></a>(self)</dt><dd><tt>Add&nbsp;tts&nbsp;triangle&nbsp;neighbors</tt></dd></dl>
+
+<dl><dt><a name="CollapseMove-delete_timelike_and_its_attached"><strong>delete_timelike_and_its_attached</strong></a>(self)</dt><dd><tt>Delete&nbsp;any&nbsp;one&nbsp;old&nbsp;timelike&nbsp;edges&nbsp;from&nbsp;neighbor&nbsp;vertices&nbsp;&amp;&nbsp;triangles</tt></dd></dl>
+
+<dl><dt><a name="CollapseMove-extract_all_info_and_update"><strong>extract_all_info_and_update</strong></a>(self)</dt><dd><tt>Update&nbsp;all&nbsp;the&nbsp;informations&nbsp;of&nbsp;two&nbsp;simplices&nbsp;that&nbsp;is&nbsp;required!</tt></dd></dl>
+
+<dl><dt><a name="CollapseMove-get_dNtts_dNsst"><strong>get_dNtts_dNsst</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;change&nbsp;in&nbsp;no.&nbsp;of&nbsp;tts&nbsp;triangle&nbsp;and&nbsp;sst&nbsp;triangle&nbsp;during&nbsp;this<br>
+move.</tt></dd></dl>
+
+<dl><dt><a name="CollapseMove-get_ratio_trial_probability"><strong>get_ratio_trial_probability</strong></a>(self)</dt><dd><tt>*&nbsp;Returns&nbsp;the&nbsp;ratio&nbsp;of&nbsp;trial/proposing&nbsp;probabilities&nbsp;of&nbsp;Triangulations&nbsp;T1&nbsp;and&nbsp;T2.<br>
+&nbsp;<br>
+*&nbsp;PROBABILITY&nbsp;OF&nbsp;A&nbsp;GIVEN&nbsp;COLLAPSE&nbsp;MOVE&nbsp;IS&nbsp;[Ben&nbsp;Rujil,&nbsp;2013&nbsp;LCDT];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g(T1-&gt;T2)&nbsp;=&nbsp;P_{alex}&nbsp;=&nbsp;rac{1}{N*N_{e}(v)}&nbsp;+&nbsp;rac{1]{N*N_{e}(w)}<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where,&nbsp;N&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices&nbsp;in&nbsp;our&nbsp;triangulated&nbsp;spacetime<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and,&nbsp;N_{e}(x)&nbsp;is&nbsp;the&nbsp;neighbours&nbsp;of&nbsp;x.&nbsp;i.e.&nbsp;total&nbsp;number&nbsp;of&nbsp;spacelike<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;edges&nbsp;and&nbsp;timelike&nbsp;edges&nbsp;attached&nbsp;to&nbsp;a&nbsp;vertex.<br>
+&nbsp;<br>
+*&nbsp;INVERSE&nbsp;PROBABILITY&nbsp;is&nbsp;[Ben&nbsp;Rujil,&nbsp;2013&nbsp;LCDT]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g(T2-&gt;T1)&nbsp;=&nbsp;P^{-1}_{collapse}&nbsp;=&nbsp;rac{1}{N-1}*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rac{2}{(N_{e}(v)+N_{e}(w)-4)(N_{e}(v)+N_{e}(w)-5)}</tt></dd></dl>
+
+<hr>
 Data and other attributes defined here:<br>
-<dl><dt><strong>__abstractmethods__</strong> = frozenset({'get_dNtts_dNsst', 'get_ratio_trial_probability'})</dl>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
 
 <hr>
 Methods inherited from <a href="Move.html#AbstractMove">Move.AbstractMove</a>:<br>
-<dl><dt><a name="PinchingMove-__init__"><strong>__init__</strong></a>(self, pick_spacelike, share_tts_triangles)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+<dl><dt><a name="CollapseMove-__init__"><strong>__init__</strong></a>(self, pick_spacelike, share_tts_triangles)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
 
-<dl><dt><a name="PinchingMove-delete_old_triangles"><strong>delete_old_triangles</strong></a>(self)</dt><dd><tt>Delete&nbsp;the&nbsp;old&nbsp;triangles&nbsp;that&nbsp;share&nbsp;the&nbsp;self.<strong>spacelike</strong>&nbsp;edge.</tt></dd></dl>
+<dl><dt><a name="CollapseMove-delete_old_triangles"><strong>delete_old_triangles</strong></a>(self)</dt><dd><tt>Delete&nbsp;the&nbsp;old&nbsp;triangles&nbsp;that&nbsp;share&nbsp;the&nbsp;self.<strong>spacelike</strong>&nbsp;edge.</tt></dd></dl>
 
-<dl><dt><a name="PinchingMove-delete_spacelike_attached"><strong>delete_spacelike_attached</strong></a>(self)</dt><dd><tt>Delete&nbsp;self.<strong>pick_spacelike</strong>&nbsp;edge&nbsp;from&nbsp;the&nbsp;vertex.</tt></dd></dl>
+<dl><dt><a name="CollapseMove-delete_spacelike_attached"><strong>delete_spacelike_attached</strong></a>(self)</dt><dd><tt>Delete&nbsp;self.<strong>pick_spacelike</strong>&nbsp;edge&nbsp;from&nbsp;the&nbsp;vertex.</tt></dd></dl>
 
-<dl><dt><a name="PinchingMove-delete_tts_triangles_attached"><strong>delete_tts_triangles_attached</strong></a>(self)</dt><dd><tt>Delete&nbsp;self.<strong>share_tts_triangles</strong>&nbsp;from&nbsp;the&nbsp;vertex,&nbsp;<br>
+<dl><dt><a name="CollapseMove-delete_tts_triangles_attached"><strong>delete_tts_triangles_attached</strong></a>(self)</dt><dd><tt>Delete&nbsp;self.<strong>share_tts_triangles</strong>&nbsp;from&nbsp;the&nbsp;vertex,&nbsp;<br>
 tts_triangle&nbsp;and&nbsp;sst_triangle&nbsp;instances.</tt></dd></dl>
 
-<dl><dt><a name="PinchingMove-extract_pick_spacelike"><strong>extract_pick_spacelike</strong></a>(self)</dt><dd><tt>Extract&nbsp;all&nbsp;the&nbsp;vertex&nbsp;instances&nbsp;from&nbsp;the&nbsp;self.<strong>pick_spacelike</strong></tt></dd></dl>
+<dl><dt><a name="CollapseMove-extract_pick_spacelike"><strong>extract_pick_spacelike</strong></a>(self)</dt><dd><tt>Extract&nbsp;all&nbsp;the&nbsp;vertex&nbsp;instances&nbsp;from&nbsp;the&nbsp;self.<strong>pick_spacelike</strong></tt></dd></dl>
 
-<dl><dt><a name="PinchingMove-extract_timelike_edges"><strong>extract_timelike_edges</strong></a>(self)</dt><dd><tt>Extract&nbsp;the&nbsp;timelike&nbsp;edges&nbsp;from&nbsp;two&nbsp;triangles.</tt></dd></dl>
+<dl><dt><a name="CollapseMove-extract_timelike_edges"><strong>extract_timelike_edges</strong></a>(self)</dt><dd><tt>Extract&nbsp;the&nbsp;timelike&nbsp;edges&nbsp;from&nbsp;two&nbsp;triangles.</tt></dd></dl>
 
-<dl><dt><a name="PinchingMove-extract_vertices"><strong>extract_vertices</strong></a>(self)</dt><dd><tt>Extract&nbsp;the&nbsp;vertices&nbsp;from&nbsp;two&nbsp;triangles.</tt></dd></dl>
+<dl><dt><a name="CollapseMove-extract_vertices"><strong>extract_vertices</strong></a>(self)</dt><dd><tt>Extract&nbsp;the&nbsp;vertices&nbsp;from&nbsp;two&nbsp;triangles.</tt></dd></dl>
 
-<dl><dt><a name="PinchingMove-get_dNtts_dNsst"><strong>get_dNtts_dNsst</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;change&nbsp;in&nbsp;no.&nbsp;of&nbsp;tts&nbsp;triangle&nbsp;and&nbsp;sst&nbsp;triangle&nbsp;during&nbsp;this&nbsp;move.</tt></dd></dl>
-
-<dl><dt><a name="PinchingMove-get_ratio_trial_probability"><strong>get_ratio_trial_probability</strong></a>(self)</dt><dd><tt>For&nbsp;simple&nbsp;simulator,&nbsp;trial&nbsp;probabilities&nbsp;are&nbsp;same&nbsp;but&nbsp;in&nbsp;our&nbsp;case,&nbsp;it's&nbsp;not!<br>
-*&nbsp;Returns&nbsp;the&nbsp;ratio&nbsp;of&nbsp;trial/proposing&nbsp;probabilities&nbsp;of&nbsp;Triangulations&nbsp;T1&nbsp;and&nbsp;T2.</tt></dd></dl>
-
-<dl><dt><a name="PinchingMove-update_all"><strong>update_all</strong></a>(self, req_vertices)</dt><dd><tt>Update&nbsp;the&nbsp;neighbors!</tt></dd></dl>
+<dl><dt><a name="CollapseMove-update_all"><strong>update_all</strong></a>(self, req_vertices)</dt><dd><tt>Update&nbsp;the&nbsp;neighbors!</tt></dd></dl>
 
 <hr>
 Data descriptors inherited from <a href="abc.html#ABC">abc.ABC</a>:<br>

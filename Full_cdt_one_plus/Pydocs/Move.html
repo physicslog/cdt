@@ -1,26 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html><head><title>Python: module simulation</title>
+<html><head><title>Python: module Move</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head><body bgcolor="#f0f0f8">
 
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
 <tr bgcolor="#7799ee">
 <td valign=bottom>&nbsp;<br>
-<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>simulation</strong></big></big></font></td
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Move</strong></big></big></font></td
 ><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/field/Gravity/4.%20Projects%20and%20Presentation%20drafts/Github_Full_cdt_one_plus/simulation.py">/media/field/Gravity/4. Projects and Presentation drafts/Github_Full_cdt_one_plus/simulation.py</a></font></td></tr></table>
-    <p><tt>Path:&nbsp;/Full_cdt_one_plus_one/simulation.py<br>
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/field/Gravity/4.%20Projects%20and%20Presentation%20drafts/Github_Full_cdt_one_plus/cdt-qg-2D-master/cdt-qg-2D/Full_cdt_one_plus/moves/Move.py">/media/field/Gravity/4. Projects and Presentation drafts/Github_Full_cdt_one_plus/cdt-qg-2D-master/cdt-qg-2D/Full_cdt_one_plus/moves/Move.py</a></font></td></tr></table>
+    <p><tt>Path:&nbsp;/Full_cdt_one_plus_one/moves/move.py<br>
 &nbsp;<br>
-Time-stamp:&nbsp;&lt;2017-12-23&nbsp;16:11:06&nbsp;(Damodar)&gt;<br>
+Time-stamp:&nbsp;&lt;2017-12-27&nbsp;07:56:26&nbsp;(Damodar)&gt;<br>
 Author:&nbsp;Damodar&nbsp;Rajbhandari&nbsp;(dphysicslog@gmail.com)<br>
 &nbsp;<br>
-Description:&nbsp;This&nbsp;module&nbsp;contains&nbsp;the&nbsp;loops&nbsp;for&nbsp;the&nbsp;Metropolis-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hastings&nbsp;algorithm.&nbsp;This&nbsp;will&nbsp;create&nbsp;a&nbsp;strong&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gravity&nbsp;from&nbsp;very&nbsp;weak&nbsp;gravity.<br>
-&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;module&nbsp;also&nbsp;contains&nbsp;the&nbsp;class&nbsp;for&nbsp;volume&nbsp;increasing<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;simulation&nbsp;where&nbsp;it&nbsp;accept&nbsp;all&nbsp;the&nbsp;volume&nbsp;increasing&nbsp;moves<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;increase&nbsp;the&nbsp;volume&nbsp;to&nbsp;our&nbsp;desire.</tt></p>
+Description:&nbsp;This&nbsp;module&nbsp;contains&nbsp;an&nbsp;abstract&nbsp;base&nbsp;class<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;all&nbsp;the&nbsp;moves.</tt></p>
 <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#aa55cc">
@@ -28,17 +23,13 @@ Description:&nbsp;This&nbsp;module&nbsp;contains&nbsp;the&nbsp;loops&nbsp;for&nb
 <font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
     
 <tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
-<a href="error_checking.html">error_checking</a><br>
-<a href="initialization.html">initialization</a><br>
-</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
-<a href="state_tracking.html">state_tracking</a><br>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
 <a href="state_manipulation.html">state_manipulation</a><br>
 </td><td width="25%" valign=top><a href="scipy.html">scipy</a><br>
 <a href="sub_triangle_property.html">sub_triangle_property</a><br>
-<a href="sys.html">sys</a><br>
-</td><td width="25%" valign=top><a href="utilities.html">utilities</a><br>
-</td></tr></table></td></tr></table><p>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+<a href="utilities.html">utilities</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ee77aa">
 <td colspan=3 valign=bottom>&nbsp;<br>
@@ -46,157 +37,58 @@ Description:&nbsp;This&nbsp;module&nbsp;contains&nbsp;the&nbsp;loops&nbsp;for&nb
     
 <tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><dl>
-<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+<dt><font face="helvetica, arial"><a href="abc.html#ABC">abc.ABC</a>(<a href="builtins.html#object">builtins.object</a>)
 </font></dt><dd>
 <dl>
-<dt><font face="helvetica, arial"><a href="simulation.html#VolumeIncreasing">VolumeIncreasing</a>
-</font></dt><dt><font face="helvetica, arial"><a href="simulation.html#metropolis">metropolis</a>
-</font></dt><dd>
-<dl>
-<dt><font face="helvetica, arial"><a href="simulation.html#select_for_area">select_for_area</a>
+<dt><font face="helvetica, arial"><a href="Move.html#AbstractMove">AbstractMove</a>
 </font></dt></dl>
-</dd>
-</dl>
 </dd>
 </dl>
  <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><a name="VolumeIncreasing">class <strong>VolumeIncreasing</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+<font color="#000000" face="helvetica, arial"><a name="AbstractMove">class <strong>AbstractMove</strong></a>(<a href="abc.html#ABC">abc.ABC</a>)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>This&nbsp;class&nbsp;job&nbsp;is&nbsp;to&nbsp;increase&nbsp;the&nbsp;volume&nbsp;of&nbsp;our&nbsp;intial&nbsp;spacetime<br>
-by&nbsp;using&nbsp;Alexander&nbsp;move.&nbsp;This&nbsp;should&nbsp;run&nbsp;first&nbsp;<br>
-before&nbsp;running&nbsp;the&nbsp;Metropolis-Hastings&nbsp;sampling&nbsp;to&nbsp;generate&nbsp;the<br>
-strong&nbsp;gravitational&nbsp;field.<br>&nbsp;</tt></td></tr>
-<tr><td>&nbsp;</td>
-<td width="100%">Methods defined here:<br>
-<dl><dt><a name="VolumeIncreasing-__init__"><strong>__init__</strong></a>(self, n)</dt><dd><tt>n&nbsp;is&nbsp;an&nbsp;integer&nbsp;in&nbsp;which&nbsp;we&nbsp;can&nbsp;create&nbsp;(2*n&nbsp;+&nbsp;18)&nbsp;tts&nbsp;triangles.</tt></dd></dl>
-
-<dl><dt><a name="VolumeIncreasing-run"><strong>run</strong></a>(self)</dt><dd><tt>Returns&nbsp;(2*n&nbsp;+&nbsp;18)&nbsp;number&nbsp;of&nbsp;tts&nbsp;triangles.</tt></dd></dl>
-
-<hr>
-Data descriptors defined here:<br>
-<dl><dt><strong>__dict__</strong></dt>
-<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
-</dl>
-<dl><dt><strong>__weakref__</strong></dt>
-<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
-</dl>
-</td></tr></table> <p>
-<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
-<tr bgcolor="#ffc8d8">
-<td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><a name="metropolis">class <strong>metropolis</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
-    
-<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>The&nbsp;<a href="#metropolis">metropolis</a>&nbsp;class&nbsp;is&nbsp;an&nbsp;ancestor&nbsp;class&nbsp;and&nbsp;never&nbsp;meant&nbsp;to&nbsp;be&nbsp;<br>
-initialized.&nbsp;It&nbsp;contains&nbsp;methods&nbsp;to&nbsp;help&nbsp;descendant&nbsp;classes&nbsp;to&nbsp;keep<br>
-surface&nbsp;area&nbsp;of&nbsp;the&nbsp;sphere&nbsp;constant.<br>
-&nbsp;<br>
-The&nbsp;Lambda&nbsp;term&nbsp;in&nbsp;the&nbsp;action&nbsp;is&nbsp;tuned&nbsp;in&nbsp;this&nbsp;method,&nbsp;so<br>
-that&nbsp;the&nbsp;average&nbsp;area&nbsp;is&nbsp;"target_area".<br>
-&nbsp;<br>
-The&nbsp;parameters;<br>
-*&nbsp;alpha&nbsp;=&nbsp;Ratio&nbsp;between&nbsp;length&nbsp;of&nbsp;spacelike&nbsp;and&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timelike&nbsp;links.<br>
-*&nbsp;target_area&nbsp;=&nbsp;Desired&nbsp;number&nbsp;of&nbsp;triangles.&nbsp;This&nbsp;adds&nbsp;an&nbsp;area<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fixing&nbsp;term&nbsp;that&nbsp;allows&nbsp;for&nbsp;small&nbsp;fluctuations.<br>
-*&nbsp;area_damping_strength&nbsp;=&nbsp;Fluctuation&nbsp;parameter&nbsp;for&nbsp;fixed&nbsp;area&nbsp;range.<br>
-*&nbsp;num_sweeps&nbsp;=&nbsp;Number&nbsp;of&nbsp;sweeps<br>
-*&nbsp;sweep_length&nbsp;=&nbsp;How&nbsp;many&nbsp;iterations&nbsp;should&nbsp;a&nbsp;sweep&nbsp;be?<br>&nbsp;</tt></td></tr>
-<tr><td>&nbsp;</td>
-<td width="100%">Methods defined here:<br>
-<dl><dt><a name="metropolis-area_damping"><strong>area_damping</strong></a>(self, surface_area)</dt><dd><tt>A&nbsp;area_damping&nbsp;(or,&nbsp;Volume&nbsp;Fixing)&nbsp;method&nbsp;enforce&nbsp;the&nbsp;system&nbsp;size&nbsp;approximately<br>
-of&nbsp;the&nbsp;desired&nbsp;size.&nbsp;Area&nbsp;fixing&nbsp;term&nbsp;can&nbsp;be&nbsp;added&nbsp;to&nbsp;the&nbsp;<br>
-action&nbsp;that&nbsp;suppresses&nbsp;moves&nbsp;that&nbsp;make&nbsp;the&nbsp;size&nbsp;difference&nbsp;larger<br>
-and&nbsp;favours&nbsp;moves&nbsp;that&nbsp;reduce&nbsp;it.&nbsp;This&nbsp;is&nbsp;because&nbsp;even&nbsp;if&nbsp;we&nbsp;<br>
-fixed&nbsp;the&nbsp;cosmological&nbsp;constant(\lambda),&nbsp;the&nbsp;system&nbsp;size&nbsp;will<br>
-fluctuate.&nbsp;In&nbsp;order&nbsp;to&nbsp;control&nbsp;the&nbsp;size,&nbsp;we&nbsp;need&nbsp;fix&nbsp;the&nbsp;system<br>
-size,&nbsp;letting&nbsp;the&nbsp;\lambda&nbsp;fluctuate.<br>
-In&nbsp;the&nbsp;literature,&nbsp;mostly&nbsp;a&nbsp;quadratic&nbsp;potential&nbsp;is&nbsp;used<br>
-[arXiv:1102.3929&nbsp;[hep-th]]:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S_{control}&nbsp;=&nbsp;area_damping_strength*(A_{current}&nbsp;-&nbsp;A)^{2}<br>
-where,&nbsp;A_{curr}&nbsp;=&nbsp;current&nbsp;area,&nbsp;A&nbsp;=&nbsp;target&nbsp;area&nbsp;and,&nbsp;<br>
-area_damping_strength&nbsp;&gt;&nbsp;0&nbsp;is&nbsp;a&nbsp;constant&nbsp;that&nbsp;controls&nbsp;how&nbsp;strict&nbsp;<br>
-area&nbsp;fixing&nbsp;should&nbsp;be.&nbsp;If&nbsp;greater&nbsp;it&nbsp;heavily&nbsp;suppressed&nbsp;the&nbsp;moves.<br>
-&nbsp;<br>
-An&nbsp;exponential&nbsp;function&nbsp;of&nbsp;S_{control},&nbsp;we&nbsp;treated&nbsp;as&nbsp;a&nbsp;probability.</tt></dd></dl>
-
-<dl><dt><a name="metropolis-get_ratio_probability_state"><strong>get_ratio_probability_state</strong></a>(self, Lambda, G, alpha, dNtts, dNsst)</dt><dd><tt>Return&nbsp;the&nbsp;raio&nbsp;of&nbsp;probabilities&nbsp;of&nbsp;being&nbsp;in&nbsp;state&nbsp;T1&nbsp;and&nbsp;T2.<br>
-rac{P(T1)}{P(T2)}&nbsp;=&nbsp;P_ratio_T1_by_T2&nbsp;=&nbsp;<br>
-\exp{rac{\Lambda}{32*np.pi*G}*(\sqrt{4*lpha&nbsp;-1}\delta&nbsp;N_{tts}&nbsp;+&nbsp;<br>
-\sqrt{lpha*(4-lpha)}\delta&nbsp;N_{sst})}<br>
-where,&nbsp;\delta&nbsp;N&nbsp;=&nbsp;N_{T2}&nbsp;-&nbsp;N_{T1}</tt></dd></dl>
-
-<dl><dt><a name="metropolis-loop_once"><strong>loop_once</strong></a>(self)</dt><dd><tt>Runs&nbsp;one&nbsp;iteration&nbsp;of&nbsp;the&nbsp;<a href="#metropolis">metropolis</a>&nbsp;loop.</tt></dd></dl>
-
-<dl><dt><a name="metropolis-print_current_state"><strong>print_current_state</strong></a>(self)</dt><dd><tt>Prints&nbsp;the&nbsp;current&nbsp;state.&nbsp;Just&nbsp;syntactic&nbsp;sugar.</tt></dd></dl>
-
-<dl><dt><a name="metropolis-reset_current_sweep"><strong>reset_current_sweep</strong></a>(self, new_current_sweep=0)</dt><dd><tt>Resets&nbsp;the&nbsp;current&nbsp;sweep&nbsp;to&nbsp;new_current_sweep</tt></dd></dl>
-
-<dl><dt><a name="metropolis-sweep"><strong>sweep</strong></a>(self, n=1, print_current_state=False)</dt><dd><tt>Perform&nbsp;n*target_area_iterations&nbsp;of&nbsp;the&nbsp;<a href="#metropolis">metropolis</a><br>
-algorithm.&nbsp;Then&nbsp;if&nbsp;you&nbsp;asked&nbsp;for&nbsp;it,&nbsp;prints&nbsp;status.</tt></dd></dl>
-
-<hr>
-Data descriptors defined here:<br>
-<dl><dt><strong>__dict__</strong></dt>
-<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
-</dl>
-<dl><dt><strong>__weakref__</strong></dt>
-<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
-</dl>
-</td></tr></table> <p>
-<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
-<tr bgcolor="#ffc8d8">
-<td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><a name="select_for_area">class <strong>select_for_area</strong></a>(<a href="simulation.html#metropolis">metropolis</a>)</font></td></tr>
-    
-<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>The&nbsp;<a href="#select_for_area">select_for_area</a>&nbsp;is&nbsp;a&nbsp;descendant&nbsp;of&nbsp;<a href="#metropolis">metropolis</a>.&nbsp;It&nbsp;selects&nbsp;only&nbsp;for<br>
-torus&nbsp;of&nbsp;a&nbsp;given&nbsp;surface&nbsp;area,&nbsp;nothing&nbsp;else<br>&nbsp;</tt></td></tr>
+<td colspan=2><tt>This&nbsp;class&nbsp;is&nbsp;an&nbsp;abstract&nbsp;base&nbsp;class&nbsp;for&nbsp;all&nbsp;<br>
+the&nbsp;moves.<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%"><dl><dt>Method resolution order:</dt>
-<dd><a href="simulation.html#select_for_area">select_for_area</a></dd>
-<dd><a href="simulation.html#metropolis">metropolis</a></dd>
+<dd><a href="Move.html#AbstractMove">AbstractMove</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
 <dd><a href="builtins.html#object">builtins.object</a></dd>
 </dl>
 <hr>
-Methods inherited from <a href="simulation.html#metropolis">metropolis</a>:<br>
-<dl><dt><a name="select_for_area-area_damping"><strong>area_damping</strong></a>(self, surface_area)</dt><dd><tt>A&nbsp;area_damping&nbsp;(or,&nbsp;Volume&nbsp;Fixing)&nbsp;method&nbsp;enforce&nbsp;the&nbsp;system&nbsp;size&nbsp;approximately<br>
-of&nbsp;the&nbsp;desired&nbsp;size.&nbsp;Area&nbsp;fixing&nbsp;term&nbsp;can&nbsp;be&nbsp;added&nbsp;to&nbsp;the&nbsp;<br>
-action&nbsp;that&nbsp;suppresses&nbsp;moves&nbsp;that&nbsp;make&nbsp;the&nbsp;size&nbsp;difference&nbsp;larger<br>
-and&nbsp;favours&nbsp;moves&nbsp;that&nbsp;reduce&nbsp;it.&nbsp;This&nbsp;is&nbsp;because&nbsp;even&nbsp;if&nbsp;we&nbsp;<br>
-fixed&nbsp;the&nbsp;cosmological&nbsp;constant(\lambda),&nbsp;the&nbsp;system&nbsp;size&nbsp;will<br>
-fluctuate.&nbsp;In&nbsp;order&nbsp;to&nbsp;control&nbsp;the&nbsp;size,&nbsp;we&nbsp;need&nbsp;fix&nbsp;the&nbsp;system<br>
-size,&nbsp;letting&nbsp;the&nbsp;\lambda&nbsp;fluctuate.<br>
-In&nbsp;the&nbsp;literature,&nbsp;mostly&nbsp;a&nbsp;quadratic&nbsp;potential&nbsp;is&nbsp;used<br>
-[arXiv:1102.3929&nbsp;[hep-th]]:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S_{control}&nbsp;=&nbsp;area_damping_strength*(A_{current}&nbsp;-&nbsp;A)^{2}<br>
-where,&nbsp;A_{curr}&nbsp;=&nbsp;current&nbsp;area,&nbsp;A&nbsp;=&nbsp;target&nbsp;area&nbsp;and,&nbsp;<br>
-area_damping_strength&nbsp;&gt;&nbsp;0&nbsp;is&nbsp;a&nbsp;constant&nbsp;that&nbsp;controls&nbsp;how&nbsp;strict&nbsp;<br>
-area&nbsp;fixing&nbsp;should&nbsp;be.&nbsp;If&nbsp;greater&nbsp;it&nbsp;heavily&nbsp;suppressed&nbsp;the&nbsp;moves.<br>
-&nbsp;<br>
-An&nbsp;exponential&nbsp;function&nbsp;of&nbsp;S_{control},&nbsp;we&nbsp;treated&nbsp;as&nbsp;a&nbsp;probability.</tt></dd></dl>
+Methods defined here:<br>
+<dl><dt><a name="AbstractMove-__init__"><strong>__init__</strong></a>(self, pick_spacelike, share_tts_triangles)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
 
-<dl><dt><a name="select_for_area-get_ratio_probability_state"><strong>get_ratio_probability_state</strong></a>(self, Lambda, G, alpha, dNtts, dNsst)</dt><dd><tt>Return&nbsp;the&nbsp;raio&nbsp;of&nbsp;probabilities&nbsp;of&nbsp;being&nbsp;in&nbsp;state&nbsp;T1&nbsp;and&nbsp;T2.<br>
-rac{P(T1)}{P(T2)}&nbsp;=&nbsp;P_ratio_T1_by_T2&nbsp;=&nbsp;<br>
-\exp{rac{\Lambda}{32*np.pi*G}*(\sqrt{4*lpha&nbsp;-1}\delta&nbsp;N_{tts}&nbsp;+&nbsp;<br>
-\sqrt{lpha*(4-lpha)}\delta&nbsp;N_{sst})}<br>
-where,&nbsp;\delta&nbsp;N&nbsp;=&nbsp;N_{T2}&nbsp;-&nbsp;N_{T1}</tt></dd></dl>
+<dl><dt><a name="AbstractMove-delete_old_triangles"><strong>delete_old_triangles</strong></a>(self)</dt><dd><tt>Delete&nbsp;the&nbsp;old&nbsp;triangles&nbsp;that&nbsp;share&nbsp;the&nbsp;self.<strong>spacelike</strong>&nbsp;edge.</tt></dd></dl>
 
-<dl><dt><a name="select_for_area-loop_once"><strong>loop_once</strong></a>(self)</dt><dd><tt>Runs&nbsp;one&nbsp;iteration&nbsp;of&nbsp;the&nbsp;<a href="#metropolis">metropolis</a>&nbsp;loop.</tt></dd></dl>
+<dl><dt><a name="AbstractMove-delete_spacelike_attached"><strong>delete_spacelike_attached</strong></a>(self)</dt><dd><tt>Delete&nbsp;self.<strong>pick_spacelike</strong>&nbsp;edge&nbsp;from&nbsp;the&nbsp;vertex.</tt></dd></dl>
 
-<dl><dt><a name="select_for_area-print_current_state"><strong>print_current_state</strong></a>(self)</dt><dd><tt>Prints&nbsp;the&nbsp;current&nbsp;state.&nbsp;Just&nbsp;syntactic&nbsp;sugar.</tt></dd></dl>
+<dl><dt><a name="AbstractMove-delete_tts_triangles_attached"><strong>delete_tts_triangles_attached</strong></a>(self)</dt><dd><tt>Delete&nbsp;self.<strong>share_tts_triangles</strong>&nbsp;from&nbsp;the&nbsp;vertex,&nbsp;<br>
+tts_triangle&nbsp;and&nbsp;sst_triangle&nbsp;instances.</tt></dd></dl>
 
-<dl><dt><a name="select_for_area-reset_current_sweep"><strong>reset_current_sweep</strong></a>(self, new_current_sweep=0)</dt><dd><tt>Resets&nbsp;the&nbsp;current&nbsp;sweep&nbsp;to&nbsp;new_current_sweep</tt></dd></dl>
+<dl><dt><a name="AbstractMove-extract_pick_spacelike"><strong>extract_pick_spacelike</strong></a>(self)</dt><dd><tt>Extract&nbsp;all&nbsp;the&nbsp;vertex&nbsp;instances&nbsp;from&nbsp;the&nbsp;self.<strong>pick_spacelike</strong></tt></dd></dl>
 
-<dl><dt><a name="select_for_area-sweep"><strong>sweep</strong></a>(self, n=1, print_current_state=False)</dt><dd><tt>Perform&nbsp;n*target_area_iterations&nbsp;of&nbsp;the&nbsp;<a href="#metropolis">metropolis</a><br>
-algorithm.&nbsp;Then&nbsp;if&nbsp;you&nbsp;asked&nbsp;for&nbsp;it,&nbsp;prints&nbsp;status.</tt></dd></dl>
+<dl><dt><a name="AbstractMove-extract_timelike_edges"><strong>extract_timelike_edges</strong></a>(self)</dt><dd><tt>Extract&nbsp;the&nbsp;timelike&nbsp;edges&nbsp;from&nbsp;two&nbsp;triangles.</tt></dd></dl>
+
+<dl><dt><a name="AbstractMove-extract_vertices"><strong>extract_vertices</strong></a>(self)</dt><dd><tt>Extract&nbsp;the&nbsp;vertices&nbsp;from&nbsp;two&nbsp;triangles.</tt></dd></dl>
+
+<dl><dt><a name="AbstractMove-get_dNtts_dNsst"><strong>get_dNtts_dNsst</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;change&nbsp;in&nbsp;no.&nbsp;of&nbsp;tts&nbsp;triangle&nbsp;and&nbsp;sst&nbsp;triangle&nbsp;during&nbsp;this&nbsp;move.</tt></dd></dl>
+
+<dl><dt><a name="AbstractMove-get_ratio_trial_probability"><strong>get_ratio_trial_probability</strong></a>(self)</dt><dd><tt>For&nbsp;simple&nbsp;simulator,&nbsp;trial&nbsp;probabilities&nbsp;are&nbsp;same&nbsp;but&nbsp;in&nbsp;our&nbsp;case,&nbsp;it's&nbsp;not!<br>
+*&nbsp;Returns&nbsp;the&nbsp;ratio&nbsp;of&nbsp;trial/proposing&nbsp;probabilities&nbsp;of&nbsp;Triangulations&nbsp;T1&nbsp;and&nbsp;T2.</tt></dd></dl>
+
+<dl><dt><a name="AbstractMove-update_all"><strong>update_all</strong></a>(self, req_vertices)</dt><dd><tt>Update&nbsp;the&nbsp;neighbors!</tt></dd></dl>
 
 <hr>
-Data descriptors inherited from <a href="simulation.html#metropolis">metropolis</a>:<br>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset({'get_dNtts_dNsst', 'get_ratio_trial_probability'})</dl>
+
+<hr>
+Data descriptors inherited from <a href="abc.html#ABC">abc.ABC</a>:<br>
 <dl><dt><strong>__dict__</strong></dt>
 <dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
 </dl>
@@ -3231,17 +3123,5 @@ Truncate&nbsp;s&nbsp;values&nbsp;at&nbsp;50&nbsp;so&nbsp;plot&nbsp;is&nbsp;inter
 &gt;&gt;&gt;&nbsp;y&nbsp;=&nbsp;x**(-a)&nbsp;/&nbsp;special.zetac(a)<br>
 &gt;&gt;&gt;&nbsp;plt.plot(x,&nbsp;y/max(y),&nbsp;linewidth=2,&nbsp;color='r')<br>
 &gt;&gt;&gt;&nbsp;plt.show()</tt></dd></dl>
-</td></tr></table><p>
-<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
-<tr bgcolor="#55aa55">
-<td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
-    
-<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><strong>col</strong> = [&lt;class 'CollapseMove.CollapseMove'&gt;]<br>
-<strong>convergence_name</strong> = '_M-OPTIMAL'<br>
-<strong>increase_move</strong> = [&lt;class 'AlexanderMove.AlexanderMove'&gt;]<br>
-<strong>list_of_all_moves</strong> = [&lt;class 'AlexanderMove.AlexanderMove'&gt;, &lt;class 'CollapseMove.CollapseMove'&gt;]<br>
-<strong>output_prefix</strong> = 'T2_'<br>
-<strong>output_suffix</strong> = '.lcdt1p1'</td></tr></table>
+</td></tr></table>
 </body></html>
