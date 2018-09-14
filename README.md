@@ -1,4 +1,7 @@
 # Causal Dynamical Triangulations (CDT) (1+1) Dimensions
+
+[![Join the chat at https://gitter.im/cdt-qg-2D/Lobby](https://badges.gitter.im/cdt-qg-2D/Lobby.svg)](https://gitter.im/cdt-qg-2D/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Author: [Damodar Rajbhandari](https://damodarrajbhandari.com.np), Outreach blogger at [Physics Log](http://www.physicslog.com/)  
 Supervisors: [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com) and [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com)
 
