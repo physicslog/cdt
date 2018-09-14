@@ -51,7 +51,7 @@ Plese download from this link: [Final Bachelor Defense Presentation](https://www
 Please see my thesis. 
 
 ## Forum
-You can join our discussions at gitter.im/physicslog/cdt-qg-2D. I want you to enjoy your stay there as much as possible. And I’m hoping that you help to maintain a welcome and pleasant atmosphere in here.
+You can join our discussions at [gitter.im/physicslog/cdt-qg-2D](https://gitter.im/physicslog/cdt-qg-2D). I want you to enjoy your stay there as much as possible. And I’m hoping that you help to maintain a welcome and pleasant atmosphere in here.
 
 ## Last Words
 If anyone wants to contribute in this project, you are welcome.
