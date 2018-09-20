@@ -1,6 +1,9 @@
 # Causal Dynamical Triangulations (CDT) (1+1) Dimensions
+ [![Open Issues](https://img.shields.io/github/issues-raw/Damicristi/cdt-qg-2D.svg)](https://github.com/Damicristi/cdt-qg-2D/issues)
+[![Join the chat at https://gitter.im/physicslog/cdt-qg-2D](https://img.shields.io/badge/gitter-join%20chat%20→-brightgreen.svg)](https://gitter.im/physicslog/cdt-qg-2D)
+
 Author: [Damodar Rajbhandari](https://damodarrajbhandari.com.np), Outreach blogger at [Physics Log](http://www.physicslog.com/)  
-Supervisors: [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com) and [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com)
+In the Collaboration with: [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com)
 
 ## Introduction
 
@@ -22,38 +25,43 @@ The main motivation for choosing this approach is that it is relies on very few 
 4. Wick Rotation
 5. Euler characteristics
 6. Periodic Boundary Condition
-7. Boltzmann Partition Function
+7. Boltzmann Probability
 
 ## Simulation Keywords
-1. Data Structure
-2. Causality Test
-3. Metropolis-Hastings Algorithm
-4. Toroidal Topology
-5. Monte-Carlo Moves
+1. Python v3.x with Object oriented programming
+2. Data Structure
+3. Causality Test
+4. Metropolis-Hastings Algorithm
+5. Toroidal Topology
+6. Monte-Carlo Moves
+7. Volume fixing terms
 
 ## Basics Reading (Online Stuffs)
-My Supervisor's blog is wonderful place to start with basic skills needed for doing CDT. Here you are : [The Physics Mill](http://www.thephysicsmill.com/)
-
 1. [Wikibooks: Spacetime](https://en.wikibooks.org/wiki/Special_Relativity/Spacetime)
 2. [PBS Space Time](https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g/playlists) 
 3. [Einstein Online](http://www.einstein-online.info/index.html)
+4. [The Physics Mill](http://www.thephysicsmill.com/)
 
 ## Recommended Reading Materials
 Please go to this link: [readings.physicslog.com](https://readings.physicslog.com#causal-dynamical-triangulations).
 
 ## Code Documentation
-Please download from this link: [Damodar Bachelor Approved Thesis by Tribhuvan University](https://www.researchgate.net/publication/327108635_An_Open_Source_Code_for_Causal_Dynamical_Triangulations_Without_Preferred_Foliation_in_11-_Dimensions_with_Elementary_Expositions).
+Please download from this link: [Damodar's Bachelor Approved Thesis by Tribhuvan University](https://www.researchgate.net/publication/327108635_An_Open_Source_Code_for_Causal_Dynamical_Triangulations_Without_Preferred_Foliation_in_11-_Dimensions_with_Elementary_Expositions).
 
 ## Presentation
 Plese download from this link: [Final Bachelor Defense Presentation](https://www.researchgate.net/publication/326837831_An_open_source_code_for_Causal_Dynamical_Triangulations_without_preferred_foliation_in_11-_dimensions_with_elementary_expositions?_iepl%5BviewId%5D=7N81OWlysW0sGWe7ejoAv9G2&_iepl%5Bcontexts%5D%5B0%5D=projectUpdatesLog&_iepl%5BtargetEntityId%5D=PB%3A326837831&_iepl%5BinteractionType%5D=publicationTitle).
 
-## Future Work
-Please see my thesis. 
+<p id="future"> </p>
+## Future Work (How you can contribute to our open source code)
+Our programming language preference is Python 3.x. version under the object oriented paradigm. The goals and targets of this project are:
+
 
 ## Forum
-You can join our discussions at [gitter.im/physicslog/cdt-qg-2D](https://gitter.im/physicslog/cdt-qg-2D). I want you to enjoy your stay there as much as possible. And I’m hoping that you help to maintain a welcome and pleasant atmosphere in here.
+You can join our discussions at [![Join the chat at https://gitter.im/physicslog/cdt-qg-2D](https://img.shields.io/badge/gitter-join%20chat%20→-brightgreen.svg)](https://gitter.im/physicslog/cdt-qg-2D). I want you to enjoy your stay there as much as possible. And I’m hoping that you help to maintain a welcome and pleasant atmosphere in here.
 
-<b id="donate">Buy me a coffee:</b> I'm hoping to rely on loyal readers, rather than erratic ads. Click the Donate button and support this project. Thank you!
+<p id="donate"></p> 
+## Buy me a coffee
+I'm hoping to rely on loyal readers, rather than erratic ads. Click the Donate button and support this project. Thank you!
 <center>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
