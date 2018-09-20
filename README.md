@@ -3,7 +3,7 @@
 [![Join the chat at https://gitter.im/physicslog/cdt-qg-2D](https://img.shields.io/badge/gitter-join%20chat%20→-brightgreen.svg)](https://gitter.im/physicslog/cdt-qg-2D)
 
 Author: [Damodar Rajbhandari](https://damodarrajbhandari.com.np), Outreach blogger at [Physics Log](http://www.physicslog.com/)  
-In the Collaboration with: [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com)
+In the Collaboration with [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com)
 
 ## Introduction
 
@@ -28,13 +28,12 @@ The main motivation for choosing this approach is that it is relies on very few 
 7. Boltzmann Probability
 
 ## Simulation Keywords
-1. Python v3.x with Object oriented programming
-2. Data Structure
-3. Causality Test
-4. Metropolis-Hastings Algorithm
-5. Toroidal Topology
-6. Monte-Carlo Moves
-7. Volume fixing terms
+1. Data Structure
+2. Causality Test
+3. Metropolis-Hastings Algorithm
+4. Toroidal Topology
+5. Monte-Carlo Moves
+6. Volume fixing terms
 
 ## Basics Reading
 1. [Wikibooks: Spacetime](https://en.wikibooks.org/wiki/Special_Relativity/Spacetime)
