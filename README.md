@@ -1,5 +1,5 @@
 # Causal Dynamical Triangulations (CDT)
- [![Open Issues](https://img.shields.io/github/issues-raw/Damicristi/cdt-qg-2D.svg)](https://github.com/Damicristi/cdt-qg-2D/issues)
+ [![Open Issues](https://img.shields.io/github/issues-raw/Damicristi/cdt.svg)](https://github.com/Damicristi/cdt/issues)
 [![Join the chat at https://gitter.im/physicslog/cdt-qg-2D](https://img.shields.io/badge/gitter-join%20chat%20→-brightgreen.svg)](https://gitter.im/physicslog/cdt-qg-2D)
 
 Author: [Damodar Rajbhandari](https://damodarrajbhandari.com.np), Outreach blogger at [Physics Log](http://www.physicslog.com/)  
