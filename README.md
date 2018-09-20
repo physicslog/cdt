@@ -36,7 +36,7 @@ The main motivation for choosing this approach is that it is relies on very few 
 6. Monte-Carlo Moves
 7. Volume fixing terms
 
-## Basics Reading (Online Stuffs)
+## Basics Reading
 1. [Wikibooks: Spacetime](https://en.wikibooks.org/wiki/Special_Relativity/Spacetime)
 2. [PBS Space Time](https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g/playlists) 
 3. [Einstein Online](http://www.einstein-online.info/index.html)
@@ -54,20 +54,21 @@ Plese download from this link: [Final Bachelor Defense Presentation](https://www
 ## How you can contribute to our open source code?
 Our programming language preference is Python 3.x. version under the object oriented paradigm. The goals and target of this project are:
 
-- [x] Data structure
-- [x] Causality test
-- [x] Alexander move
-- [x] Collapse move
-- [ ] Inverse Alexander move
-- [ ] Inverse collapse move
-- [ ] Flip move
-- [ ] Inverse flip move
-- [ ] Pinching move
-- [ ] Inverse pinching move
-- [ ] Volume control terms to fixed the spacetime topology
-- [ ] Metropolis-Hastings algorithm
-- [ ] Python Script consisting of input data to run the simulation
-- [ ] Generate Quantum spacetime ensembles
+[x]  Data structure
+[x]  Causality test
+[x]  Alexander move
+[x]  Collapse move
+[x]  Generate flat spacetime of initial standard CDT
+[ ]  Inverse Alexander move
+[ ]  Inverse collapse move
+[ ]  Flip move
+[ ]  Inverse flip move
+[ ]  Pinching move
+[ ]  Inverse pinching move
+[ ]  Volume control terms to fixed the spacetime topology
+[ ]  Metropolis-Hastings algorithm
+[ ]  Script consisting of data to run the simulation
+[ ]  Generate Quantum spacetime ensembles
 
 ## Forum
 You can join our discussions at [![Join the chat at https://gitter.im/physicslog/cdt-qg-2D](https://img.shields.io/badge/gitter-join%20chat%20→-brightgreen.svg)](https://gitter.im/physicslog/cdt-qg-2D). I want you to enjoy your stay there as much as possible. And I’m hoping that you help to maintain a welcome and pleasant atmosphere in here.
