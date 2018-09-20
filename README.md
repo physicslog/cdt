@@ -89,16 +89,16 @@ I'm hoping to rely on loyal readers, rather than erratic ads. Click the Donate b
 ## How to cite this project?
 ```
 D. Rajbhandari. An open source code for causal dynamical triangulations without preferred
-foliation in (1+1)- dimensions, 2017 –. URL https://github.com/Damicristi/cdt-qg-2D.
+foliation in (1+1)- dimensions, 2017 –. URL https://github.com/Damicristi/cdt.
 ```
 In LaTeX, use this:
 ```
-@Misc{cdt-qg-2D,
+@Misc{cdt,
 author={D. Rajbhandari},
 title={An open source code for Causal Dynamical Triangulations
        without preferred foliation in (1+1)- dimensions},
-note={URL \href{https://github.com/Damicristi/cdt-qg-2D}
-      {https://github.com/Damicristi/cdt-qg-2D}},
+note={URL \href{https://github.com/Damicristi/cdt}
+      {https://github.com/Damicristi/cdt}},
 year={2017 --}
 }
 ```
