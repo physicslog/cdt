@@ -91,7 +91,9 @@ I'm hoping to rely on loyal readers, rather than erratic ads. Click the Donate b
 ## How to cite this project?
 Giving credit is a way of respecting the author’s heartfelt dedication and hard work. So, do I prefer. 
 ```
-Damodar Rajbhandari. (2018, July 23). An open source code for causal dynamical triangulations without preferred foliation in (1+1)- dimensions. Zenodo. http://doi.org/10.5281/zenodo.1422810
+Damodar Rajbhandari. (2018, July 23). An open source code for
+causal dynamical triangulations without preferred foliation 
+in (1+1)- dimensions. Zenodo. http://doi.org/10.5281/zenodo.1422810
 ```
 In LaTeX, use this:
 ```
