@@ -84,8 +84,22 @@ I'm hoping to rely on loyal readers, rather than erratic ads. Click the Donate b
 </form>
 </center>
 
-## Last Words
-If anyone wants to contribute in this project, you are welcome.
+## How to cite this project?
+```
+D. Rajbhandari. An open source code for causal dynamical triangulations without preferred
+foliation in (1+1)- dimensions, 2017 –. URL https://github.com/Damicristi/cdt-qg-2D.
+```
+In LaTeX, use this:
+```
+@Misc{cdt-qg-2D,
+author={D. Rajbhandari},
+title={An open source code for Causal Dynamical Triangulations
+       without preferred foliation in (1+1)- dimensions},
+note={URL \href{https://github.com/Damicristi/cdt-qg-2D}
+      {https://github.com/Damicristi/cdt-qg-2D}},
+year={2017 --}
+}
+```
 
 ## Special Thanks
 To Prof. Dr. Jerzy Jurkiewicz (Jagiellonian University, Poland), Prof. Dr. Steven Carlip (University of California, Davis, USA), Dr. Ben Ruijl (ETH Zurich, Switzerland), Dr. Joshua Cooperman (Radboud University, Netherlands) and Mr. Adam Getchell (University of California, Davis, USA), who provided invaluable advices. 
