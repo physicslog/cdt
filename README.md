@@ -106,7 +106,5 @@ year={2017 --}
 ## Special Thanks
 To Prof. Dr. Jerzy Jurkiewicz (Jagiellonian University, Poland), Prof. Dr. Steven Carlip (University of California, Davis, USA), Dr. Ben Ruijl (ETH Zurich, Switzerland), Dr. Joshua Cooperman (Radboud University, Netherlands) and Mr. Adam Getchell (University of California, Davis, USA), who provided invaluable advices. 
 
-## Invitation
-I invite you to ask any questions you may have via dphysicslog[at]gmail[dot]com.
 
 ##### [Click Here to go in Home page](https://projects.physicslog.com)
