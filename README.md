@@ -83,11 +83,14 @@ I'm hoping to rely on loyal readers, rather than erratic ads. Click the Donate b
 <img alt="" border="3" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="30" height="15">
 </form>
 </center>
+
 ## Last Words
 If anyone wants to contribute in this project, you are welcome.
 
-##### Special Thanks to Prof. Dr. Jerzy Jurkiewicz (Jagiellonian University, Poland), Prof. Dr. Steven Carlip (University of California, Davis, USA), Dr. Ben Ruijl (ETH Zurich, Switzerland), Dr. Joshua Cooperman (Radboud University, Netherlands) and Mr. Adam Getchell (University of California, Davis, USA), who provided invaluable advices. 
+## Special Thanks
+To Prof. Dr. Jerzy Jurkiewicz (Jagiellonian University, Poland), Prof. Dr. Steven Carlip (University of California, Davis, USA), Dr. Ben Ruijl (ETH Zurich, Switzerland), Dr. Joshua Cooperman (Radboud University, Netherlands) and Mr. Adam Getchell (University of California, Davis, USA), who provided invaluable advices. 
 
-###### I invite you to ask any questions you may have via dphysicslog[at]gmail[dot]com.
+## Invitation
+I invite you to ask any questions you may have via dphysicslog[at]gmail[dot]com.
 
 ##### [Click Here to go in Home page](https://projects.physicslog.com)
