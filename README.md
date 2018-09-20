@@ -91,18 +91,19 @@ I'm hoping to rely on loyal readers, rather than erratic ads. Click the Donate b
 ## How to cite this project?
 Giving credit is a way of respecting the author’s heartfelt dedication and hard work. So, do I prefer. 
 ```
-D. Rajbhandari. An open source code for causal dynamical triangulations without preferred
-foliation in (1+1)- dimensions, 2017 –. URL https://github.com/Damicristi/cdt.
+Damodar Rajbhandari. (2018, July 23). An open source code for causal dynamical triangulations without preferred foliation in (1+1)- dimensions. Zenodo. http://doi.org/10.5281/zenodo.1422810
 ```
 In LaTeX, use this:
 ```
-@Misc{cdt,
-author={D. Rajbhandari},
-title={An open source code for Causal Dynamical Triangulations
-       without preferred foliation in (1+1)- dimensions},
-note={URL \href{https://github.com/Damicristi/cdt}
-      {https://github.com/Damicristi/cdt}},
-year={2017 --}
+@misc{damodar_rajbhandari_2018_1422810,
+  author = {Damodar Rajbhandari},
+  title  = {{An open source code for causal dynamical 
+             triangulations without preferred foliation in
+             (1+1)- dimensions}},
+  month  = jul,
+  year   = 2018,
+  doi    = {10.5281/zenodo.1422810},
+  url    = {https://doi.org/10.5281/zenodo.1422810}
 }
 ```
 
