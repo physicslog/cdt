@@ -57,7 +57,7 @@ Our programming language preference is Python 3.x. version under the object orie
 - [x]  Causality test
 - [x]  Alexander move
 - [x]  Collapse move
-- [x]  Generate flat spacetime of initial standard CDT
+- [x]  Generate flat discrete spacetime 
 - [ ]  Inverse Alexander move
 - [ ]  Inverse collapse move
 - [ ]  Flip move
