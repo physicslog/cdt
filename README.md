@@ -52,9 +52,22 @@ Please download from this link: [Damodar's Bachelor Approved Thesis by Tribhuvan
 Plese download from this link: [Final Bachelor Defense Presentation](https://www.researchgate.net/publication/326837831_An_open_source_code_for_Causal_Dynamical_Triangulations_without_preferred_foliation_in_11-_dimensions_with_elementary_expositions?_iepl%5BviewId%5D=7N81OWlysW0sGWe7ejoAv9G2&_iepl%5Bcontexts%5D%5B0%5D=projectUpdatesLog&_iepl%5BtargetEntityId%5D=PB%3A326837831&_iepl%5BinteractionType%5D=publicationTitle).
 
 <p id="future"> </p>
-## Future Work (How you can contribute to our open source code)
-Our programming language preference is Python 3.x. version under the object oriented paradigm. The goals and targets of this project are:
-
+## How you can contribute to our open source code?
+Our programming language preference is Python 3.x. version under the object oriented paradigm. The goals and target of this project are:
+- [x] Data structure
+- [x] Causality test
+- [x] Alexander move
+- [x] Collapse move
+- [ ] Inverse Alexander move
+- [ ] Inverse collapse move
+- [ ] Flip move
+- [ ] Inverse flip move
+- [ ] Pinching move
+- [ ] Inverse pinching move
+- [ ] Volume control terms to fixed the spacetime topology
+- [ ] Metropolis-Hastings algorithm
+- [ ] Python Script consisting of input data to run the simulation
+- [ ] Generate Quantum spacetime ensembles
 
 ## Forum
 You can join our discussions at [![Join the chat at https://gitter.im/physicslog/cdt-qg-2D](https://img.shields.io/badge/gitter-join%20chat%20→-brightgreen.svg)](https://gitter.im/physicslog/cdt-qg-2D). I want you to enjoy your stay there as much as possible. And I’m hoping that you help to maintain a welcome and pleasant atmosphere in here.
