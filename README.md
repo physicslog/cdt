@@ -88,6 +88,7 @@ I'm hoping to rely on loyal readers, rather than erratic ads. Click the Donate b
 </center>
 
 ## How to cite this project?
+Giving credit is a way of respecting the author’s heartfelt dedication and hard work. So, do I prefer. 
 ```
 D. Rajbhandari. An open source code for causal dynamical triangulations without preferred
 foliation in (1+1)- dimensions, 2017 –. URL https://github.com/Damicristi/cdt.
