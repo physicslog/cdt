@@ -99,9 +99,9 @@ In LaTeX, use this:
 ```
 @misc{damodar_rajbhandari_2018_1422810,
   author = {Damodar Rajbhandari},
-  title  = {{An open source code for causal dynamical 
+  title  = {An open source code for causal dynamical 
              triangulations without preferred foliation in
-             (1+1)- dimensions}},
+             (1+1)- dimensions},
   month  = jul,
   year   = 2018,
   doi    = {10.5281/zenodo.1422810},
