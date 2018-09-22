@@ -19,7 +19,7 @@ In short, Causal Dynamical Triangulations (CDT) is an approach to Quantum Gravit
 
 ## Presentation
 <center>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/9U6G1H7oyZ2Eiy" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: #000000 6px outset; width: 400px; display: block; margin-left: auto; margin-right: auto; max-width: 100%" allowfullscreen> </iframe> 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/9U6G1H7oyZ2Eiy" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: #000000 6px outset; display: block; margin-left: auto; margin-right: auto; max-width: 100%" allowfullscreen> </iframe> 
 </center>  
 
 ## Background theories
