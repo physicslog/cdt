@@ -113,7 +113,13 @@ In LaTeX, use this:
 
 ## Talks
 
-<a align="center" href="https://www.slideshare.net/DamodarRajbhandari/quantum-gravity-on-a-computer-an-introduction-to-11-dimensional-causal-dynamical-triangulations-without-preferred-foliation?ref=https://projects.physicslog.com/cdt/"><img style="border: #000000 6px outset; width: 400px; display: block; margin-left: auto; margin-right: auto;" alt="PRI Science Discussion Series, Epsiode 24" src="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg"></a>
+<a align="center" href="https://www.slideshare.net/DamodarRajbhandari/quantum-gravity-on-a-computer-an-introduction-to-11-dimensional-causal-dynamical-triangulations-without-preferred-foliation?ref=https://projects.physicslog.com/cdt/"><img id="myImg" src="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" style="border: #000000 6px outset; width: 400px; display: block; margin-left: auto; margin-right: auto;" alt="PRI Science Discussion Series, Episode 24" style="width:100%;max-width:300px">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 
 ## Special Thanks
 To Prof. Dr. Jerzy Jurkiewicz (Jagiellonian University, Poland), Prof. Dr. Steven Carlip (University of California, Davis, USA), Dr. Ben Ruijl (ETH Zurich, Switzerland), Dr. Joshua Cooperman (Radboud University, Netherlands) and Mr. Adam Getchell (University of California, Davis, USA), who provided invaluable advices. 
