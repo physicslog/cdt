@@ -113,7 +113,7 @@ In LaTeX, use this:
 
 ## Talks
 
-<img align="center" id="myImg" src="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg"  style="width:100%;max-width:300px" alt="PRI Science Discussion Series, Episode 24." style="width:100%;max-width:300px">
+<img align="center" id="myImg" src="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" alt="PRI Science Discussion Series, Episode 24." style="border: #000000 6px outset; width: 400px; display: block; margin-left: auto; margin-right: auto;">
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
