@@ -111,6 +111,10 @@ In LaTeX, use this:
 }
 ```
 
+## Talks
+
+<a align="center" href="https://www.slideshare.net/DamodarRajbhandari/quantum-gravity-on-a-computer-an-introduction-to-11-dimensional-causal-dynamical-triangulations-without-preferred-foliation?ref=https://projects.physicslog.com/cdt/"><img border="1" alt="PRI Science Discussion Series, Epsiode 24" src="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg"></a>
+
 ## Special Thanks
 To Prof. Dr. Jerzy Jurkiewicz (Jagiellonian University, Poland), Prof. Dr. Steven Carlip (University of California, Davis, USA), Dr. Ben Ruijl (ETH Zurich, Switzerland), Dr. Joshua Cooperman (Radboud University, Netherlands) and Mr. Adam Getchell (University of California, Davis, USA), who provided invaluable advices. 
 
