@@ -53,7 +53,7 @@ Please download from this link: [Damodar's Bachelor Approved Thesis by Tribhuvan
 
 ## Presentation
 
-<iframe src="https://www.slideshare.net/DamodarRajbhandari/slideshelf" width="760px" height="570px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/9U6G1H7oyZ2Eiy" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/DamodarRajbhandari/quantum-gravity-on-a-computer-an-introduction-to-11-dimensional-causal-dynamical-triangulations-without-preferred-foliation" title="Quantum Gravity on a computer: An introduction to (1+1) dimensional Causal Dynamical Triangulations without preferred foliation" target="_blank">Quantum Gravity on a computer: An introduction to (1+1) dimensional Causal Dynamical Triangulations without preferred foliation</a> </strong> from <strong><a href="//www.slideshare.net/DamodarRajbhandari" target="_blank">Damodar Rajbhandari</a></strong> </div>
 
 ## How you can contribute to our open source code?
 Our programming language preference is Python 3.x. version under the object oriented paradigm. The goals and target of this project are:
