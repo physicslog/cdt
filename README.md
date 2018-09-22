@@ -19,7 +19,7 @@ In short, Causal Dynamical Triangulations (CDT) is an approach to Quantum Gravit
 
 ## Presentation
 <center>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/9U6G1H7oyZ2Eiy" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: #000000 6px outset; display: block; margin-left: auto; margin-right: auto; max-width: 100%" allowfullscreen> </iframe> 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/9U6G1H7oyZ2Eiy" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: #000000 4px outset; display: block; margin-left: auto; margin-right: auto; max-width: 100%" allowfullscreen> </iframe> 
 </center>  
 
 ## Background theories
@@ -113,7 +113,7 @@ In LaTeX, use this:
 
 ## Talks
 <figure>
-<a align="center" href="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" target="_blank"><img src="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" alt="PRI Science Discussion Series, Episode 24." style="border: #000000 6px outset; width: 400px; display: block; margin-left: auto; margin-right: auto;"></a>
+<a align="center" href="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" target="_blank"><img src="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" alt="PRI Science Discussion Series, Episode 24." style="border: #000000 4px outset; width: 400px; display: block; margin-left: auto; margin-right: auto;"></a>
  <figcaption align="center">PRI Science Discussion Series, Episode 24. <br> Please find the presentation file at <a href="https://www.slideshare.net/DamodarRajbhandari/quantum-gravity-on-a-computer-an-introduction-to-11-dimensional-causal-dynamical-triangulations-without-preferred-foliation?ref=https://projects.physicslog.com/cdt/" target="_blank">SlideShare</a>.</figcaption>
 </figure>
 
