@@ -17,6 +17,10 @@ The main motivation for choosing this approach is that it is relies on very few 
 
 In short, Causal Dynamical Triangulations (CDT) is an approach to Quantum Gravity based on the sum over histories line of research which gives a quantization of classical Einstein gravity using a discrete approximation to the gravitational path integral, and spacetimes are approximated by Minkowskian equilateral triangles.
 
+## Presentation
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/9U6G1H7oyZ2Eiy" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/DamodarRajbhandari/quantum-gravity-on-a-computer-an-introduction-to-11-dimensional-causal-dynamical-triangulations-without-preferred-foliation" title="Quantum Gravity on a computer: An introduction to (1+1) dimensional Causal Dynamical Triangulations without preferred foliation" target="_blank">Quantum Gravity on a computer: An introduction to (1+1) dimensional Causal Dynamical Triangulations without preferred foliation</a> </strong> from <strong><a href="//www.slideshare.net/DamodarRajbhandari" target="_blank">Damodar Rajbhandari</a></strong> </div>
+
 ## Background theories
 1. General Relativity
 2. Quantum Field Theory
@@ -50,10 +54,6 @@ Please go to this link: [readings.physicslog.com](https://readings.physicslog.co
 
 ## Code Documentation
 Please download from this link: [Damodar's Bachelor Approved Thesis by Tribhuvan University](https://www.researchgate.net/publication/327108635_An_Open_Source_Code_for_Causal_Dynamical_Triangulations_Without_Preferred_Foliation_in_11-_Dimensions_with_Elementary_Expositions).
-
-## Presentation
-
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/9U6G1H7oyZ2Eiy" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/DamodarRajbhandari/quantum-gravity-on-a-computer-an-introduction-to-11-dimensional-causal-dynamical-triangulations-without-preferred-foliation" title="Quantum Gravity on a computer: An introduction to (1+1) dimensional Causal Dynamical Triangulations without preferred foliation" target="_blank">Quantum Gravity on a computer: An introduction to (1+1) dimensional Causal Dynamical Triangulations without preferred foliation</a> </strong> from <strong><a href="//www.slideshare.net/DamodarRajbhandari" target="_blank">Damodar Rajbhandari</a></strong> </div>
 
 ## How you can contribute to our open source code?
 Our programming language preference is Python 3.x. version under the object oriented paradigm. The goals and target of this project are:
