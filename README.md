@@ -114,7 +114,7 @@ In LaTeX, use this:
 ## Talks
 <figure>
 <a align="center" href="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" target="_blank"><img src="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" alt="PRI Science Discussion Series, Episode 24." style="border: #000000 6px outset; width: 400px; display: block; margin-left: auto; margin-right: auto;"></a>
-  <br><figcaption align="center">PRI Science Discussion Series, Episode 24. <br> Please find the presentation file at <a href="https://www.slideshare.net/DamodarRajbhandari/quantum-gravity-on-a-computer-an-introduction-to-11-dimensional-causal-dynamical-triangulations-without-preferred-foliation?ref=https://projects.physicslog.com/cdt/" target="_blank">SlideShare</a></figcaption>
+ <figcaption align="center">PRI Science Discussion Series, Episode 24. <br> Please find the presentation file at <a href="https://www.slideshare.net/DamodarRajbhandari/quantum-gravity-on-a-computer-an-introduction-to-11-dimensional-causal-dynamical-triangulations-without-preferred-foliation?ref=https://projects.physicslog.com/cdt/" target="_blank">SlideShare</a></figcaption>
 </figure>
 
 ## Special Thanks
