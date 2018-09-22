@@ -113,13 +113,8 @@ In LaTeX, use this:
 
 ## Talks
 
-<img align="center" id="myImg" src="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" alt="PRI Science Discussion Series, Episode 24." style="border: #000000 6px outset; width: 400px; display: block; margin-left: auto; margin-right: auto;">
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
+<a align="center" href="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" target="_blank"><img src="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" alt="PRI Science Discussion Series, Episode 24." style="border: #000000 6px outset; width: 400px; display: block; margin-left: auto; margin-right: auto;"></a>
+
 
 ## Special Thanks
 To Prof. Dr. Jerzy Jurkiewicz (Jagiellonian University, Poland), Prof. Dr. Steven Carlip (University of California, Davis, USA), Dr. Ben Ruijl (ETH Zurich, Switzerland), Dr. Joshua Cooperman (Radboud University, Netherlands) and Mr. Adam Getchell (University of California, Davis, USA), who provided invaluable advices. 
