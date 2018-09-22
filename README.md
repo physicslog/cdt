@@ -52,7 +52,8 @@ Please go to this link: [readings.physicslog.com](https://readings.physicslog.co
 Please download from this link: [Damodar's Bachelor Approved Thesis by Tribhuvan University](https://www.researchgate.net/publication/327108635_An_Open_Source_Code_for_Causal_Dynamical_Triangulations_Without_Preferred_Foliation_in_11-_Dimensions_with_Elementary_Expositions).
 
 ## Presentation
-Plese download from this link: [Final Bachelor Defense Presentation](https://www.researchgate.net/publication/326837831_An_open_source_code_for_Causal_Dynamical_Triangulations_without_preferred_foliation_in_11-_dimensions_with_elementary_expositions?_iepl%5BviewId%5D=7N81OWlysW0sGWe7ejoAv9G2&_iepl%5Bcontexts%5D%5B0%5D=projectUpdatesLog&_iepl%5BtargetEntityId%5D=PB%3A326837831&_iepl%5BinteractionType%5D=publicationTitle).
+
+<iframe src="https://www.slideshare.net/DamodarRajbhandari/slideshelf" width="760px" height="570px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
 
 ## How you can contribute to our open source code?
 Our programming language preference is Python 3.x. version under the object oriented paradigm. The goals and target of this project are:
