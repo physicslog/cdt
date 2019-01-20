@@ -1,12 +1,14 @@
+# Programming language
 language: python
+# Python version to test
 python: 
      - 3.5.4
      - 3.6
+# Caching the pip dependencies
 cache: pip
-# command to install dependencies
+# Command to install dependencies
 install: pip install -r requirements.txt
-# command to switch to test dir
+# Command to switch to test dir
 before_install: cd Full_cdt_one_plus
-
-# command to run tests.
+# Command to run specific test.
 script: python debugging.py
