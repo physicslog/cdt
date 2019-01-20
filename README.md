@@ -121,6 +121,18 @@ In LaTeX, use this:
  <figcaption align="center"><a href="http://pri.org.np/sds.html" target="_blank">PRI Science Discussion Series, Episode 24</a>. <br> Please find the presentation file at <a href="https://www.slideshare.net/DamodarRajbhandari/quantum-gravity-on-a-computer-an-introduction-to-11-dimensional-causal-dynamical-triangulations-without-preferred-foliation?ref=https://projects.physicslog.com/cdt/" target="_blank">SlideShare</a>.</figcaption>
 </figure>
 
+## Contributors:
+Thanks goes to all these wonderful people at ["View Contributors"](https://github.com/Damicristi/cdt/graphs/contributors){:target="_blank"}.
+<iframe src="https://tylerlh.github.io/github-latest-commits-widget/?username=damicristi&amp;repo=cdt&amp;limit=1" allowtransparency="true" frameborder="0" scrolling="no" width="100%"></iframe>
+
+Here is a throughput graph of the repository for the last few weeks:
+
+[![Throughput Graph](https://graphs.waffle.io/Damicristi/cdt/throughput.svg)](https://waffle.io/Damicristi/cdt/metrics/throughput)
+
+## Visitor counter:
+This webpage counts the number of visitors since 20 Jan, 2019. Webpage created on 20 Sept, 2018 and recent edited on 20 Jan, 2019. 
+<script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0upkcckxlaf&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script>
+
 ## Special Thanks
 To Prof. Dr. Jerzy Jurkiewicz (Jagiellonian University, Poland), Prof. Dr. Steven Carlip (University of California, Davis, USA), Dr. Ben Ruijl (ETH Zurich, Switzerland), Dr. Joshua Cooperman (Radboud University, Netherlands) and Mr. Adam Getchell (University of California, Davis, USA), who provided invaluable advices. 
 
