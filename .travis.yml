@@ -2,12 +2,12 @@ language: python
 
 # Directory to test
 before_install:
-	- cd /Full_cdt_one_plus
+     - cd /Full_cdt_one_plus
 
 # command to install dependencies
 install:
-	-pip install -r requirements.txt
+     -pip install -r requirements.txt
 
 # command to run tests.
 script:
-	-debugging
+     -debugging
