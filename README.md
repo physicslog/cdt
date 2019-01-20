@@ -123,10 +123,7 @@ In LaTeX, use this:
 </figure>
 
 ## Contributors:
-Thanks goes to all these wonderful people at ["View Contributors"](https://github.com/Damicristi/cdt/graphs/contributors){:target="_blank"}.
-<iframe src="https://tylerlh.github.io/github-latest-commits-widget/?username=damicristi&amp;repo=cdt&amp;limit=1" allowtransparency="true" frameborder="0" scrolling="no" width="100%"></iframe>
-
-Here is a throughput graph of the repository for the last few weeks:
+Thanks goes to all these wonderful people at ["View Contributors"](https://github.com/Damicristi/cdt/graphs/contributors){:target="_blank"}. Here is a throughput graph of the repository for the last few weeks:
 
 [![Throughput Graph](https://graphs.waffle.io/Damicristi/cdt/throughput.svg)](https://waffle.io/Damicristi/cdt/metrics/throughput)
 
