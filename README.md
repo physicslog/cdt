@@ -5,7 +5,7 @@
 [![Join the chat at https://gitter.im/physicslog/cdt-qg-2D](https://img.shields.io/badge/gitter-join%20chat%20→-brightgreen.svg)](https://gitter.im/physicslog/cdt-qg-2D)
 
 Author: [Damodar Rajbhandari](https://damodarrajbhandari.com.np), Outreach blogger at [Physics Log](http://www.physicslog.com/)  
-In the Collaboration with [Dr. Jonah Maxwell Miller](mailto:jonah.maxwell.miller@gmail.com) and [Prof. Dr. Udayaraj Khanal](mailto:khanalu@yahoo.com)
+In the Collaboration with [Dr. Jonah Maxwell Miller](https://www.lanl.gov/expertise/profiles/view/jonah-miller) and [Prof. Dr. Udayaraj Khanal](https://en.wikipedia.org/wiki/Udayraj_Khanal).
 
 ## Introduction
 
