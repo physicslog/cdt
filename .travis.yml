@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.5.4"
+  - "3.5"
 
 # Directory to test
 before_install:
