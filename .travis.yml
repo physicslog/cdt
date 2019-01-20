@@ -8,5 +8,4 @@ install: pip install scipy numpy matplotlib
 before_install: cd Full_cdt_one_plus
 
 # command to run tests.
-script:
-     -python debugging.py
+script: python debugging.py
