@@ -2,7 +2,7 @@
 language: python
 # Python version to test
 python: 
-     - 3.5.4
+     - 3.5
      - 3.6
 # Caching the pip dependencies
 cache: pip
