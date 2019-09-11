@@ -1,3 +1,5 @@
+# Linux Distro:
+dist: xenial
 # Programming language
 language: python
 # Python version to test
