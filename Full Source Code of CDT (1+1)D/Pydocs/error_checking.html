@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module error_checking</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>error_checking</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/mnt/d/Projects/cdt/Full_cdt_one_plus/error_checking.py">/mnt/d/Projects/cdt/Full_cdt_one_plus/error_checking.py</a></font></td></tr></table>
+    <p><tt>error_checking.py<br>
+&nbsp;<br>
+This&nbsp;module&nbsp;is&nbsp;taken&nbsp;from&nbsp;Jonah&nbsp;Miller&nbsp;(jonah.maxwell.miller@gmail.com)<br>
+&nbsp;<br>
+This&nbsp;file&nbsp;is&nbsp;part&nbsp;of&nbsp;the&nbsp;program&nbsp;which&nbsp;generates<br>
+2-D&nbsp;torus&nbsp;of&nbsp;(as&nbsp;close&nbsp;as&nbsp;possible&nbsp;to)&nbsp;uniform&nbsp;curvature&nbsp;for&nbsp;a&nbsp;given<br>
+surface&nbsp;area&nbsp;by&nbsp;monte&nbsp;carlo&nbsp;simulation.<br>
+&nbsp;<br>
+This&nbsp;module&nbsp;contains&nbsp;nothing&nbsp;but&nbsp;error&nbsp;checking&nbsp;tools:&nbsp;small,&nbsp;snippets<br>
+of&nbsp;code&nbsp;that&nbsp;we&nbsp;use&nbsp;over&nbsp;and&nbsp;over&nbsp;again.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="scipy.html">scipy</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-check_length"><strong>check_length</strong></a>(S, target_length, object_name=False, function_name=False)</dt><dd><tt>Ensures&nbsp;that&nbsp;the&nbsp;tuple/set/list&nbsp;S&nbsp;has&nbsp;length&nbsp;target_length.&nbsp;If&nbsp;it<br>
+is&nbsp;not,&nbsp;raises&nbsp;an&nbsp;error.&nbsp;If&nbsp;object&nbsp;name&nbsp;is&nbsp;given,&nbsp;alerts&nbsp;the&nbsp;user<br>
+which&nbsp;object&nbsp;name&nbsp;the&nbsp;list&nbsp;had.&nbsp;If&nbsp;function_name&nbsp;is&nbsp;given,&nbsp;alerts&nbsp;the<br>
+user&nbsp;that&nbsp;function_name&nbsp;function&nbsp;failed.</tt></dd></dl>
+ <dl><dt><a name="-too_many_duplicates"><strong>too_many_duplicates</strong></a>(object_type, object_instance, duplicates, allowed_duplicates, function_name)</dt><dd><tt>If&nbsp;duplicate&nbsp;checking&nbsp;runs&nbsp;and&nbsp;finds&nbsp;too&nbsp;many&nbsp;duplicates,&nbsp;you&nbsp;can<br>
+call&nbsp;this&nbsp;to&nbsp;produce&nbsp;a&nbsp;suitable&nbsp;error&nbsp;message.</tt></dd></dl>
+</td></tr></table>
+</body></html>

@@ -14,7 +14,6 @@ After introducing the General Theory of Relativity (in 1915), Einstein pointed o
 
 One can attempt to construct a theory of quantum gravity by defining a non-perturbative quantum field theory as a sum over histories. This technique is a modification of Feynman path integral formulation which was first put forwarded by Stephen Hawking and Gary William Gibbons for their quantum gravity approach “Euclidean quantum gravity ”. In-short, instead of superposing the usual Lorentzian spacetimes, they used Euclidean spaces which have four space dimensions. The hope of Euclidean quantum gravity was that spacetime could be assumed to be Euclidean and that time would emerge dynamically. Unfortunately, this did not work out. In the 1990s, this work was combined with quantum Regge calculus so that it could be formulated non-perturbatively. This was called Dynamical Triangulations. This technique failed due to unboundedness in the gravitational action. And also the path integral knows nothing about causality (i.e. light cone structure of the spacetime) and there’s no specification that any test matter will bounded by light cones. In an effort to resolve these issues, Renate Loll, Jan Ambjørn and Jerzy Jurkiewicz reformulated this construction, but with Lorentzian signature imposed from the start. They only map into Euclidean signature via Wick rotation after constructing the theory. Thus, Causal Dynamical Triangulations was born (initially, it was named as Lorentzian Dynamical Triangulations). This approach provides concrete evidence that one must include causal structure, in the sense of having a well-defined light cones everywhere. This model imposed preferred foliation of time so that we can track of time direction.
 
-<p align="center"> <img class="statics" src="https://projects.physicslog.com/cdt//Plot%20for%20Initial%20Universe/d8p19200.png"><img class="active" style="max-width: 100%;" src="https://projects.physicslog.com/cdt//Plot%20for%20Initial%20Universe/d8p19200.gif"></p>
 
 But the question is, does CDT rely on distinguished time slicing? To answer this question, Renate Loll and Samo Jordan introduced the more general version of CDT which is called CDT without preferred foliation (equivalent to say, Locally causal dynamical triangulations) and found the answer to be hopefully no.
 
@@ -23,9 +22,6 @@ The main motivation for choosing this approach is that it is relies on very few 
 In short, Causal Dynamical Triangulations (CDT) is an approach to Quantum Gravity based on the sum over histories line of research which gives a quantization of classical Einstein gravity using a discrete approximation to the gravitational path integral, and spacetimes are approximated by Minkowskian equilateral triangles.
 
 ## Presentation
-<center>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/9U6G1H7oyZ2Eiy" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: #000000 4px outset; display: block; margin-left: auto; margin-right: auto; max-width: 100%" allowfullscreen> </iframe> 
-</center>  
 
 I gave this talk at "Marian Sokołowski Institute of Physics" at Jagiellonian university, Krakow, Poland. I was invited by Prof. Jerzy Jurkiewicz as a visiting research student. This talk is more detailed and technical.
 
@@ -61,13 +57,10 @@ I gave this talk at "Marian Sokołowski Institute of Physics" at Jagiellonian un
 3. [Einstein Online](http://www.einstein-online.info/index.html)
 4. [The Physics Mill](http://www.thephysicsmill.com/)
 
-## Recommended Reading Materials
-Please go to this link: [readings.physicslog.com](https://readings.physicslog.com#causal-dynamical-triangulations).
-
 ## Code Documentation
 Please download from this link: [Damodar's Bachelor Approved Thesis by Tribhuvan University](https://www.researchgate.net/publication/327108635_An_Open_Source_Code_for_Causal_Dynamical_Triangulations_Without_Preferred_Foliation_in_11-_Dimensions_with_Elementary_Expositions).
 
-## How you can contribute to our open source code?
+## How you can contribute to our open source code at [GitHub](https://github.com/Damicristi/cdt)?
 Our programming language preference is Python 3.x. version under the object oriented paradigm. The goals and target of this project are:
 
 - [x]  Data structure
@@ -75,7 +68,7 @@ Our programming language preference is Python 3.x. version under the object orie
 - [x]  Alexander move
 - [x]  Collapse move
 - [x]  Generate flat discrete spacetime 
-- [ ]  Inverse Alexander move
+- [x]  Inverse Alexander move
 - [ ]  Inverse collapse move
 - [ ]  Flip move
 - [ ]  Inverse flip move
@@ -83,23 +76,10 @@ Our programming language preference is Python 3.x. version under the object orie
 - [ ]  Inverse pinching move
 - [ ]  Volume control terms to fixed the spacetime topology
 - [ ]  Metropolis-Hastings algorithm
-- [ ]  Script consisting of data to run the simulation
 - [ ]  Generate Quantum spacetime ensembles
 
 ## Forum
 You can join our discussions at [![Join the chat at https://gitter.im/physicslog/cdt-qg-2D](https://img.shields.io/badge/gitter-join%20chat%20→-brightgreen.svg)](https://gitter.im/physicslog/cdt-qg-2D). I want you to enjoy your stay there as much as possible. And I’m hoping that you help to maintain a welcome and pleasant atmosphere in here.
-
-## Buy me a coffee
-I'm hoping to rely on loyal readers, rather than erratic ads. Click the Donate button and support this project. Thank you!
-<center>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="3" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="30" height="15">
-</form>
-</center>
 
 ## How to cite this project?
 Giving credit is a way of respecting the author’s heartfelt dedication and hard work. So, do I prefer. 
@@ -121,24 +101,13 @@ In LaTeX, use this:
   url    = {https://doi.org/10.5281/zenodo.1422810}
 }
 ```
-
-## Talks
-<figure>
-<a align="center" href="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" target="_blank"><img src="https://raw.githubusercontent.com/Damicristi/My-contents/master/pri24.jpg" alt="PRI Science Discussion Series, Episode 24." style="border: #000000 4px outset; width: 400px; display: block; margin-left: auto; margin-right: auto;"></a>
- <figcaption align="center"><a href="http://pri.org.np/sds.html" target="_blank">PRI Science Discussion Series, Episode 24</a>. <br> Please find the presentation file at <a href="https://www.slideshare.net/DamodarRajbhandari/quantum-gravity-on-a-computer-an-introduction-to-11-dimensional-causal-dynamical-triangulations-without-preferred-foliation?ref=https://projects.physicslog.com/cdt/" target="_blank">SlideShare</a>.</figcaption>
-</figure>
-
 ## Contributors:
-Thanks goes to all these wonderful people at ["View Contributors"](https://github.com/Damicristi/cdt/graphs/contributors){:target="_blank"}. Here is a throughput graph of the repository for the last few weeks:
-
-[![Throughput Graph](https://graphs.waffle.io/Damicristi/cdt/throughput.svg)](https://waffle.io/Damicristi/cdt/metrics/throughput)
+Thanks goes to all these wonderful people at ["View Contributors"](https://github.com/Damicristi/cdt/graphs/contributors)
 
 ## Visitor counter:
 This webpage counts the number of visitors since 20 Jan, 2019. Webpage created on 20 Sept, 2018 and recent edited on 20 Jan, 2019. 
-<script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0upkcckxlaf&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script>
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/0.js?i=0upkcckxlaf&amp;d=2&amp;p=3&amp;b=4&amp;w=293&amp;g=2&amp;f=arial&amp;fs=12&amp;r=0&amp;c0=362b05&amp;c1=375363&amp;c2=000000&amp;ic0=0&amp;ic1=0" async="async"></script>
 
 ## Special Thanks
 To Prof. Dr. Jerzy Jurkiewicz (Jagiellonian University, Poland), Prof. Dr. Steven Carlip (University of California, Davis, USA), Dr. Ben Ruijl (ETH Zurich, Switzerland), Dr. Joshua Cooperman (Radboud University, Netherlands) and Mr. Adam Getchell (University of California, Davis, USA), who provided invaluable advices. 
 
-
-##### [Click Here to go in Home page](https://projects.physicslog.com)

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module state_tracking</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>state_tracking</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/mnt/d/Projects/cdt/Full_cdt_one_plus/state_tracking.py">/mnt/d/Projects/cdt/Full_cdt_one_plus/state_tracking.py</a></font></td></tr></table>
+    <p><tt>Path:&nbsp;/Full_cdt_one_plus_one/state_tracking.py<br>
+&nbsp;<br>
+Time-stamp:&nbsp;&lt;2017-12-18&nbsp;06:57:19&nbsp;(Damodar)&gt;<br>
+Author:&nbsp;Damodar&nbsp;Rajbhandari&nbsp;(dphysicslog@gmail.com)<br>
+&nbsp;<br>
+Description:&nbsp;This&nbsp;module&nbsp;will&nbsp;keep&nbsp;track&nbsp;of&nbsp;the&nbsp;toroidal&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;topology.&nbsp;This&nbsp;file&nbsp;contains&nbsp;classes&nbsp;and&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functions&nbsp;for&nbsp;measuring&nbsp;properties&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;generated&nbsp;sphere.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="error_checking.html">error_checking</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="state_manipulation.html">state_manipulation</a><br>
+<a href="scipy.html">scipy</a><br>
+</td><td width="25%" valign=top><a href="sub_triangle_property.html">sub_triangle_property</a><br>
+<a href="triangle_property.html">triangle_property</a><br>
+</td><td width="25%" valign=top><a href="utilities.html">utilities</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="state_tracking.html#torus">torus</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="torus">class <strong>torus</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Contains&nbsp;and&nbsp;calculates&nbsp;the&nbsp;state&nbsp;information&nbsp;for&nbsp;the&nbsp;<br>
+<a href="#torus">torus</a>&nbsp;at&nbsp;a&nbsp;given&nbsp;time-step.&nbsp;Meant&nbsp;to&nbsp;be&nbsp;initialized.&nbsp;<br>
+&nbsp;<br>
+It's&nbsp;worth&nbsp;noting&nbsp;that&nbsp;printing&nbsp;the&nbsp;<a href="#torus">torus</a>&nbsp;instances&nbsp;is&nbsp;<br>
+useful.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="torus-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="torus-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>The&nbsp;state&nbsp;of&nbsp;the&nbsp;system&nbsp;at&nbsp;a&nbsp;given&nbsp;time.</tt></dd></dl>
+
+<dl><dt><a name="torus-curvature_std"><strong>curvature_std</strong></a>(self)</dt><dd><tt>Calculates&nbsp;standard&nbsp;deviation&nbsp;of&nbsp;the&nbsp;Gauss&nbsp;curvature&nbsp;over&nbsp;the<br>
+<a href="#torus">torus</a>.</tt></dd></dl>
+
+<dl><dt><a name="torus-curvature_total"><strong>curvature_total</strong></a>(self, normalized=False)</dt><dd><tt>Calculates&nbsp;the&nbsp;total&nbsp;Gauss&nbsp;curvature&nbsp;of&nbsp;the&nbsp;<a href="#torus">torus</a>.&nbsp;If&nbsp;normalized&nbsp;=&nbsp;True<br>
+,&nbsp;also&nbsp;divide&nbsp;by&nbsp;the&nbsp;number&nbsp;of&nbsp;vertices&nbsp;to&nbsp;get&nbsp;an&nbsp;average.</tt></dd></dl>
+
+<dl><dt><a name="torus-euler_characteristic"><strong>euler_characteristic</strong></a>(self)</dt><dd><tt>Calculate&nbsp;the&nbsp;Euler&nbsp;characteristic&nbsp;of&nbsp;the&nbsp;<a href="#torus">torus</a></tt></dd></dl>
+
+<dl><dt><a name="torus-get_spacelike"><strong>get_spacelike</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;string&nbsp;each&nbsp;spacelike&nbsp;edge&nbsp;in&nbsp;the&nbsp;<a href="#torus">torus</a>.&nbsp;Output&nbsp;could&nbsp;be&nbsp;long.</tt></dd></dl>
+
+<dl><dt><a name="torus-get_sst_triangle"><strong>get_sst_triangle</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;string&nbsp;each&nbsp;sst&nbsp;triangle&nbsp;in&nbsp;the&nbsp;<a href="#torus">torus</a>.&nbsp;Output&nbsp;could&nbsp;be&nbsp;long.</tt></dd></dl>
+
+<dl><dt><a name="torus-get_timelike"><strong>get_timelike</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;string&nbsp;each&nbsp;timelike&nbsp;edge&nbsp;in&nbsp;the&nbsp;<a href="#torus">torus</a>.&nbsp;Output&nbsp;could&nbsp;be&nbsp;long.</tt></dd></dl>
+
+<dl><dt><a name="torus-get_tts_triangle"><strong>get_tts_triangle</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;string&nbsp;each&nbsp;tts&nbsp;triangle&nbsp;in&nbsp;the&nbsp;<a href="#torus">torus</a>.&nbsp;Output&nbsp;could&nbsp;be&nbsp;long.</tt></dd></dl>
+
+<dl><dt><a name="torus-get_vertices"><strong>get_vertices</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;string&nbsp;each&nbsp;vertex&nbsp;in&nbsp;the&nbsp;<a href="#torus">torus</a>.&nbsp;Output&nbsp;could&nbsp;be&nbsp;long.</tt></dd></dl>
+
+<dl><dt><a name="torus-surface_area"><strong>surface_area</strong></a>(self)</dt><dd><tt>Calculates&nbsp;the&nbsp;surface&nbsp;area&nbsp;of&nbsp;the&nbsp;<a href="#torus">torus</a>.&nbsp;Basically&nbsp;syntactic&nbsp;sugar.<br>
+returns&nbsp;no.&nbsp;of&nbsp;tts_triangles&nbsp;+&nbsp;no.&nbsp;of&nbsp;sst_triangles</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
