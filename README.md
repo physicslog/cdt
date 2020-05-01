@@ -105,7 +105,8 @@ In LaTeX, use this:
 Thanks goes to all these wonderful people at ["View Contributors"](https://github.com/Damicristi/cdt/graphs/contributors)
 
 ## Visitor counter:
-This webpage counts the number of visitors since 20 Jan, 2019. Webpage created on 20 Sept, 2018 and recent edited on 20 Jan, 2019. 
+This webpage counts the number of visitors since 20 Jan, 2019. Webpage created on 20 Sept, 2018 and recent edited on 1 May, 2020. 
+
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/0.js?i=0upkcckxlaf&amp;d=2&amp;p=3&amp;b=4&amp;w=293&amp;g=2&amp;f=arial&amp;fs=12&amp;r=0&amp;c0=362b05&amp;c1=375363&amp;c2=000000&amp;ic0=0&amp;ic1=0" async="async"></script>
 
 ## Special Thanks
