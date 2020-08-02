@@ -1,7 +1,6 @@
 # Causal Dynamical Triangulations (CDT)
 [![License](https://img.shields.io/badge/License-GPL%20v3.0-blue.svg)](LICENSE.md)
 [![DOI](https://zenodo.org/badge/84816891.svg)](https://zenodo.org/badge/latestdoi/84816891)
-[![Build Status](https://travis-ci.org/Damicristi/cdt.svg?branch=master)](https://travis-ci.org/Damicristi/cdt)
 [![Open Issues](https://img.shields.io/github/issues-raw/Damicristi/cdt.svg)](https://github.com/Damicristi/cdt/issues)
 [![Join the chat at https://gitter.im/physicslog/cdt-qg-2D](https://img.shields.io/badge/gitter-join%20chat%20→-brightgreen.svg)](https://gitter.im/physicslog/cdt-qg-2D)
 
@@ -58,7 +57,7 @@ I gave this talk at "Marian Sokołowski Institute of Physics" at Jagiellonian un
 4. [The Physics Mill](http://www.thephysicsmill.com/)
 
 ## Code Documentation
-Please download from this link: [Damodar's Bachelor Approved Thesis by Tribhuvan University](https://www.researchgate.net/publication/327108635_An_Open_Source_Code_for_Causal_Dynamical_Triangulations_Without_Preferred_Foliation_in_11-_Dimensions_with_Elementary_Expositions).
+You can download from this link: [Damodar's Bachelor Approved Thesis by Tribhuvan University](https://figshare.com/articles/thesis/An_open_source_code_for_Causal_Dynamical_Triangulations_without_preferred_foliation_in_1_1_-dimensions_with_elementary_expositions/12751772).
 
 ## How you can contribute to our open source code at [GitHub](https://github.com/Damicristi/cdt)?
 Our programming language preference is Python 3.x. version under the object oriented paradigm. The goals and target of this project are:
@@ -77,9 +76,6 @@ Our programming language preference is Python 3.x. version under the object orie
 - [ ]  Volume control terms to fixed the spacetime topology
 - [ ]  Metropolis-Hastings algorithm
 - [ ]  Generate Quantum spacetime ensembles
-
-## Forum
-You can join our discussions at [![Join the chat at https://gitter.im/physicslog/cdt-qg-2D](https://img.shields.io/badge/gitter-join%20chat%20→-brightgreen.svg)](https://gitter.im/physicslog/cdt-qg-2D). I want you to enjoy your stay there as much as possible. And I’m hoping that you help to maintain a welcome and pleasant atmosphere in here.
 
 ## How to cite this project?
 Giving credit is a way of respecting the author’s heartfelt dedication and hard work. So, do I prefer. 
