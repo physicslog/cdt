@@ -13,20 +13,11 @@ After introducing the General Theory of Relativity (in 1915), Einstein pointed o
 
 One can attempt to construct a theory of quantum gravity by defining a non-perturbative quantum field theory as a sum over histories. This technique is a modification of Feynman path integral formulation which was first put forwarded by Stephen Hawking and Gary William Gibbons for their quantum gravity approach “Euclidean quantum gravity ”. In-short, instead of superposing the usual Lorentzian spacetimes, they used Euclidean spaces which have four space dimensions. The hope of Euclidean quantum gravity was that spacetime could be assumed to be Euclidean and that time would emerge dynamically. Unfortunately, this did not work out. In the 1990s, this work was combined with quantum Regge calculus so that it could be formulated non-perturbatively. This was called Dynamical Triangulations. This technique failed due to unboundedness in the gravitational action. And also the path integral knows nothing about causality (i.e. light cone structure of the spacetime) and there’s no specification that any test matter will bounded by light cones. In an effort to resolve these issues, Renate Loll, Jan Ambjørn and Jerzy Jurkiewicz reformulated this construction, but with Lorentzian signature imposed from the start. They only map into Euclidean signature via Wick rotation after constructing the theory. Thus, Causal Dynamical Triangulations was born (initially, it was named as Lorentzian Dynamical Triangulations). This approach provides concrete evidence that one must include causal structure, in the sense of having a well-defined light cones everywhere. This model imposed preferred foliation of time so that we can track of time direction.
 
-
 But the question is, does CDT rely on distinguished time slicing? To answer this question, Renate Loll and Samo Jordan introduced the more general version of CDT which is called CDT without preferred foliation (equivalent to say, Locally causal dynamical triangulations) and found the answer to be hopefully no.
 
 The main motivation for choosing this approach is that it is relies on very few fundamental physical principles and attempts to quantize gravitational degree of freedom without introduction of additional variables, extra dimensions or new symmetries widely used by String theory (for example). Moreover, it comes with definite numerical approximation scheme. To study the numerical simulations of 1+1 dimensional CDT with non-foliated structure, we requires new Monte Carlo moves, which are significantly more difficult to implement than the generalized Pachner moves used in standard CDT.
 
-In short, Causal Dynamical Triangulations (CDT) is an approach to Quantum Gravity based on the sum over histories line of research which gives a quantization of classical Einstein gravity using a discrete approximation to the gravitational path integral, and spacetimes are approximated by Minkowskian equilateral triangles.
-
-## Presentation
-
-I gave this talk at "Marian Sokołowski Institute of Physics" at Jagiellonian university, Krakow, Poland. I was invited by Prof. Jerzy Jurkiewicz as a visiting research student. This talk is more detailed and technical.
-
-<center>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/NPdwyaPxuomqxt" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: #000000 4px outset; display: block; margin-left: auto; margin-right: auto; max-width: 100%" allowfullscreen> </iframe> 
-</center>  
+In short, Causal Dynamical Triangulations (CDT) is an approach to Quantum Gravity based on the sum over histories line of research which gives a quantization of classical Einstein gravity using a discrete approximation to the gravitational path integral, and spacetimes are approximated by Minkowskian equilateral triangles. 
 
 ## Background theories
 1. General Relativity
@@ -104,7 +95,4 @@ Thanks goes to all these wonderful people at ["View Contributors"](https://githu
 This webpage counts the number of visitors since 20 Jan, 2019. Webpage created on 20 Sept, 2018 and recent edited on 1 May, 2020. 
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/0.js?i=0upkcckxlaf&amp;d=2&amp;p=3&amp;b=4&amp;w=293&amp;g=2&amp;f=arial&amp;fs=12&amp;r=0&amp;c0=362b05&amp;c1=375363&amp;c2=000000&amp;ic0=0&amp;ic1=0" async="async"></script>
-
-## Special Thanks
-To Prof. Dr. Jerzy Jurkiewicz (Jagiellonian University, Poland), Prof. Dr. Steven Carlip (University of California, Davis, USA), Dr. Ben Ruijl (ETH Zurich, Switzerland), Dr. Joshua Cooperman (Radboud University, Netherlands) and Mr. Adam Getchell (University of California, Davis, USA), who provided invaluable advices. 
 
