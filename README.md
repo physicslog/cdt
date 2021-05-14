@@ -33,23 +33,6 @@ In short, Causal Dynamical Triangulations (CDT) is an approach to Quantum Gravit
 6. Periodic Boundary Condition
 7. Boltzmann Probability
 
-## Simulation Keywords
-1. Data Structure
-2. Causality Test
-3. Metropolis-Hastings Algorithm
-4. Toroidal Topology
-5. Monte-Carlo Moves
-6. Volume fixing terms
-
-## Basics Reading
-1. [Wikibooks: Spacetime](https://en.wikibooks.org/wiki/Special_Relativity/Spacetime)
-2. [PBS Space Time](https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g/playlists) 
-3. [Einstein Online](http://www.einstein-online.info/index.html)
-4. [The Physics Mill](http://www.thephysicsmill.com/)
-
-## Code Documentation
-You can download from this link: [Damodar's Bachelor Approved Thesis by Tribhuvan University](https://figshare.com/articles/thesis/An_open_source_code_for_Causal_Dynamical_Triangulations_without_preferred_foliation_in_1_1_-dimensions_with_elementary_expositions/12751772).
-
 ## How you can contribute to our open source code at [GitHub](https://github.com/Damicristi/cdt)?
 Our programming language preference is Python 3.x. version under the object oriented paradigm. The goals and target of this project are:
 
@@ -92,7 +75,7 @@ In LaTeX, use this:
 Thanks goes to all these wonderful people at ["View Contributors"](https://github.com/Damicristi/cdt/graphs/contributors)
 
 ## Visitor counter:
-This webpage counts the number of visitors since 20 Jan, 2019. Webpage created on 20 Sept, 2018 and recent edited on 1 May, 2020. 
+This webpage counts the number of visitors since 20 Jan, 2019. Webpage created on 20 Sept, 2018 and recent edited on 14 May, 2021. 
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/0.js?i=0upkcckxlaf&amp;d=2&amp;p=3&amp;b=4&amp;w=293&amp;g=2&amp;f=arial&amp;fs=12&amp;r=0&amp;c0=362b05&amp;c1=375363&amp;c2=000000&amp;ic0=0&amp;ic1=0" async="async"></script>
 
